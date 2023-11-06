@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./Header";
+import Homepage from "./Homepage";
+import Footer from "./Footer";
+import EmiCalc from "./EmiCalc";
+import Faqs from "./Faqs";
+import About from "./About";
+import TermsCon from "./TermsCon";
+import Privacy from "./Privacy";
+import Contact from "./Contact";
+import Personel from "./Personel";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Homepage />} />
+        <Route path="/personelloan" element={<Personel />} />
+        <Route path="/emicalculator" element={<EmiCalc />} />
+        <Route path="/faqs" element={<Faqs />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/terms" element={<TermsCon />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
-
 export default App;
