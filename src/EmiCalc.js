@@ -1,16 +1,9 @@
 import { Slider, Table, TableCell, TableRow } from "@mui/material";
 import { withStyles } from "@mui/styles";
 import React, { useState } from "react";
-// import {  withStyles } from "@mui/material";
-// import { Pie } from "react-chartjs-2";
 import EmiTable from "./EmiTable";
 export default function EmiCalc() {
-  const PrettoSlider=withStyles({
-    root:{color:'MediumVioletRed',height:10},
-    thumb:{height:25,width:25,backgroundColor:'white',border:'3px solid black',marginTop:-9,marginLeft:-9},
-    track:{height:10,borderRadius:4},
-    rail:{height:10,borderRadius:4}
-  })
+  
 
   const [pAmount,setpAmount]=useState(2755000);
   const [interest,setInterest]=useState(7);
@@ -31,7 +24,7 @@ export default function EmiCalc() {
       <div className="font-bold text-3xl mt-5">
         EMI Calculator - Your Convenient Loan Planning Tool
       </div>
-      <div className=" flex justify-around gap-5 p-5">
+      <div className=" flex justify-center gap-5 p-5 mt-5">
         <div className="shadow-2xl ... p-5" style={{width:'50%',background:'#2B4A84',color:'white'}}>
       <div>
         <div>Loan Amount</div>
@@ -46,7 +39,7 @@ export default function EmiCalc() {
         <Slider  value={duration} onChange={(event,vduration)=>{setDuration(vduration)}} defaultValue={duration} max={maxDuration}/>
       </div>
       </div>
-      <div className="shadow-2xl ... p-5" style={{width:'50%'}}>
+      <div  >
         <Table>
           <TableRow>
             <TableCell>

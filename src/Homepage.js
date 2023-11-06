@@ -35,7 +35,7 @@ export default function Homepage() {
           </a>
         </div>
         <div style={{ width: "50%" }}>
-          <div className="flex justify-around">
+          <div className="flex justify-around gap-5">
             <div>
               <a href="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
                 <img alt="google"  src="andr.png"></img>
@@ -117,12 +117,12 @@ export default function Homepage() {
           Blessings Makes Us Unique.
         </p>
       </div>
-      <div className="flex gap-5 mt-5 justify-center heading-para">
+      <div className="flex gap-5 mt-5 justify-center heading-para p-5">
         <div
           className=" p-5 rounded-lg ..."
-          style={{ width: "350px",background:'white',color:'black' }}
+          style={{ background:'white',color:'black' }}
         >
-          <div style={{ width: "300px" }}>
+          <div >
             <p>
               “I used ClikFin to help me pay for my travel expenses. The service
               was great – fast but still friendly. Fantastic and Painless
@@ -142,9 +142,9 @@ export default function Homepage() {
         </div>
         <div
           className=" p-5 rounded-lg ..."
-          style={{ width: "350px",background:'white',color:'black' }}
+          style={{ background:'white',color:'black' }}
         >
-          <div style={{ width: "300px" }}>
+          <div >
             <p>
               “These guys are always ready to help when you need it most. They
               helped cover school fees for my brother and I when I was a little
@@ -165,9 +165,9 @@ export default function Homepage() {
         </div>
         <div
           className=" p-5 rounded-lg ..."
-          style={{ width: "350px",background:'white',color:'black' }}
+          style={{background:'white',color:'black' }}
         >
-          <div style={{ width: "300px" }}>
+          <div >
             <p>
               “Their application process was quick and simple. in a short time I
               had the funds I needed to complete some much needed improvements

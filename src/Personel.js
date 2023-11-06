@@ -155,7 +155,9 @@ export default function Personel() {
           <div>6. Last three-month pay slips</div>
           <div className="font-bold text-3xl mt-5">Personal Loan Details</div>
           <div className="mt-5">
-            <table>
+
+            
+            <table className="w-full">
               <tr>
                 <th>BANK/NBFC</th>
                 <th>Interest Rate(pa)</th>
