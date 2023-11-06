@@ -67,9 +67,10 @@ body
 .get-loan-now{
   background-color: #f9bd08 ;
   display: flex;
+  color: #2B4A84;
   justify-content: center;
   align-items: center;
-  width: 215px;
+  width: 245px;
 
 }
 table,

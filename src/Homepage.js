@@ -137,6 +137,7 @@ export default function Homepage() {
               <div className=" font-bold">Swati Joshi</div>
               <div>Mumbai</div>
             </div>
+            
           </div>
         </div>
         <div
@@ -155,9 +156,11 @@ export default function Homepage() {
               <img alt="test2" style={{ height: "50px" }} src="testm.png"></img>
             </div>
             <div>
-              <div className=" font-bold">Swati Joshi</div>
-              <div>Mumbai</div>
+              <div className=" font-bold">Purnima Rawat</div>
+              <div>Kanpur</div>
             </div>
+            
+
           </div>
         </div>
         <div
@@ -176,10 +179,12 @@ export default function Homepage() {
               <img alt="test3" style={{ height: "50px" }} src="testm.png"></img>
             </div>
             <div>
-              <div className=" font-bold">Swati Joshi</div>
-              <div>Mumbai</div>
+              <div className=" font-bold">Kartik Patel</div>
+              <div>Ahmedabad</div>
             </div>
           </div>
+          
+
         </div>
       </div>
       <div
@@ -296,12 +301,12 @@ As Seen On
       <div className="flex pers-loan p-5  justify-around mt-5">
         <div className="text-xl text-white">
           <div>
-            Apply for loans of upto ₹5 lakhs easily using your phone or laptop,{" "}
+            Apply for loans of upto ₹ 10 lakhs easily using your phone or laptop,{" "}
           </div>
           <div>and pay back on low EMIs</div>
         </div>
 
-        <div className="get-loan-now rounded-full ... p-2 heading-para font-bold">
+        <div className="get-loan-now rounded-full ... p-2  font-bold">
           Get a Personal Loan Now
         </div>
       </div>

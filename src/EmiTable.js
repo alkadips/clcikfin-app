@@ -22,7 +22,7 @@ export default function EmiTable(props) {
                 <strong style={{color:'white'}}>Interest %</strong>
               </TableCell>
               <TableCell className="EtableCellValue">
-                <strong style={{color:'white'}}>Rs</strong>:<span style={{color:'white'}}>{props.interest}</span>
+                <strong style={{color:'white'}}>₹</strong>:<span style={{color:'white'}}>{props.interest}</span>
 
               </TableCell>
             </TableRow>
@@ -40,7 +40,7 @@ export default function EmiTable(props) {
                 <strong style={{color:'white'}}>EMI (Monthly)</strong>
               </TableCell>
               <TableCell className="EtableCellValue">
-                <strong style={{color:'white'}}>Rs</strong>:<span style={{color:'white'}}>{props.emi}</span>
+                <strong style={{color:'white'}}>₹</strong>:<span style={{color:'white'}}>{props.emi}</span>
 
               </TableCell>
             </TableRow>
@@ -49,7 +49,7 @@ export default function EmiTable(props) {
                 <strong style={{color:'white'}}>Total Interest</strong>
               </TableCell>
               <TableCell className="EtableCellValue">
-                <strong style={{color:'white'}}>Rs</strong>:<span style={{color:'white'}}>{props.totalAmountOFInterest}</span>
+                <strong style={{color:'white'}}>₹</strong>:<span style={{color:'white'}}>{props.totalAmountOFInterest}</span>
 
               </TableCell>
             </TableRow>
@@ -58,7 +58,7 @@ export default function EmiTable(props) {
                 <strong style={{color:'white'}}>Total Payment (Loan Amount + Interest rate)</strong>
               </TableCell>
               <TableCell className="EtableCellValue">
-                <strong style={{color:'white'}}>Rs</strong> : <span style={{color:'white'}}>{props.totalAmt ? props.totalAmt : 0}</span>
+                <strong style={{color:'white'}}>₹</strong> : <span style={{color:'white'}}>{props.totalAmt ? props.totalAmt : 0}</span>
 
               </TableCell>
             </TableRow>
