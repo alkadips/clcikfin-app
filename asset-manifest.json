@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/clcikfin-app/static/css/main.801129fb.css",
+    "main.js": "/clcikfin-app/static/js/main.92c074c3.js",
+    "static/js/787.efcd5bf8.chunk.js": "/clcikfin-app/static/js/787.efcd5bf8.chunk.js",
+    "index.html": "/clcikfin-app/index.html",
+    "main.801129fb.css.map": "/clcikfin-app/static/css/main.801129fb.css.map",
+    "main.92c074c3.js.map": "/clcikfin-app/static/js/main.92c074c3.js.map",
+    "787.efcd5bf8.chunk.js.map": "/clcikfin-app/static/js/787.efcd5bf8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.801129fb.css",
+    "static/js/main.92c074c3.js"
+  ]
+}
