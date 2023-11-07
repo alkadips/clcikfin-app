@@ -5,6 +5,7 @@ import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -12,72 +13,72 @@ export default function Footer() {
       <div className=" flex justify-around " style={{ marginTop: "100px",borderBottom:'1px solid',padding:'20px' }}>
         <div>
           <div>
-            <a href="/">
+            <Link to="/">
               <img alt="logo" src="logo.png"></img>
-            </a>
+            </Link>
           </div>
         </div>
         <div>
           <div className="font-bold">PRODUCTS</div>
-          <a href="/personelloan">
+          <Link to="/personelloan">
             <div className="mt-5 text-xs">Personal Loan</div>
-          </a>
+          </Link>
         </div>
         <div>
           <div className="font-bold">RESOURCES</div>
-          <a href="/emicalculator">
+          <Link to="/emicalculator">
             <div className="mt-5 text-xs">Emi Calculator</div>
-          </a>
-          <a href="/faqs">
+          </Link>
+          <Link to="/faqs">
             <div className="text-xs mt-3">Faqs</div>
-          </a>
+          </Link>
         </div>
         <div>
           <div className="font-bold">COMPANY</div>
-          <a href="/about">
+          <Link to="/about">
             <div className="mt-5 text-xs">About Clikfin</div>
-          </a>
-          <a href="/contact">
+          </Link>
+          <Link to="/contact">
             <div className="text-xs mt-3">Contact Us</div>
-          </a>
+          </Link>
         </div>
 
         <div>
           <div className="font-bold">MORE</div>
-          <a href="/privacy">
+          <Link to="/privacy">
             <div className="mt-5 text-xs">Privacy Policy</div>
-          </a>
-          <a href="/terms">
+          </Link>
+          <Link to="/terms">
             <div className="text-xs mt-3">Terms & condition</div>
-          </a>
+          </Link>
         </div>
         <div>
           <div className="font-bold">CONTACT US</div>
           <div className="flex justify-center mt-5 gap-5">
         <div>
-          <a href="https://www.facebook.com/ClikFin/">
+          <Link to="https://www.facebook.com/ClikFin/">
             <IoLogoFacebook />
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="https://twitter.com/clikfin?lang=en">
+          <Link to="https://twitter.com/clikfin?lang=en">
             <IoLogoTwitter />
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="https://www.instagram.com/clikfin/?hl=en">
+          <Link to="https://www.instagram.com/clikfin/?hl=en">
             <IoLogoInstagram />
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="https://www.linkedin.com/company/clikfin/">
+          <Link to="https://www.linkedin.com/company/clikfin/">
             <IoLogoLinkedin />
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=support@clikfin.com">
+          <Link to="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=support@clikfin.com">
             <IoIosMail />
-          </a>
+          </Link>
         </div>
       </div>
         </div>

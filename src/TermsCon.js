@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function TermsCon() {
   return (
@@ -12,10 +13,10 @@ export default function TermsCon() {
           <p>
             Welcome to ClikFin! These Terms and Conditions (“Terms”) outline the
             rules and regulations for using our website, accessible at
-            <a href="www.clikfin.com" style={{ color: "blue" }}>
+            <Link to="www.clikfin.com" style={{ color: "blue" }}>
               {" "}
               www.clikfin.com
-            </a>{" "}
+            </Link>{" "}
             or through our mobile application (“Website”). By using the Website,
             you accept these Terms, along with our Privacy Policy. If you do not
             agree with any part of these Terms, please refrain from using the
@@ -121,10 +122,10 @@ export default function TermsCon() {
           <p>
             10. Violations: If you have any violations or grievances related to
             these Terms, please report them to
-            <a href="support@clikfin.com." style={{ color: "blue" }}>
+            <Link to="support@clikfin.com" style={{ color: "blue" }}>
               {" "}
-              support@clikfin.com.
-            </a>{" "}
+              support@clikfin.com
+            </Link>{" "}
           </p>
         </div>
       </div>

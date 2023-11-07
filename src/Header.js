@@ -1,5 +1,6 @@
 import { Box, Modal } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = React.useState(false);
@@ -25,110 +26,110 @@ export default function Header() {
         <nav id="drawer">
           <ul>
             <li>
-              <a href="/">
+              <Link to="/">
                 <div>Home</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about">
+              <Link to="/about">
                 <div>About</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/personelloan">
+              <Link to="/personelloan">
                 <div>Personal Loan</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/emicalculator">
+              <Link to="/emicalculator">
                 <div>EMI Calculator</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/terms">
+              <Link to="/terms">
                 <div>Terms & condition</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/privacy">
+              <Link to="/privacy">
                 <div>Privacy Policy</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/faqs">
+              <Link to="/faqs">
                 <div>FAQS</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact">
+              <Link to="/contact">
                 <div>Contact</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+              <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
                 <div className="get-cash-now rounded-full ... p-2">
                   GET CASH NOW
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a style={{ cursor: "pointer" }}>
+              <Link style={{ cursor: "pointer" }}>
                 <div
                   onClick={handleOpen}
                   className="get-cash-now rounded-full ... p-2"
                 >
                   Log In
                 </div>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
         <div>
-          <a href="/">
-            <img alt="logo" src="logo.png"></img>
-          </a>{" "}
+          <Link to="/">
+            <img  src="../logo.png"></img>
+          </Link>{" "}
         </div>
         <div className="flex gap-5 font-bold wrapper-gap">
-          <a href="/">
+          <Link to="/">
             <div>Home</div>
-          </a>
-          <a href="/about">
+          </Link>
+          <Link to="/about">
             <div>About</div>
-          </a>
-          <a href="/personelloan">
+          </Link>
+          <Link to="/personelloan">
             <div>Personal Loan</div>
-          </a>
-          <a href="/emicalculator">
+          </Link>
+          <Link to="/emicalculator">
             <div>EMI Calculator</div>
-          </a>
-          <a href="/terms">
+          </Link>
+          <Link to="/terms">
             <div>Terms & condition</div>
-          </a>
-          <a href="/privacy">
+          </Link>
+          <Link to="/privacy">
             <div>Privacy Policy</div>
-          </a>
-          <a href="/faqs">
+          </Link>
+          <Link to="/faqs">
             <div>FAQS</div>
-          </a>
-          <a href="/contact">
+          </Link>
+          <Link to="/contact">
             <div>Contact</div>
-          </a>
-          {/* <a href="/whatsapp">
+          </Link>
+          {/* <Link to="/whatsapp">
             <div>Whatsapp</div>
-          </a> */}
-          <a href="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+          </Link> */}
+          <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
             <div className="get-cash-now rounded-full ... p-2">
               GET CASH NOW
             </div>
-          </a>
-          <a style={{ cursor: "pointer" }}>
+          </Link>
+          <Link style={{ cursor: "pointer" }}>
             <div
               onClick={handleOpen}
               className="get-cash-now rounded-full ... p-2"
             >
               Log In
             </div>
-          </a>
+          </Link>
         </div>
 
         <Modal

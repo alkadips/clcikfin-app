@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Homepage() {
   return (
@@ -28,23 +29,23 @@ export default function Homepage() {
               bills, or handle any financial exigency, we’ve got you covered!
             </p>
           </div>
-          <a href="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+          <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
             <div className="get-cash-now rounded-full ... p-2 mt-5 font-bold">
               <button>GET CASH NOW</button>
             </div>
-          </a>
+          </Link>
         </div>
         <div style={{ width: "50%" }}>
           <div className="flex justify-around gap-5">
             <div>
-              <a href="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+              <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
                 <img alt="google"  src="andr.png"></img>
-              </a>
+              </Link>
             </div>
             <div>
-              <a href="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
+              <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
                 <img alt="apple"  src="app.png"></img>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mt-5" style={{borderRadius:'20px'}}>
