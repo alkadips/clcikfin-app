@@ -1,5 +1,6 @@
 {
   "name": "clickfin-app",
+  "homepage": "https://alkadips.github.io/clcikfin-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
