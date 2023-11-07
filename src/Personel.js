@@ -10,6 +10,7 @@ export default function Personel() {
             <div className="font-bold text-4xl mt-5">
               Benefits And Features Of Unsecured Personal Loans
             </div>
+            <div className='p-5 bg-black rounded-xl mt-5'>
             <div className="heading-para mt-5">
               <p>
                 <span className="font-bold">1. No Collateral Required:</span> Unlike
@@ -87,9 +88,10 @@ export default function Personel() {
                 possibilities.
               </p>
             </div>
+            </div>
           </div>
           <div className="font-bold text-4xl mt-5">Personal Loan Eligibility</div>
-          <div className="mt-5">
+          <div className="mt-5 p-5 bg-black rounded-xl">
             <p>
               Personal loans are offered by most banks and NBFCs, each with their
               own specific eligibility criteria. Nonetheless, there exist certain
@@ -98,7 +100,7 @@ export default function Personel() {
               self-employed individuals are:
             </p>
           </div>
-          <div className="mt-5">
+          <div className="mt-5 p-5 bg-black rounded-xl">
             <table className="w-full">
               <tr>
                 <th>Age</th>
@@ -134,6 +136,7 @@ export default function Personel() {
           <div className="font-bold text-3xl mt-5">
             Documents Required For Personal Loan
           </div>
+          <div className='mt-5 p-5 bg-black rounded-xl'>
           <div className="mt-5">
             Below is a list of the typical documents needed for the approval of an
             online personal loan:
@@ -153,8 +156,9 @@ export default function Personel() {
             salary account)
           </div>
           <div>6. Last three-month pay slips</div>
+          </div>
           <div className="font-bold text-3xl mt-5">Personal Loan Details</div>
-          <div className="mt-5">
+          <div className="mt-5 p-5 bg-black rounded-xl">
 
             
             <table className="w-full">
@@ -196,6 +200,7 @@ export default function Personel() {
             </table>
           </div>
           <div className="text-3xl font-bold mt-5">Representative Example:</div>
+          <div className='p-3 bg-black rounded-xl mt-5'>
           <div className="mt-5 ">Loan Amount: ₹1,00,000</div>
           <div>Tenure: 36 months</div>
           <div>Interest Rate: @18%* (reducing basis)</div>
@@ -211,7 +216,10 @@ export default function Personel() {
             Total Cost of the Loan = Interest Amount + Processing Fees = ₹30,140 +
             ₹2,360 = ₹32,500
           </div>
+
+          </div>
           <div className="font-bold text-3xl mt-5">FAQs About Personal Loans</div>
+          <div className='bg-black p-5 mt-5 rounded-xl'>
           <div className="heading-para mt-5">
             <p>
               <span className="font-bold">
@@ -221,7 +229,8 @@ export default function Personel() {
               crises, as they provide quick access to funds without requiring
               collateral.
             </p>
-          </div>
+            </div>
+
           <div className="heading-para mt-5">
             <p>
               <span className="font-bold">
@@ -308,6 +317,7 @@ export default function Personel() {
               banks and NBFCs typically require a monthly income of ₹20,000 or more
               for personal loan approval.
             </p>
+          </div>
           </div>
           <div className="mt-5">
             Explore the world of personal loans with confidence, knowing the answers

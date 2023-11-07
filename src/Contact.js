@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="flex p-5 gap-5 justify-around mt-5">
           <div style={{ width: "50%" }}>
             <div className="font-bold mt-5">About </div>
-            <div className="mt-5">
+            <div className="mt-5 p-5 bg-black rounded-xl">
               <p>
                 Clikfin brand is 100% owned by CygniSys Service’s Pvt Ltd
                 formerly known as ( CygniSys OPC Pvt Ltd ) incorporated in 2021,

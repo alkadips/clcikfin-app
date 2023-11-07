@@ -21,7 +21,7 @@ export default function About() {
           </div>
       </div>
       <div className="flex  mt-5 p-5 gap-5">
-        <div style={{ width: "50%" }}>
+        <div className="p-5 bg-black rounded-xl" style={{ width: "50%" }}>
           <div className="font-bold text-4xl mt-5 ">
             Who We Are: Empowering Your Financial Journey
           </div>
@@ -94,6 +94,7 @@ export default function About() {
         <div className="font-bold mt-5 text-4xl ">
           Discover The Possibilities With Our Instant Loan Service
         </div>
+        <div className="p-5 bg-black rounded-xl mt-5">
         <div className="font-bold mt-3">
           At ClikFin, Our Instant Loan Service Opens Up A World Of Possibilities
           For You. You Can Use The Funds For A Wide Range Of Purposes,
@@ -215,6 +216,7 @@ export default function About() {
           <div>New Customers Everyday</div>
           <div>Customer Ratings</div>
         </div>
+        </div>
       </div>
       <div className="our-mission text-center font-bold text-4xl">
         Why Apply With Us?
@@ -229,18 +231,18 @@ export default function About() {
         <div>Flexible Repayment Plans</div>
       </div>
       <div className="flex justify-around p-5 gap-5">
-        <div className="text-center">
+        <div className="text-center p-5 bg-black rounded-xl">
           Your privacy and security are our utmost priorities. Our loan
           procedure is designed to be easy and straightforward, and once your
           submitted documents are approved, we ensure instant processing to get
           you the funds you need.
         </div>
-        <div className="text-center">
+        <div className="text-center p-5 bg-black rounded-xl">
           We value the privacy of your personal data and adhere to a strict
           private data policy. Rest assured that your information is handled
           with the utmost confidentiality and care.
         </div>
-        <div className="text-center">
+        <div className="text-center p-5 bg-black rounded-xl">
           We understand that every individual’s financial situation is unique.
           Hence, when we approve loans, we offer flexible repayment plans
           tailored to suit your financial capacity and preferences.

@@ -3,6 +3,7 @@ import React from "react";
 export default function TermsCon() {
   return (
     <div style={{ marginTop: "100px" }}>
+      <div className="p-5 bg-black rounded-xl" >
       <div className="font-bold text-4xl mt-5 text-center text-white">
         Terms & Condition
       </div>
@@ -126,6 +127,7 @@ export default function TermsCon() {
             </a>{" "}
           </p>
         </div>
+      </div>
       </div>
     </div>
   );

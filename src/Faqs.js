@@ -112,7 +112,7 @@ export default function Faqs() {
         <div className="font-bold text-2xl mt-5 heading-para">
           To Apply For A Loan With ClikFin, Follow These Simple Steps:
         </div>
-        <div className="heading-para">
+        <div className="heading-para p-5 bg-black rounded-xl mt-5">
           <div className="mt-5 ">
             <p>
               1. Install the ClikFin App from Google Play Store and register an

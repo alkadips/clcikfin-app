@@ -9,11 +9,12 @@ import TermsCon from "./TermsCon";
 import Privacy from "./Privacy";
 import Contact from "./Contact";
 import Personel from "./Personel";
-
+import WhatsApp from "./WhatsApp";
 function App() {
   return (
     <BrowserRouter>
       <Header />
+
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route path="/personelloan" element={<Personel />} />
@@ -23,6 +24,8 @@ function App() {
         <Route path="/terms" element={<TermsCon />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/whatsapp" element={<WhatsApp />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>

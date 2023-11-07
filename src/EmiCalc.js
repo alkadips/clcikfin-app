@@ -50,8 +50,9 @@ export default function EmiCalc() {
       </div>
       </div>
       
-     
+     <div className="p-5 bg-black rounded-xl">
       <div className="mt-5">
+
         <p>
           Calculating the Equated Monthly Installment (EMI) for a loan has never
           been easier. With our user-friendly EMI calculator, you can obtain the
@@ -94,6 +95,7 @@ export default function EmiCalc() {
           lending institution. For precise loan details, feel free to connect
           with our team or the respective financing institution.
         </p>
+      </div>
       </div>
     </div>
   );

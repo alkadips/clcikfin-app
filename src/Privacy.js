@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Privacy() {
   return (
-    <div style={{marginTop:'100px'}}>
+    <div className='bg-black rounded-xl p-5' style={{marginTop:'100px'}}>
         <div className='font-bold text-4xl mt-5 text-center heading-para'>Privacy Policy</div>
         <div className='heading-para text-center'>
         <div className='mt-5'>Effective Date: March 15, 2021</div>

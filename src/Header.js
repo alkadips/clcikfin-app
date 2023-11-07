@@ -113,6 +113,9 @@ export default function Header() {
           <a href="/contact">
             <div>Contact</div>
           </a>
+          <a href="/whatsapp">
+            <div>Whatsapp</div>
+          </a>
           <a href="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
             <div className="get-cash-now rounded-full ... p-2">
               GET CASH NOW

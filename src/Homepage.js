@@ -7,7 +7,7 @@ export default function Homepage() {
         <source src="clcikfinve.mp4" type="video/mp4" />
         Your browser does not support HTML video.
       </video>
-      <div className="p-5 flex homepage-wrapper heading-para">
+      <div className="p-5 flex gap-5 homepage-wrapper heading-para">
         <div style={{ width: "50%" }}>
           <div className="font-bold text-3xl ml-3 mt-5">
             Welcome To ClikFin – Your Instant Life Upgrade
@@ -19,7 +19,7 @@ export default function Homepage() {
               <li>Instant Transfer to Bank</li>
             </ul>
           </div>
-          <div className="clickfin-para-home">
+          <div className="clickfin-para-home p-5 bg-black rounded">
             <p>
               At ClikFin, we understand that life can present unexpected
               challenges and opportunities, and that’s why we’re here to offer
@@ -47,9 +47,9 @@ export default function Homepage() {
               </a>
             </div>
           </div>
-          <div>
+          <div className="mt-5" style={{borderRadius:'20px'}}>
             {" "}
-            <img alt="mobile" src="mobile-img.png"></img>
+            <img alt="mobile" src="sideimage.jpeg"></img>
           </div>
         </div>
       </div>
@@ -219,7 +219,7 @@ As Seen On
         <div>What Makes Us Unique?</div>
       </div>
       <div className="flex gap-5 justify-around">
-        <div style={{ width: "40%" }}>
+        <div className="p-5 bg-black rounded" style={{ width: "40%" }}>
           <div className="heading-para mt-5">
             <p>
               ClikFin, a proud venture wholly owned by CygniSys Services Pvt.
@@ -250,7 +250,7 @@ As Seen On
             </p>
           </div>
         </div>
-        <div style={{ width: "40%" }}>
+        <div className="p-5 p-5 bg-black rounded" style={{ width: "40%" }}>
           <div className="mt-5 heading-para">
             <p>
               1.{" "}

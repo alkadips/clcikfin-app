@@ -23,6 +23,13 @@ body
   align-items: center;
   width: 190px;
 }
+.get-cash-now-whats{
+  background-color: #f9bd08 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+}
 .header-wrapper{
   align-items: center;
   height: 65px;
@@ -354,6 +361,7 @@ tr:hover {background-color:#f9bd08;}
       #drawer-toggle:checked ~ #page-content { 
       margin-left: calc(100% - 50px); 
       } 
+
   }
   
   
