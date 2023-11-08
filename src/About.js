@@ -1,9 +1,32 @@
-import React from "react";
+import { Dialog } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function About() {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    handleClickOpen();
+  }, []);
   return (
     <div className="heading-para" style={{ marginTop: "65px" }}>
       <div className="about-back">
+      <Dialog onClose={handleClose} open={open}>
+      <div>
+        <Link to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
+        <img className="popup-style" alt="popup" src='./clcikfin-app/popup.jpeg'></img>
+        </Link>
+      </div>
+       
+    </Dialog>
       <div className="mt-5 about-info">
         <p className="mt-5" style={{  color: '#f9bd08'}}>ABOUT US</p>
             <p className="mt-5" style={{  color: '#f9bd08'

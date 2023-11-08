@@ -1,13 +1,35 @@
-import React from "react";
+import { Dialog } from "@mui/material";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function TermsCon() {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    handleClickOpen();
+  }, []);
   return (
     <div style={{ marginTop: "100px" }}>
       <div className="p-5 bg-black rounded-xl" >
       <div className="font-bold text-4xl mt-5 text-center text-white">
         Terms & Condition
       </div>
+      <Dialog onClose={handleClose} open={open}>
+      <div>
+        <Link to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
+        <img className="popup-style" alt="popup" src='./clcikfin-app/popup.jpeg'></img>
+        </Link>
+      </div>
+       
+    </Dialog>
       <div className="heading-para p-5 text-center">
         <div className="mt-5">
           <p>

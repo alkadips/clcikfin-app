@@ -1,13 +1,39 @@
-import React from "react";
+import { Dialog } from "@mui/material";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+ 
 
 export default function Homepage() {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    handleClickOpen();
+  }, []);
   return (
     <div>
       <video width="100%" controls>
         <source src="./clcikfin-app/clcikfinve.mp4" type="video/mp4" />
         Your browser does not support HTML video.
       </video>
+      
+     <div>
+     <Dialog onClose={handleClose} open={open}>
+      <div>
+        <Link to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
+        <img className="popup-style" alt="popup" src='./clcikfin-app/popup.jpeg'></img>
+        </Link>
+      </div>
+       
+    </Dialog>
+     </div>
       <div className="p-5 flex gap-5 homepage-wrapper heading-para">
         <div style={{ width: "50%" }}>
           <div className="font-bold text-3xl ml-3 mt-5">
@@ -35,7 +61,7 @@ export default function Homepage() {
             </div>
           </Link>
         </div>
-        <div style={{ width: "50%" }}>
+        <div >
           <div className="flex justify-around gap-5">
             <div>
               <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
@@ -50,7 +76,7 @@ export default function Homepage() {
           </div>
           <div className="mt-5" style={{borderRadius:'20px'}}>
             {" "}
-            <img alt="mobile" src="./clcikfin-app/sideimage.jpeg"></img>
+            <img style={{width:'70%'}} alt="mobile" src="./clcikfin-app/homeab.jpeg"></img>
           </div>
         </div>
       </div>

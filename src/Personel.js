@@ -1,11 +1,34 @@
-import React from 'react'
+import { Dialog } from '@mui/material';
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Personel() {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    handleClickOpen();
+  }, []);
     return (
         <div
           className="text-center p-5 heading-para"
           style={{ marginTop: "100px" }}
         >
+           <Dialog onClose={handleClose} open={open}>
+      <div>
+        <Link to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
+        <img className="popup-style" alt="popup" src='./clcikfin-app/popup.jpeg'></img>
+        </Link>
+      </div>
+       
+    </Dialog>
           <div>
             <div className="font-bold text-4xl mt-5">
               Benefits And Features Of Unsecured Personal Loans

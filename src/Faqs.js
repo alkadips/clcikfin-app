@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FAQ from "./FAq";
+import { Dialog } from "@mui/material";
+import { Link } from "react-router-dom";
 export default function Faqs() {
   const [faqs1, setFaqs1] = useState([
     {
@@ -99,6 +101,19 @@ export default function Faqs() {
       })
     );
   };
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    handleClickOpen();
+  }, []);
 
   return (
     <div style={{ marginTop: "100px" }}>
@@ -106,6 +121,14 @@ export default function Faqs() {
         <div className="font-bold text-4xl mt-5 heading-para">
         Frequently Asked Questions
         </div>
+        <Dialog onClose={handleClose} open={open}>
+      <div>
+        <Link to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
+        <img className="popup-style" alt="popup" src='./clcikfin-app/popup.jpeg'></img>
+        </Link>
+      </div>
+       
+    </Dialog>
         <div className="font-bold text-3xl mt-5 heading-para" style={{color: '#f9bd08'}}>
           How To Apply For A Loan With ClikFin?
         </div>

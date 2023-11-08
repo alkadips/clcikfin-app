@@ -16,6 +16,7 @@ body
     margin: 0;
     padding: 0;
     }
+   
 .get-cash-now{
   background-color: #f9bd08 ;
   display: flex;
@@ -364,4 +365,14 @@ tr:hover {background-color:#f9bd08;}
 
   }
   
+  .popup-style{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 40%; 
+    border-radius: 20px
+
+  }
+    
+
   
