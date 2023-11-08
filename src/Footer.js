@@ -14,7 +14,7 @@ export default function Footer() {
         <div>
           <div>
             <Link to="/">
-              <img alt="logo" src="./clcikfin-app/logo.png"></img>
+              <img alt="logo" src="/clcikfin-app/logo.png"></img>
             </Link>
           </div>
         </div>

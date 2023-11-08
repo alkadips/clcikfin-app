@@ -5,7 +5,7 @@ export default function Homepage() {
   return (
     <div>
       <video width="100%" controls>
-        <source src="clcikfinve.mp4" type="video/mp4" />
+        <source src="./clcikfin-app/clcikfinve.mp4" type="video/mp4" />
         Your browser does not support HTML video.
       </video>
       <div className="p-5 flex gap-5 homepage-wrapper heading-para">
