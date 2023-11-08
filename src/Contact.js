@@ -4,6 +4,7 @@ import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -34,29 +35,29 @@ export default function Contact() {
             <div className="font-bold">Follow Us</div>
             <div className="flex justify-center mt-5 gap-5">
               <div>
-                <a href="https://www.facebook.com/ClikFin/">
+                <Link to="https://www.facebook.com/ClikFin/">
                   <IoLogoFacebook />
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="https://twitter.com/clikfin?lang=en">
+                <Link to="https://twitter.com/clikfin?lang=en">
                   <IoLogoTwitter />
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="https://www.instagram.com/clikfin/?hl=en">
+                <Link to="https://www.instagram.com/clikfin/?hl=en">
                   <IoLogoInstagram />
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="https://www.linkedin.com/company/clikfin/">
+                <Link to="https://www.linkedin.com/company/clikfin/">
                   <IoLogoLinkedin />
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=support@clikfin.com">
+                <Link to="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=support@clikfin.com">
                   <IoIosMail />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -70,13 +71,13 @@ export default function Contact() {
         </div>
         <div className="flex justify-around mt-5">
           <div>
-            <img alt="branch" style={{ height: "100px" }} src="branch.png"></img>
+            <img alt="branch" style={{ height: "100px" }} src="./clcikfin-app/branch.png"></img>
           </div>
           <div>
-            <img alt="call" style={{ height: "100px" }} src="call.png"></img>
+            <img alt="call" style={{ height: "100px" }} src="./clcikfin-app/call.png"></img>
           </div>
           <div>
-            <img alt="email" style={{ height: "100px" }} src="email.png"></img>
+            <img alt="email" style={{ height: "100px" }} src="./clcikfin-app/email.png"></img>
           </div>
         </div>
         <div className="flex justify-around mt-3 font-bold">

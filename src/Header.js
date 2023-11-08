@@ -86,7 +86,7 @@ export default function Header() {
         </nav>
         <div>
           <Link to="/">
-            <img  src="../logo.png"></img>
+            <img  src="./clcikfin-app/logo.png"></img>
           </Link>{" "}
         </div>
         <div className="flex gap-5 font-bold wrapper-gap">

@@ -87,7 +87,7 @@ export default function About() {
           </div>
         </div>
         <div className=" p-5" style={{background:'white'}}>
-          <img alt="about" src="/about.png"></img>
+          <img alt="about" src="./clcikfin-app/about.png"></img>
         </div>
       </div>
       <div className="text-center">
@@ -202,13 +202,13 @@ export default function About() {
         </div>
         <div className="flex mt-5 justify-around">
           <div>
-            <img alt="happy" src="/happ.png"></img>
+            <img alt="happy" src="./clcikfin-app/happ.png"></img>
           </div>
           <div>
-            <img alt="cus" src="/cus2.png"></img>
+            <img alt="cus" src="./clcikfin-app/cus2.png"></img>
           </div>
           <div>
-            <img alt="cus2" src="/cus.png"></img>
+            <img alt="cus2" src="./clcikfin-app/cus.png"></img>
           </div>
         </div>
         <div className="flex justify-around  font-bold">

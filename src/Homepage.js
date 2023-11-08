@@ -39,18 +39,18 @@ export default function Homepage() {
           <div className="flex justify-around gap-5">
             <div>
               <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
-                <img alt="google"  src="andr.png"></img>
+                <img alt="google"  src='./clcikfin-app/andr.png'></img>
               </Link>
             </div>
             <div>
               <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
-                <img alt="apple"  src="app.png"></img>
+                <img alt="apple"  src="./clcikfin-app/app.png"></img>
               </Link>
             </div>
           </div>
           <div className="mt-5" style={{borderRadius:'20px'}}>
             {" "}
-            <img alt="mobile" src="sideimage.jpeg"></img>
+            <img alt="mobile" src="./clcikfin-app/sideimage.jpeg"></img>
           </div>
         </div>
       </div>
@@ -62,16 +62,16 @@ export default function Homepage() {
       </div>
       <div className="flex justify-around gap-5" style={{ marginTop: "85px" }}>
         <div>
-          <img alt="loan1" src="loan1.png"></img>
+          <img alt="loan1" src="./clcikfin-app/loan1.png"></img>
         </div>
         <div>
-          <img alt="laon2" src="loan2.png"></img>
+          <img alt="laon2" src="./clcikfin-app/loan2.png"></img>
         </div>
         <div>
-          <img alt="loan3" src="laon3.png"></img>
+          <img alt="loan3" src="./clcikfin-app/laon3.png"></img>
         </div>
         <div>
-          <img alt="laon4" src="laon4.png"></img>
+          <img alt="laon4" src="./clcikfin-app/laon4.png"></img>
         </div>
       </div>
       <div
@@ -93,17 +93,17 @@ export default function Homepage() {
       <div className="flex justify-around gap-5" style={{ marginTop: "85px" }}>
         <div>
           <div>
-            <img alt="ins1" src="ins1.png"></img>
+            <img alt="ins1" src="./clcikfin-app/ins1.png"></img>
           </div>
         </div>
         <div>
-          <img alt="ins2" src="ins2.png"></img>
+          <img alt="ins2" src="./clcikfin-app/ins2.png"></img>
         </div>
         <div>
-          <img alt="ins3" src="ins3.png"></img>
+          <img alt="ins3" src="./clcikfin-app/ins3.png"></img>
         </div>
         <div>
-          <img alt="ins4" src="ins3.png"></img>
+          <img alt="ins4" src="./clcikfin-app/ins3.png"></img>
         </div>
       </div>
       <div
@@ -132,7 +132,7 @@ export default function Homepage() {
           </div>
           <div className="flex gap-5 mt-5">
             <div>
-              <img alt="test1" style={{ height: "50px" }} src="testm.png"></img>
+              <img alt="test1" style={{ height: "50px" }} src="./clcikfin-app/testm.png"></img>
             </div>
             <div>
               <div className=" font-bold">Swati Joshi</div>
@@ -154,7 +154,7 @@ export default function Homepage() {
           </div>
           <div className="flex gap-5 mt-5">
             <div>
-              <img alt="test2" style={{ height: "50px" }} src="testm.png"></img>
+              <img alt="test2" style={{ height: "50px" }} src="./clcikfin-app/testm.png"></img>
             </div>
             <div>
               <div className=" font-bold">Purnima Rawat</div>
@@ -177,7 +177,7 @@ export default function Homepage() {
           </div>
           <div className="flex gap-5 mt-5">
             <div>
-              <img alt="test3" style={{ height: "50px" }} src="testm.png"></img>
+              <img alt="test3" style={{ height: "50px" }} src="./clcikfin-app/testm.png"></img>
             </div>
             <div>
               <div className=" font-bold">Kartik Patel</div>
@@ -196,13 +196,13 @@ As Seen On
  </div>
       <div className="flex justify-center gap-5 " style={{ marginTop: "50px" }}>
         <div>
-          <img alt="part1" src="part1.png"></img>
+          <img alt="part1" src="./clcikfin-app/part1.png"></img>
         </div>
         <div>
-          <img alt="part2" style={{ height: "100px" }} src="par2.jpeg"></img>
+          <img alt="part2" style={{ height: "100px" }} src="./clcikfin-app/par2.jpeg"></img>
         </div>
         <div>
-          <img alt="part3" src="par3.jpg"></img>
+          <img alt="part3" src="./clcikfin-app/par3.jpg"></img>
         </div>
       </div>
 
