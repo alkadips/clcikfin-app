@@ -1,6 +1,5 @@
-import { Dialog, Slider, Table, TableCell, TableRow } from "@mui/material";
-import { withStyles } from "@mui/styles";
-import React, { useEffect, useState } from "react";
+import {  Slider, Table, TableCell, TableRow } from "@mui/material";
+import React, { useState } from "react";
 import EmiTable from "./EmiTable";
 import { Link } from "react-router-dom";
 export default function EmiCalc() {
@@ -18,33 +17,13 @@ export default function EmiCalc() {
   var totalAmountOfCredit=Math.round((emi/intr)*(1-Math.pow((1+intr),(-duration))));
   const totalAmountOFInterest=Math.round(totalAmt-totalAmountOfCredit);
 
-  const [open, setOpen] = useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = (value) => {
-    setOpen(false);
-  };
-
-  useEffect(() => {
-    handleClickOpen();
-  }, []);
-
+  
   return (
     <div className="heading-para text-center" style={{ marginTop: "100px" }}>
       <div className="font-bold text-3xl mt-5">
         EMI Calculator - Your Convenient Loan Planning Tool
       </div>
-      <Dialog onClose={handleClose} open={open}>
-      <div>
-        <Link to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
-        <img className="popup-style" alt="popup" src='./clcikfin-app/popup.jpeg'></img>
-        </Link>
-      </div>
-       
-    </Dialog>
+     
       <div className=" flex justify-center gap-5 p-5 mt-5">
         <div className="shadow-2xl ... p-5" style={{width:'50%',background:'#2B4A84',color:'white'}}>
       <div>

@@ -26,15 +26,35 @@ export default function Homepage() {
       
      <div>
      <Dialog onClose={handleClose} open={open}>
-      <div>
+      <div className="popup-wrapper"  style={{boxShadow: '4px 4px 5px 0px rgba(0, 0, 0, 0.5)'}}>
         <Link to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
-        <img className="popup-style" alt="popup" src='./clcikfin-app/popup.jpeg'></img>
+        <img className="popup-style"  alt="popup" src='./clcikfin-app/popup.jpeg'></img>
         </Link>
       </div>
        
     </Dialog>
      </div>
-      <div className="p-5 flex gap-5 homepage-wrapper heading-para">
+      <div className="p-5 flex gap-5 homepage-wrapper heading-para justify-between">
+
+      <div >
+         
+          <div  style={{borderRadius:'20px'}}>
+            {" "}
+            <img className="mobile-image" alt="mobile" src="./clcikfin-app/mobile.png"></img>
+          </div>
+          <div className="flex justify-around gap-5">
+            <div>
+              <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+                <img alt="google"  src='./clcikfin-app/andr.png'></img>
+              </Link>
+            </div>
+            <div>
+              <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
+                <img alt="apple"  src="./clcikfin-app/app.png"></img>
+              </Link>
+            </div>
+          </div>
+        </div>
         <div style={{ width: "50%" }}>
           <div className="font-bold text-3xl ml-3 mt-5">
             Welcome To ClikFin – Your Instant Life Upgrade
@@ -61,25 +81,12 @@ export default function Homepage() {
             </div>
           </Link>
         </div>
-        <div >
-          <div className="flex justify-around gap-5">
-            <div>
-              <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
-                <img alt="google"  src='./clcikfin-app/andr.png'></img>
-              </Link>
-            </div>
-            <div>
-              <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
-                <img alt="apple"  src="./clcikfin-app/app.png"></img>
-              </Link>
-            </div>
-          </div>
-          <div className="mt-5" style={{borderRadius:'20px'}}>
-            {" "}
-            <img style={{width:'70%'}} alt="mobile" src="./clcikfin-app/homeab.jpeg"></img>
-          </div>
-        </div>
+
+        
       </div>
+
+
+
       <div
         className="font-bold text-center text-4xl heading-para"
         style={{ marginTop: "50px" }}

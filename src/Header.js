@@ -65,9 +65,9 @@ export default function Header() {
                 <div>Contact</div>
               </Link>
             </li>
-            <li>
-              <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
-                <div className="get-cash-now rounded-full ... p-2">
+            <li >
+              <Link  to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+                <div  className="get-cash-now rounded-full ... p-2">
                   GET CASH NOW
                 </div>
               </Link>

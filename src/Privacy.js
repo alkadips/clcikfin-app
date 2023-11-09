@@ -1,21 +1,8 @@
-import { Dialog } from '@mui/material'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Privacy() {
-    const [open, setOpen] = useState(false);
-
-    const handleClickOpen = () => {
-      setOpen(true);
-    };
-  
-    const handleClose = (value) => {
-      setOpen(false);
-    };
-  
-    useEffect(() => {
-      handleClickOpen();
-    }, []);
+   
   return (
     
     <div className='bg-black rounded-xl p-5' style={{marginTop:'100px'}}>
@@ -25,14 +12,7 @@ export default function Privacy() {
         <div className='mt-5'>
             <p>This Privacy Policy (“Policy”) outlines the collection, use, storage, processing, disclosure, and protection of information, including personal and business information, provided by you (“User” or “You”) while using the ClikFin website accessible at www.clikfin.com or through the mobile application (“Website”). ClikFin, also referred to as “Us,” “Our,” or “We,” is owned and operated by CygniSys Services Pvt. Ltd. Formerly known as (CygniSys OPC Pvt. Ltd.), with its registered office at #147, 3rd Floor, 7th Sector, 5th Main, HSR Layout, Bangalore, Karnataka 560102, India.</p>
         </div>
-        <Dialog onClose={handleClose} open={open}>
-      <div>
-        <Link to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
-        <img className="popup-style" alt="popup" src='./clcikfin-app/popup.jpeg'></img>
-        </Link>
-      </div>
-       
-    </Dialog>
+      
 <div className='mt-5'>
     <p>By using the Website, you acknowledge that you are a natural person, a citizen of India, and at least 18 years of age. This Policy constitutes a legal agreement between you, as the User, and ClikFin, the owner of the Website.</p>
 </div>

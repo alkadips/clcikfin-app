@@ -1,42 +1,23 @@
-import { Dialog } from '@mui/material';
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 
 export default function Personel() {
-  const [open, setOpen] = useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = (value) => {
-    setOpen(false);
-  };
-
-  useEffect(() => {
-    handleClickOpen();
-  }, []);
+ 
     return (
         <div
           className="text-center p-5 heading-para"
           style={{ marginTop: "100px" }}
         >
-           <Dialog onClose={handleClose} open={open}>
-      <div>
-        <Link to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
-        <img className="popup-style" alt="popup" src='./clcikfin-app/popup.jpeg'></img>
-        </Link>
-      </div>
-       
-    </Dialog>
+         
           <div>
             <div className="font-bold text-4xl mt-5">
               Benefits And Features Of Unsecured Personal Loans
             </div>
             <div className='p-5 bg-black rounded-xl mt-5'>
             <div className="heading-para mt-5">
+              <div>1. No Collateral Required:</div>
               <p>
-                <span className="font-bold">1. No Collateral Required:</span> Unlike
+               Unlike
                 secured loans that demand collateral, personal loans don’t require
                 you to pledge any assets. This eliminates the risk of losing
                 valuable possessions and provides peace of mind while accessing
