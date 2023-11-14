@@ -1,143 +1,61 @@
-import { Box, Tab, Tabs, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Carousel from "react-multi-carousel";
-import '../node_modules/react-multi-carousel/lib/styles.css'
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
-};
+import Carousel from "react-bootstrap/Carousel";
 export default function Homepage() {
   const [value, setValue] = useState(0);
+  const [upwords, setupwords] = useState(false);
+  const [laontap, setLoanTap] = useState(false);
+  const [creditSesions, setCreditSesions] = useState(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  function CustomTabPanel(props) {
-    const { children, value, index, ...other } = props;
+ 
+
+  const toggleupword = () => {
+    setupwords(!upwords);
+  };
   
-    return (
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`simple-tabpanel-${index}`}
-        aria-labelledby={`simple-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
-          <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    );
-  }
-  function a11yProps(index) {
-    return {
-      id: `simple-tab-${index}`,
-      'aria-controls': `simple-tabpanel-${index}`,
-    };
-  }
+  const toggleloantap = () => {
+    setLoanTap(!laontap);
+  };
   
-  const Upword=()=>{
-    return <>
-    <img style={{width:'150px'}} className="mobile-image" src="./clcikfin-app/part1.png"></img>
-    </>
-  }
-  const LoanTap=()=>{
-    return <>
-    <img style={{width:'150px'}} className="mobile-image"  src="./clcikfin-app/par2.jpeg"></img>
-    </>
-  }
-  const CreditSaison=()=>{
-    return <>
-    <img style={{width:'150px'}} className="mobile-image" src="./clcikfin-app/par3.jpg"></img>
-    </>
-  }
+ 
   return (
-    <div >
-      {/* <video controls autoPlay width="100%">
-        <source src="./clcikfin-app/clcikfinve.mp4" type="video/mp4" />
-      </video> */}
-
-{/* <Carousel style={{display:'none'}} className="corosel-back" autoPlay>
-        <div>
-        <img style={{width:'50%'}} alt="" src="./clcikfin-app/mobile.png" />
-        </div>
-        <div>
-            <img style={{width:'50%'}} alt="" src="./clcikfin-app/mobile.png" />
-        </div>
-        
-       
-       
-        <div>
-        <img style={{width:'50%'}} alt="" src="./clcikfin-app/mobile.png" />
-        </div>
-        <div>
-        <img style={{width:'50%'}} alt="" src="./clcikfin-app/mobile.png" />
-        </div>
-       
-    </Carousel > */}
-
-{/* <Carousel style={{marginTop:'100px'}}
-  swipeable={false}
-  draggable={false}
-  showDots={true}
-  responsive={responsive}
-  ssr={true} // means to render carousel on server-side.
-  infinite={true}
-  autoPlaySpeed={1000}
-  keyBoardControl={true}
-  customTransition="all .5"
-  transitionDuration={500}
-  containerClass="carousel-container"
-  removeArrowOnDeviceType={["tablet", "mobile"]}
-  dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-40-px"
->
-  <div>
-  <img style={{width:'50%'}} alt="" src="./clcikfin-app/mobile.png" />
-
-  </div>
-  <div>
-  <img style={{width:'50%'}} alt="" src="./clcikfin-app/mobile.png" />
-
-  </div>
-  <div>
-  <img style={{width:'50%'}} alt="" src="./clcikfin-app/mobile.png" />
-
-  </div>
-  <div>
-            <img style={{width:'50%'}} alt="" src="./clcikfin-app/mobile.png" />
-
-  </div>
-</Carousel>; */}
+    <div>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            style={{ width: "50%" }}
+            alt=""
+            src="./clcikfin-app/mobile.png"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            style={{ width: "50%" }}
+            alt=""
+            src="./clcikfin-app/mobile.png"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            style={{ width: "50%" }}
+            alt=""
+            src="./clcikfin-app/mobile.png"
+          />
+        </Carousel.Item>
+      </Carousel>
       <div>
-
-      {/* <div class="hover01 column">
+        {/* <div class="hover01 column">
   <div>
     <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
   </div>
   </div> */}
-     
       </div>
-      
-     <div>
-     {/* <Dialog onClose={handleClose} open={open}>
+
+      <div>
+        {/* <Dialog onClose={handleClose} open={open}>
       <div className="popup-wrapper"  style={{boxShadow: '4px 4px 5px 0px rgba(0, 0, 0, 0.5)'}}>
         <Link to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
         <img className="popup-style"  alt="popup" src='./clcikfin-app/popup.jpeg'></img>
@@ -145,24 +63,34 @@ export default function Homepage() {
       </div>
        
     </Dialog> */}
-     </div>
+      </div>
       <div className="p-5 flex gap-5  justify-between">
-
-      <div >
-         
-          <div  style={{borderRadius:'20px'}}>
+        <div>
+          <div style={{ borderRadius: "20px" }}>
             {" "}
-            <img  className="mobile-image" alt="mobile" src="./clcikfin-app/mobile.png"></img>
+            <img
+              className="mobile-image"
+              alt="mobile"
+              src="./clcikfin-app/mobile.png"
+            ></img>
           </div>
           <div className="flex gap-5 ml-5  mt-5">
             <div>
               <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
-                <img className="mobile-image" alt="google"  src='./clcikfin-app/andr.png'></img>
+                <img
+                  className="mobile-image"
+                  alt="google"
+                  src="./clcikfin-app/andr.png"
+                ></img>
               </Link>
             </div>
             <div>
               <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
-                <img className="mobile-image" alt="apple"  src="./clcikfin-app/app.png"></img>
+                <img
+                  className="mobile-image"
+                  alt="apple"
+                  src="./clcikfin-app/app.png"
+                ></img>
               </Link>
             </div>
           </div>
@@ -172,8 +100,7 @@ export default function Homepage() {
             Welcome To ClikFin – Your Instant Life Upgrade
           </div>
           <div className="list-item-demo">
-            <ul style={{ listStyle: "initial", color: '#2B4A84'
-}}>
+            <ul style={{ listStyle: "initial", color: "#2B4A84" }}>
               <li>Up to ₹10 Lakhs</li>
               <li>Instant Transfer to Bank</li>
             </ul>
@@ -187,19 +114,17 @@ export default function Homepage() {
               bills, or handle any financial exigency, we’ve got you covered!
             </p>
           </div>
-          <NavLink style={{textDecoration:'none'}} to='https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication'>
+          <NavLink
+            style={{ textDecoration: "none" }}
+            to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication"
+          >
             <div className="get-cash-now rounded-full ... p-2 mt-5 font-bold">
               <button>GET CASH NOW</button>
             </div>
           </NavLink>
         </div>
-
-        
       </div>
 
-
-
-    
       <div
         className=" text-center text-4xl text-black"
         style={{ marginTop: "100px" }}
@@ -216,7 +141,7 @@ export default function Homepage() {
           24X7
         </p>
       </div>
-    
+
       <div
         className=" text-center text-4xl text-black"
         style={{ marginTop: "100px" }}
@@ -230,11 +155,15 @@ export default function Homepage() {
         </p>
       </div>
       <div className="flex gap-5 mt-3 justify-center text-black p-5">
+
+      <Carousel>
+        <Carousel.Item>
+          <div className="flex gap-5 mt-3 justify-center text-black p-5">
         <div
           className=" p-5 rounded-lg ... mobile-image"
-          style={{ background:'black',color:'white' }}
+          style={{ background: "black", color: "white" }}
         >
-          <div >
+          <div>
             <p>
               “I used ClikFin to help me pay for my travel expenses. The service
               was great – fast but still friendly. Fantastic and Painless
@@ -243,20 +172,23 @@ export default function Homepage() {
           </div>
           <div className="flex gap-5 mt-5">
             <div>
-              <img alt="test1" style={{ height: "50px" }} src="./clcikfin-app/testm.png"></img>
+              <img
+                alt="test1"
+                style={{ height: "50px" }}
+                src="./clcikfin-app/testm.png"
+              ></img>
             </div>
             <div>
               <div className=" font-bold">Swati Joshi</div>
               <div>Mumbai</div>
             </div>
-            
           </div>
         </div>
         <div
           className=" p-5 rounded-lg ... mobile-image"
-          style={{ background:'black',color:'white' }}
+          style={{ background: "black", color: "white" }}
         >
-          <div >
+          <div>
             <p>
               “These guys are always ready to help when you need it most. They
               helped cover school fees for my brother and I when I was a little
@@ -265,21 +197,23 @@ export default function Homepage() {
           </div>
           <div className="flex gap-5 mt-5">
             <div>
-              <img alt="test2" style={{ height: "50px" }} src="./clcikfin-app/testm.png"></img>
+              <img
+                alt="test2"
+                style={{ height: "50px" }}
+                src="./clcikfin-app/testm.png"
+              ></img>
             </div>
             <div>
               <div className=" font-bold">Purnima Rawat</div>
               <div>Kanpur</div>
             </div>
-            
-
           </div>
         </div>
         <div
           className=" p-5 rounded-lg ... mobile-image"
-          style={{ background:'black',color:'white' }}
+          style={{ background: "black", color: "white" }}
         >
-          <div >
+          <div>
             <p>
               “Their application process was quick and simple. in a short time I
               had the funds I needed to complete some much needed improvements
@@ -288,102 +222,274 @@ export default function Homepage() {
           </div>
           <div className="flex gap-5 mt-5">
             <div>
-              <img alt="test3" style={{ height: "50px" }} src="./clcikfin-app/testm.png"></img>
+              <img
+                alt="test3"
+                style={{ height: "50px" }}
+                src="./clcikfin-app/testm.png"
+              ></img>
             </div>
             <div>
               <div className=" font-bold">Kartik Patel</div>
               <div>Ahmedabad</div>
             </div>
           </div>
-          
-
         </div>
+        </div>
+        </Carousel.Item>
+        <Carousel.Item>
+        <div className="flex gap-5 mt-3 justify-center text-black p-5">
+        <div
+          className=" p-5 rounded-lg ... mobile-image"
+          style={{ background: "black", color: "white" }}
+        >
+          <div>
+            <p>
+              “I used ClikFin to help me pay for my travel expenses. The service
+              was great – fast but still friendly. Fantastic and Painless
+              Experience. Thank you.”
+            </p>
+          </div>
+          <div className="flex gap-5 mt-5">
+            <div>
+              <img
+                alt="test1"
+                style={{ height: "50px" }}
+                src="./clcikfin-app/testm.png"
+              ></img>
+            </div>
+            <div>
+              <div className=" font-bold">Swati Joshi</div>
+              <div>Mumbai</div>
+            </div>
+          </div>
+        </div>
+        <div
+          className=" p-5 rounded-lg ... mobile-image"
+          style={{ background: "black", color: "white" }}
+        >
+          <div>
+            <p>
+              “These guys are always ready to help when you need it most. They
+              helped cover school fees for my brother and I when I was a little
+              low on cash.”
+            </p>
+          </div>
+          <div className="flex gap-5 mt-5">
+            <div>
+              <img
+                alt="test2"
+                style={{ height: "50px" }}
+                src="./clcikfin-app/testm.png"
+              ></img>
+            </div>
+            <div>
+              <div className=" font-bold">Purnima Rawat</div>
+              <div>Kanpur</div>
+            </div>
+          </div>
+        </div>
+        <div
+          className=" p-5 rounded-lg ... mobile-image"
+          style={{ background: "black", color: "white" }}
+        >
+          <div>
+            <p>
+              “Their application process was quick and simple. in a short time I
+              had the funds I needed to complete some much needed improvements
+              around the house.”
+            </p>
+          </div>
+          <div className="flex gap-5 mt-5">
+            <div>
+              <img
+                alt="test3"
+                style={{ height: "50px" }}
+                src="./clcikfin-app/testm.png"
+              ></img>
+            </div>
+            <div>
+              <div className=" font-bold">Kartik Patel</div>
+              <div>Ahmedabad</div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </Carousel.Item>
+        <Carousel.Item>
+        <div className="flex gap-5 mt-3 justify-center text-black p-5">
+        <div
+          className=" p-5 rounded-lg ... mobile-image"
+          style={{ background: "black", color: "white" }}
+        >
+          <div>
+            <p>
+              “I used ClikFin to help me pay for my travel expenses. The service
+              was great – fast but still friendly. Fantastic and Painless
+              Experience. Thank you.”
+            </p>
+          </div>
+          <div className="flex gap-5 mt-5">
+            <div>
+              <img
+                alt="test1"
+                style={{ height: "50px" }}
+                src="./clcikfin-app/testm.png"
+              ></img>
+            </div>
+            <div>
+              <div className=" font-bold">Swati Joshi</div>
+              <div>Mumbai</div>
+            </div>
+          </div>
+        </div>
+        <div
+          className=" p-5 rounded-lg ... mobile-image"
+          style={{ background: "black", color: "white" }}
+        >
+          <div>
+            <p>
+              “These guys are always ready to help when you need it most. They
+              helped cover school fees for my brother and I when I was a little
+              low on cash.”
+            </p>
+          </div>
+          <div className="flex gap-5 mt-5">
+            <div>
+              <img
+                alt="test2"
+                style={{ height: "50px" }}
+                src="./clcikfin-app/testm.png"
+              ></img>
+            </div>
+            <div>
+              <div className=" font-bold">Purnima Rawat</div>
+              <div>Kanpur</div>
+            </div>
+          </div>
+        </div>
+        <div
+          className=" p-5 rounded-lg ... mobile-image"
+          style={{ background: "black", color: "white" }}
+        >
+          <div>
+            <p>
+              “Their application process was quick and simple. in a short time I
+              had the funds I needed to complete some much needed improvements
+              around the house.”
+            </p>
+          </div>
+          <div className="flex gap-5 mt-5">
+            <div>
+              <img
+                alt="test3"
+                style={{ height: "50px" }}
+                src="./clcikfin-app/testm.png"
+              ></img>
+            </div>
+            <div>
+              <div className=" font-bold">Kartik Patel</div>
+              <div>Ahmedabad</div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </Carousel.Item>
+      </Carousel>
+      
+      
       </div>
       <div
         className="font-bold text-center text-4xl text-black"
         style={{ marginTop: "50px" }}
       >
-Our Partners
- </div>
-      
-       
+        Our Partners
+      </div>
 
-        <Box >
-      <Box  lg={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs style={{margin:'0 auto',width:'50%'}} value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab icon={<Upword/>} {...a11yProps(0)} >
-         
-          </Tab>
-          <Tab icon={<CreditSaison/>}{...a11yProps(1)} >
+     
 
-          </Tab>
-          <Tab  icon={<LoanTap/>} {...a11yProps(2)} >
-        
-          </Tab>
-        </Tabs>
-      </Box>
+<div className="flex justify-around mt-5">
+  <div>
+  <img onClick={toggleupword}
+          style={{ width: "150px",cursor:'pointer' }}
+          className="mobile-image"
+          src="./clcikfin-app/part1.png"
+        ></img>
+  </div>
+  <div>
+  <img  onClick={toggleloantap}
+          style={{ width: "150px",cursor:'pointer' }}
+          className="mobile-image"
+          src="./clcikfin-app/par2.jpeg"
+        ></img>
+  </div>
 
-      <CustomTabPanel value={value} index={0}>
-      <table style={{margin:'0 auto'}}>
-              <tr>
-                <th>BANK/NBFC</th>
-                <th>Interest Rate(pa)</th>
-                <th>Loan Amount </th>
-                <th>Processing Fees </th>
-                <th>Part Payment</th>
-                <th>Pre-closure Charges</th>
-                <th>Locking Period</th>
-                <th>Tenure</th>
-              </tr>
-              <tr>
-                <td>Upwards</td>
-                <td>16.00 % to 32%</td>
-                <td>20,000 Thousand to 5 Lakhs</td>
-                <td>Up to 2 % to 4 % of the loan amount</td>
-                <td>Up to 40% of loan amount every year</td>
-                <td>Upto 5% on your principal outstanding + GST</td>
-                <td>3 Month</td>
-                <td>12 to 48 months</td>
-              </tr>
-            
-            </table>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
-      <table style={{width:'90%',margin:'0 auto'}}>
-              <tr>
-                <th>BANK/NBFC</th>
-                <th>Interest Rate(pa)</th>
-                <th>Loan Amount </th>
-                <th>Processing Fees </th>
-                <th>Part Payment</th>
-                <th>Pre-closure Charges</th>
-                <th>Locking Period</th>
-                <th>Tenure</th>
-              </tr>
-             
-              <tr>
-                <td>Loan Tap</td>
-                <td>16.00 % to 24%</td>
-                <td>50 Thousand to 10 Lakhs</td>
-                <td>2 % of the loan amount</td>
-                <td>Up to 40% of loan amount every year</td>
-                <td>
-                  <ul>
-                    <li>0-6 Months – 5% of Principal Outstanding</li>
-                    <li>6 months – 0%</li>
-                  </ul>
-                </td>
-                <td>6 Month</td>
-                <td>12 to 60 months</td>
-              </tr>
-            </table>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
-        Item Three
-      </CustomTabPanel>
-      </Box>
-   
-      
+  <div>
+   <img
+          style={{ width: "150px",cursor:'pointer' }}
+          className="mobile-image"
+          src="./clcikfin-app/par3.jpg"
+        ></img>
+  </div>
+</div>
+
+{upwords && (<div className="mt-5">
+  <table style={{ margin: "0 auto" ,width:'90%' }}>
+            <tr>
+              <th>BANK/NBFC</th>
+              <th>Interest Rate(pa)</th>
+              <th>Loan Amount </th>
+              <th>Processing Fees </th>
+              <th>Part Payment</th>
+              <th>Pre-closure Charges</th>
+              <th>Locking Period</th>
+              <th>Tenure</th>
+            </tr>
+            <tr>
+              <td>Upwards</td>
+              <td>16.00 % to 32%</td>
+              <td>20,000 Thousand to 5 Lakhs</td>
+              <td>Up to 2 % to 4 % of the loan amount</td>
+              <td>Up to 40% of loan amount every year</td>
+              <td>Upto 5% on your principal outstanding + GST</td>
+              <td>3 Month</td>
+              <td>12 to 48 months</td>
+            </tr>
+          </table>
+</div>
+)}
+{laontap && (
+  <div className="mt-5">
+      <table style={{ width: "90%", margin: "0 auto" }}>
+            <tr>
+              <th>BANK/NBFC</th>
+              <th>Interest Rate(pa)</th>
+              <th>Loan Amount </th>
+              <th>Processing Fees </th>
+              <th>Part Payment</th>
+              <th>Pre-closure Charges</th>
+              <th>Locking Period</th>
+              <th>Tenure</th>
+            </tr>
+
+            <tr>
+              <td>Loan Tap</td>
+              <td>16.00 % to 24%</td>
+              <td>50 Thousand to 10 Lakhs</td>
+              <td>2 % of the loan amount</td>
+              <td>Up to 40% of loan amount every year</td>
+              <td>
+                <ul>
+                  <li>0-6 Months – 5% of Principal Outstanding</li>
+                  <li>6 months – 0%</li>
+                </ul>
+              </td>
+              <td>6 Month</td>
+              <td>12 to 60 months</td>
+            </tr>
+          </table>
+  </div>
+
+)}
       <div
         className="font-bold text-center text-4xl text-black"
         style={{ marginTop: "50px" }}
@@ -399,7 +505,7 @@ Our Partners
       </div>
       <div className="flex gap-5 justify-around mt-3">
         <div className="p-5 bg-black rounded" style={{ width: "40%" }}>
-          <div className="text-white" style={{color:'white'}}>
+          <div className="text-white" style={{ color: "white" }}>
             <p>
               ClikFin, a proud venture wholly owned by CygniSys Services Pvt.
               Ltd. Formerly known as (CygniSys OPC Pvt. Ltd.), established in
@@ -433,9 +539,7 @@ Our Partners
           <div className="text-white">
             <p>
               1.{" "}
-              <span className="font-bold ">
-                Transparency and Neutrality :{" "}
-              </span>{" "}
+              <span className="font-bold ">Transparency and Neutrality : </span>{" "}
               At ClikFin, transparency and neutrality are at the core of our
               operations. As a facilitator, we maintain an unbiased approach in
               assisting you in finding the best financial options from RBI
@@ -445,9 +549,7 @@ Our Partners
           <div className="mt-5 text-white">
             <p>
               2.{" "}
-              <span className="font-bold ">
-                Extensive Loan Distribution :{" "}
-              </span>{" "}
+              <span className="font-bold ">Extensive Loan Distribution : </span>{" "}
               Leveraging our strategic partnerships with RBI Approved NBFCs, we
               offer a diverse range of loans to cater to your varied financial
               needs.
@@ -455,20 +557,16 @@ Our Partners
           </div>
           <div className="mt-5 text-white">
             <p>
-              3.<span className="font-bold "> Not an NBFC:</span> It
-              is essential to understand that ClikFin is not an NBFC itself. We
-              do not engage in co-lending or FLDG based lending. Our expertise
-              lies in connecting you with reputable lenders to meet your
-              borrowing requirements.
+              3.<span className="font-bold "> Not an NBFC:</span> It is
+              essential to understand that ClikFin is not an NBFC itself. We do
+              not engage in co-lending or FLDG based lending. Our expertise lies
+              in connecting you with reputable lenders to meet your borrowing
+              requirements.
             </p>
           </div>
           <div className="mt-5 text-white">
             <p>
-              4.{" "}
-              <span className="font-bold ">
-                {" "}
-                No Collections/Recovery:
-              </span>
+              4. <span className="font-bold "> No Collections/Recovery:</span>
               Rest assured, at ClikFin, we do not undertake any collections or
               recovery activities related to the loans we facilitate. Our
               commitment is solely to assist you in securing the loan that
@@ -477,6 +575,7 @@ Our Partners
           </div>
         </div>
       </div>
+     
       {/* <div className="flex pers-loan p-5  justify-around mt-5">
         <div className="text-xl text-white">
           <div>

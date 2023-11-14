@@ -38,7 +38,7 @@ import getSchedule from "./Lib/AmortizationService";
     currentYear: (new Date()).getFullYear(),
     developer: 'goel4ever'
   };
-  calculatePayments = ({ principal, rate, duration, startDate, extraPayment }) => {
+  calculatePayments = ({ principal, rate, duration,  }) => {
 
     if (principal < 0 || rate < 0 || duration < 0 || duration > 40) {
       return;

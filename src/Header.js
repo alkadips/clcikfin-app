@@ -1,6 +1,6 @@
 import { Box, Modal } from "@mui/material";
 import React from "react";
-import { NavLink } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 
@@ -30,113 +30,111 @@ export default function Header() {
         <nav id="drawer">
           <ul>
             <li>
-              <NavLink href="/">
+              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/">
                 <div>Home</div>
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink href="/about">
+              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/about">
                 <div>About</div>
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink href="/personelloan">
+              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/personelloan">
                 <div>Personal Loan</div>
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink href="/emicalculator">
+              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/emicalculator">
                 <div>EMI Calculator</div>
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink href="/terms">
+              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/terms">
                 <div>Terms & condition</div>
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink href="/privacy">
+              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/privacy">
                 <div>Privacy Policy</div>
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink href="/faqs">
+              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/faqs">
                 <div>FAQS</div>
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink href="/contact">
+              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/contact">
                 <div>Contact</div>
-              </NavLink>
+              </Link>
             </li>
             <li >
-              <NavLink  href="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+              <Link style={{textDecoration:'none',color:'#2B4A84'}}  to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
                 <div  className="get-cash-now rounded-full ... p-2">
                   GET CASH NOW
                 </div>
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink style={{ cursor: "pointer" }}>
+              <Link style={{ cursor: "pointer",textDecoration:'none',color:'#2B4A84' }}>
                 <div
                   onClick={handleOpen}
                   className="get-cash-now rounded-full ... p-2"
                 >
                   Log In
                 </div>
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </nav>
         <div >
-          <NavLink href="/">
+          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/" >
             <img  alt="logo" src="/clcikfin-app/logo.png"></img>
-          </NavLink>{" "}
+          </Link>{" "}
         </div>
         <div className="flex font-bold wrapper-gap" style={{gap:'20px'}}>
-          <NavLink href="/">
+          <Link style={{textDecoration:'none',color:'#2B4A84'}} to='"/"' >
             <div className="home">Home</div>
-          </NavLink>
-          <NavLink href="/about">
+          </Link>
+          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/about" >
             <div className="home">About</div>
-          </NavLink>
-          <NavLink href="/personelloan">
+          </Link>
+          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/personelloan">
             <div className="home">Personal Loan</div>
-          </NavLink>
-          <NavLink href="/emicalculator">
+          </Link>
+          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/emicalculator">
             <div className="home">EMI Calculator</div>
-          </NavLink>
-          {/* <NavLink href="/terms">
+          </Link>
+          {/* <Link to="/terms">
             <div className="home">Terms & condition</div>
-          </NavLink>
-          <NavLink href="/privacy">
+          </Link>
+          <Link to="/privacy">
             <div className="home">Privacy Policy</div>
-          </NavLink> */}
-          <NavLink href="/faqs">
-            <div className="home">FAQs</div>
-          </NavLink>
-          <NavLink href="/blog">
-            <div className="home">Blog</div>
-          </NavLink>
-          <NavLink href="/contact">
-            <div className="home">Contact</div>
-          </NavLink>
-          {/* <Link href="/whatsapp">
-            <div>Whatsapp</div>
           </Link> */}
-          <NavLink href="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/faqs">
+            <div className="home">FAQs</div>
+          </Link>
+          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/blog">
+            <div className="home">Blog</div>
+          </Link>
+          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/contact">
+            <div className="home">Contact</div>
+          </Link>
+        
+          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
             <div className="get-cash-now rounded-full ... p-2">
               Get Cash Now
             </div>
-          </NavLink>
-          <NavLink style={{ cursor: "pointer" }}>
+          </Link>
+          <Link  style={{ cursor: "pointer",textDecoration:'none',color:'#2B4A84' }}>
             <div
               onClick={handleOpen}
               className="get-cash-now rounded-full ... p-2"
             >
               Log In
             </div>
-          </NavLink>
+          </Link>
         </div>
 
         <Modal
