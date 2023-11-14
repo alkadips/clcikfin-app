@@ -94,7 +94,7 @@ export default function Header() {
           </Link>{" "}
         </div>
         <div className="flex font-bold wrapper-gap" style={{gap:'20px'}}>
-          <Link style={{textDecoration:'none',color:'#2B4A84'}} to='"/"' >
+          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/" >
             <div className="home">Home</div>
           </Link>
           <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/about" >
