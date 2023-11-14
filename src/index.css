@@ -6,17 +6,7 @@ html{
   scroll-behavior: smooth;
   overflow-y: scroll;
 }
-body
-    {
-    width: 100%;
-    height: 100%;
-    /* background-image:url(//d9hhrg4mnvzow.cloudfront.net/promotion.exness.com/en/brand/4727818a-brand-generic-lp-key-min-2-min_11hc17b000000000000000.jpg); */
-    background-color: black;
-    background-size: cover;
-    background-attachment:fixed;
-    margin: 0;
-    padding: 0;
-    }
+
     .popup-wrapper{
       box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 5px 0px;
     background: white;
@@ -29,16 +19,17 @@ body
     border-radius: 20px;
 }
     
-   
+
 .get-cash-now{
-  background-color: #f9bd08 ;
+  background-color: #426097 ;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 190px;
+  color: white;
 }
 .get-cash-now:hover{
-background-color: #2B4A84;
+background-color: #426097;
 }
 .get-cash-now-whats{
   background-color: #f9bd08 ;
@@ -56,13 +47,36 @@ background-color: #2B4A84;
   background-color: white;
   top: 0;
 }
-.mobile-image:hover{
-  box-shadow: 10px 10px 5px #fff;
-  
-  transition:.5s;
+.corosel-back{
+  background-image: './clcikfin-app/par3.jpg';
+  background-image: url('.');
 }
+.mobile-image:hover{
+  box-shadow: 0 0 11px #fff;  
+  }
+  /* .header-wrapper:hover {
+    color: #f9bd08;
+  } */
+  .home:active {
+    color: #f9bd08;
+    font-style: italic;
+  }
+  .home:focus {
+    color: #f9bd08;
+  }
+ .number-list{
+  text-align: left;
+  align-items: center;
+  width: 33%;
+  margin: 0 auto;
+  list-style:number ;
 
-.list-item{
+
+ }
+ .sample-cal{
+
+ }
+.list-item-demo{
   margin-top: 30px;
   margin-left: 50px;
   font-size: 20px;
@@ -71,7 +85,7 @@ background-color: #2B4A84;
   padding: 10px 16px 10px 16px;
   margin-top: 20px;
 }
-.heading-para{
+.text-black{
   color: white;
 }
 .clickfin-para-home{
@@ -79,7 +93,8 @@ background-color: #2B4A84;
   font-size: 20px;
 }
 .footer{
-  background-color: black;
+  background-color: #4a4444;
+
   color: white;
   padding: 10px;
 }
@@ -96,11 +111,14 @@ background-color: #2B4A84;
   width: 245px;
 
 }
+.get-loan-now:hover{
+  background-color: #2B4A84;
+  color: white;
+}
 table,
 th,
 td {
     border: 1px solid black;
-    border-collapse: collapse;
 }
  
 th,
@@ -108,7 +126,9 @@ td {
     padding: 20px;
     text-align: left;
 }
-tr:hover {background-color:#f9bd08;}
+tr:hover {background-color:#f9bd08;
+  border: 1px solid;
+}
 
 
 .faqs {
@@ -173,7 +193,6 @@ tr:hover {background-color:#f9bd08;}
 .about-info{
   color: white;
   position: absolute;
-  text-align: center;
   font-size: 16px;
 }
 .our-mission{
@@ -393,6 +412,123 @@ tr:hover {background-color:#f9bd08;}
     border-radius: 20px
 
   }
+  /* //blog css */
     
+  @import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
+.snip1527 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  float: left;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  margin: 10px 1%;
+  max-width: 310px;
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
+}
+
+.snip1527 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1527 img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+
+.snip1527 figcaption {
+  padding: 25px 20px 25px;
+  bottom: 0;
+  z-index: 1;
+}
+
+.snip1527 figcaption:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #700877;
+  content: '';
+  background: -moz-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: -webkit-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.snip1527 .date {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #700877;
+  font-size: 18px;
+  font-weight: 700;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 10px 0;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  top: -25px;
+}
+
+.snip1527 .date span {
+  display: block;
+  line-height: 14px;
+}
+
+.snip1527 .date .month {
+  font-size: 11px;
+}
+
+.snip1527 h3,
+.snip1527 p {
+  margin: 0;
+  padding: 0;
+}
+
+.snip1527 h3 {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-bottom: 5px;
+}
+
+.snip1527 p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  margin-bottom: 0px;
+}
+
+.snip1527 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.snip1527:hover img,
+.snip1527.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* Demo less more only */
+
+
+
+
 
   

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { IoLogoFacebook } from "react-icons/io";
 import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io";
@@ -10,16 +10,16 @@ export default function Contact() {
   
   return (
     <div style={{ marginTop: "100px" }}>
-      <div className="font-bold text-4xl mt-5 text-center heading-para">Get In Touch</div>
-      <div className="font-bold text-center mt-5 heading-para">
+      <div className="font-bold text-4xl mt-5 text-center text-black">Get In Touch</div>
+      <div className="font-bold text-center mt-5 text-black">
         Reach Out To Us & We Will Respond As Soon As We Can.
       </div>
      
-      <div className="heading-para">
+      <div >
         <div className="flex p-5 gap-5 justify-around mt-5">
           <div style={{ width: "50%" }}>
-            <div className="font-bold mt-5">About </div>
-            <div className="mt-5 p-5 bg-black rounded-xl">
+            <div className="font-bold mt-5 text-black">About </div>
+            <div className="mt-5 p-5 bg-black rounded-xl text-white">
               <p>
                 Clikfin brand is 100% owned by CygniSys Service’s Pvt Ltd
                 formerly known as ( CygniSys OPC Pvt Ltd ) incorporated in 2021,

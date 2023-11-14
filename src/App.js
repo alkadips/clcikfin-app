@@ -5,17 +5,18 @@ import Footer from "./Footer";
 import EmiCalc from "./EmiCalc";
 import Faqs from "./Faqs";
 import About from "./About";
+
 import TermsCon from "./TermsCon";
 import Privacy from "./Privacy";
 import Contact from "./Contact";
 import Personel from "./Personel";
-import WhatsApp from "./WhatsApp";
+import Blog from "./Blog";
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <Header />
 
-      <Routes>
+      <Routes >
         <Route exact path="/" element={<Homepage />} />
         <Route path="/personelloan" element={<Personel />} />
         <Route path="/emicalculator" element={<EmiCalc />} />
@@ -24,7 +25,8 @@ function App() {
         <Route path="/terms" element={<TermsCon />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/whatsapp" element={<WhatsApp />} />
+        <Route path="/blog" element={<Blog />} />
+
 
       </Routes>
       <Footer />

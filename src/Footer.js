@@ -5,80 +5,80 @@ import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="footer ">
+    <div className="footer mt-5">
       <div className=" flex justify-around " style={{ marginTop: "100px",borderBottom:'1px solid',padding:'20px' }}>
         <div>
           <div>
-            <Link to="/">
+            <NavLink to="/">
               <img alt="logo" src="/clcikfin-app/logo.png"></img>
-            </Link>
+            </NavLink>
           </div>
         </div>
         <div>
           <div className="font-bold">PRODUCTS</div>
-          <Link to="/personelloan">
+          <NavLink to="/personelloan">
             <div className="mt-5 text-xs">Personal Loan</div>
-          </Link>
+          </NavLink>
         </div>
         <div>
           <div className="font-bold">RESOURCES</div>
-          <Link to="/emicalculator">
+          <NavLink to="/emicalculator">
             <div className="mt-5 text-xs">Emi Calculator</div>
-          </Link>
-          <Link to="/faqs">
+          </NavLink>
+          <NavLink to="/faqs">
             <div className="text-xs mt-3">Faqs</div>
-          </Link>
+          </NavLink>
         </div>
         <div>
           <div className="font-bold">COMPANY</div>
-          <Link to="/about">
+          <NavLink to="/about">
             <div className="mt-5 text-xs">About Clikfin</div>
-          </Link>
-          <Link to="/contact">
+          </NavLink>
+          <NavLink to="/contact">
             <div className="text-xs mt-3">Contact Us</div>
-          </Link>
+          </NavLink>
         </div>
 
         <div>
           <div className="font-bold">MORE</div>
-          <Link to="/privacy">
+          <NavLink to="/privacy">
             <div className="mt-5 text-xs">Privacy Policy</div>
-          </Link>
-          <Link to="/terms">
+          </NavLink>
+          <NavLink to="/terms">
             <div className="text-xs mt-3">Terms & condition</div>
-          </Link>
+          </NavLink>
         </div>
         <div>
           <div className="font-bold">CONTACT US</div>
           <div className="flex justify-center mt-5 gap-5">
         <div>
-          <Link to="https://www.facebook.com/ClikFin/">
+          <NavLink to="https://www.facebook.com/ClikFin/">
             <IoLogoFacebook />
-          </Link>
+          </NavLink>
         </div>
         <div>
-          <Link to="https://twitter.com/clikfin?lang=en">
+          <NavLink to="https://twitter.com/clikfin?lang=en">
             <IoLogoTwitter />
-          </Link>
+          </NavLink>
         </div>
         <div>
-          <Link to="https://www.instagram.com/clikfin/?hl=en">
+          <NavLink to="https://www.instagram.com/clikfin/?hl=en">
             <IoLogoInstagram />
-          </Link>
+          </NavLink>
         </div>
         <div>
-          <Link to="https://www.linkedin.com/company/clikfin/">
+          <NavLink to="https://www.linkedin.com/company/clikfin/">
             <IoLogoLinkedin />
-          </Link>
+          </NavLink>
         </div>
         <div>
-          <Link to="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=support@clikfin.com">
+          <NavLink to="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=support@clikfin.com">
             <IoIosMail />
-          </Link>
+          </NavLink>
         </div>
       </div>
         </div>

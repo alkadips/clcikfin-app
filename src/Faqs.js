@@ -3,75 +3,43 @@ import FAQ from "./FAq";
 export default function Faqs() {
   const [faqs1, setFaqs1] = useState([
     {
-      question: "Criteria for Loan Approval:",
+      question: " What types of loans do you offer?",
       answer:
-        "The loan approval depends on the information you provide in the ClikFin App and your credit history, which plays a significant role in the loan approval process.",
+        "We provide a variety of loans to meet different needs, including personal loans, home loans, car loans, and bike loans. etc",
       open: true,
     },
     {
-      question: "Eligibility for a Personal Loan from ClikFin:",
+      question: "How can I apply for a loan?",
       answer:
-        "As long as you meet the eligibility criteria, you can apply for a personal loan with ClikFin.",
+        " Applying for a loan is simple. You can download our app and apply for loan, and our team will guide you through the process.",
       open: false,
     },
     {
-      question: "Minimum and Maximum Loan Amount:",
+      question: "Are there any hidden fees associated with your loans?",
       answer:
-        "The minimum and maximum loan amount available for you to avail will be based on your profile and creditworthiness.",
+        "We believe in transparency. All applicable fees and charges are clearly communicated to you before finalizing the loan agreement.",
       open: false,
     },
     {
-      question: "Supported Platform:",
+      question: "Eligibility criteria to apply for clikfin loans",
       answer:
-        "ClikFin supports the Google Play Store platform for its mobile application.,",
+        "Our basic eligibility criteria is- Applicant must be salaried or self-employed,Monthly in-hand income of ₹20,000 or more,Income should be received in a bank,Min. CIBIL score and Experian score of 650,Should be aged between 21 years and 57 years",
       open: false,
     },
     {
-      question: "Processing Fee:",
+      question: " How to track your loan application?",
       answer:
-        "ClikFin charges a processing fee, the exact amount of which will be specified during the loan application process.",
+        "you can track on our app 'clikfin'",
+      open: false,
+    },
+    {
+      question: " What documents do I need to get an loan from clikfin?",
+      answer:
+        " Pan Card, adhar card, profile pic, 3 month salary account statement in pdf, company id, Current address proof",
       open: false,
     },
   ]);
-  const [faqs2, setFaqs2] = useState([
-    {
-      question: "Reason for Loan Amount Not Increasing:",
-      answer:
-        " The loan amount increases based on your credit records and repayment history. As you make timely loan repayments and build a positive credit history, your loan amount eligibility will increase.",
-      open: true,
-    },
-    {
-      question: "Changing Bank Account Number:",
-      answer:
-        "To change your bank account number in the ClikFin App, please reach out to our customer support.",
-      open: false,
-    },
-    {
-      question: "Updating Mobile Number:",
-      answer: `If you need to change your mobile number in your profile, you can do so through the App’s settings or contact our customer support for assistance.`,
-      open: false,
-    },
-    {
-      question: "Data Security:",
-      answer: `Your information is secure with ClikFin, and we take data privacy seriously, following strict security practices and encryption protocols.`,
-      open: false,
-    },
-    {
-      question: "Contacting ClikFin:",
-      answer: `You can contact ClikFin through the customer support section in the App or visit our website for contact details.`,
-      open: false,
-    },
-    {
-      question: "E-Sign Process:",
-      answer: `The E-sign process can be done through the App, allowing you to digitally sign loan documents.`,
-      open: false,
-    },
-    {
-      question: "Reasons for Loan Application Rejection:",
-      answer: `Loan applications can be rejected for various reasons, including inadequate documentation, low credit score, or not meeting the eligibility criteria. If your application is rejected, you can contact customer support for further information and assistance.`,
-      open: false,
-    },
-  ]);
+ 
   const toggleFAQ = (index) => {
     setFaqs1(
       faqs1.map((faq, i) => {
@@ -80,41 +48,28 @@ export default function Faqs() {
         } else {
           faq.open = false;
         }
-
         return faq;
       })
     );
   };
 
-  const toggleFAQ2 = (index) => {
-    setFaqs2(
-      faqs2.map((faq, i) => {
-        if (i === index) {
-          faq.open = !faq.open;
-        } else {
-          faq.open = false;
-        }
-
-        return faq;
-      })
-    );
-  };
+ 
  
 
   return (
     <div style={{ marginTop: "100px" }}>
       <div className="text-center">
-        <div className="font-bold text-4xl mt-5 heading-para">
+        <div className="font-bold text-4xl mt-5 text-black">
         Frequently Asked Questions
         </div>
        
-        <div className="font-bold text-3xl mt-5 heading-para" style={{color: '#f9bd08'}}>
+        <div className="font-bold text-3xl mt-5 text-black" style={{color: '#f9bd08'}}>
           How To Apply For A Loan With ClikFin?
         </div>
-        <div className="font-bold text-2xl mt-5 heading-para">
+        <div className="font-bold text-2xl mt-5 text-black">
           To Apply For A Loan With ClikFin, Follow These Simple Steps:
         </div>
-        <div className="heading-para p-5 bg-black rounded-xl mt-5">
+        <div className="text-white p-5 bg-black rounded-xl mt-5">
           <div className="mt-5 ">
             <p>
               1. Install the ClikFin App from Google Play Store and register an
@@ -142,20 +97,13 @@ export default function Faqs() {
         </div>
       </div>
 
-      <div className="faqs heading-para ">
+      <div className="faqs text-black ">
         {faqs1.map((faq, index) => (
           <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
         ))}
       </div>
 
-      <div className="font-bold text-3xl mt-5 text-center heading-para">
-        Why My Loan Amount Is Not Increas In Geven
-      </div>
-      <div className="faqs heading-para">
-        {faqs2.map((faq, index) => (
-          <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ2} />
-        ))}
-      </div>
+    
     </div>
   );
 }

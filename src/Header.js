@@ -1,8 +1,12 @@
 import { Box, Modal } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-bootstrap";
 
 export default function Header() {
+
+
+
+  
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -26,110 +30,113 @@ export default function Header() {
         <nav id="drawer">
           <ul>
             <li>
-              <Link to="/">
+              <NavLink href="/">
                 <div>Home</div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">
+              <NavLink href="/about">
                 <div>About</div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/personelloan">
+              <NavLink href="/personelloan">
                 <div>Personal Loan</div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/emicalculator">
+              <NavLink href="/emicalculator">
                 <div>EMI Calculator</div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/terms">
+              <NavLink href="/terms">
                 <div>Terms & condition</div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/privacy">
+              <NavLink href="/privacy">
                 <div>Privacy Policy</div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/faqs">
+              <NavLink href="/faqs">
                 <div>FAQS</div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact">
+              <NavLink href="/contact">
                 <div>Contact</div>
-              </Link>
+              </NavLink>
             </li>
             <li >
-              <Link  to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+              <NavLink  href="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
                 <div  className="get-cash-now rounded-full ... p-2">
                   GET CASH NOW
                 </div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link style={{ cursor: "pointer" }}>
+              <NavLink style={{ cursor: "pointer" }}>
                 <div
                   onClick={handleOpen}
                   className="get-cash-now rounded-full ... p-2"
                 >
                   Log In
                 </div>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
-        <div>
-          <Link to="/">
-            <img  src="/clcikfin-app/logo.png"></img>
-          </Link>{" "}
+        <div >
+          <NavLink href="/">
+            <img  alt="logo" src="/clcikfin-app/logo.png"></img>
+          </NavLink>{" "}
         </div>
-        <div className="flex gap-5 font-bold wrapper-gap">
-          <Link to="/">
-            <div>Home</div>
-          </Link>
-          <Link to="/about">
-            <div>About</div>
-          </Link>
-          <Link to="/personelloan">
-            <div>Personal Loan</div>
-          </Link>
-          <Link to="/emicalculator">
-            <div>EMI Calculator</div>
-          </Link>
-          <Link to="/terms">
-            <div>Terms & condition</div>
-          </Link>
-          <Link to="/privacy">
-            <div>Privacy Policy</div>
-          </Link>
-          <Link to="/faqs">
-            <div>FAQS</div>
-          </Link>
-          <Link to="/contact">
-            <div>Contact</div>
-          </Link>
-          {/* <Link to="/whatsapp">
+        <div className="flex font-bold wrapper-gap" style={{gap:'20px'}}>
+          <NavLink href="/">
+            <div className="home">Home</div>
+          </NavLink>
+          <NavLink href="/about">
+            <div className="home">About</div>
+          </NavLink>
+          <NavLink href="/personelloan">
+            <div className="home">Personal Loan</div>
+          </NavLink>
+          <NavLink href="/emicalculator">
+            <div className="home">EMI Calculator</div>
+          </NavLink>
+          {/* <NavLink href="/terms">
+            <div className="home">Terms & condition</div>
+          </NavLink>
+          <NavLink href="/privacy">
+            <div className="home">Privacy Policy</div>
+          </NavLink> */}
+          <NavLink href="/faqs">
+            <div className="home">FAQs</div>
+          </NavLink>
+          <NavLink href="/blog">
+            <div className="home">Blog</div>
+          </NavLink>
+          <NavLink href="/contact">
+            <div className="home">Contact</div>
+          </NavLink>
+          {/* <Link href="/whatsapp">
             <div>Whatsapp</div>
           </Link> */}
-          <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+          <NavLink href="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
             <div className="get-cash-now rounded-full ... p-2">
-              GET CASH NOW
+              Get Cash Now
             </div>
-          </Link>
-          <Link style={{ cursor: "pointer" }}>
+          </NavLink>
+          <NavLink style={{ cursor: "pointer" }}>
             <div
               onClick={handleOpen}
               className="get-cash-now rounded-full ... p-2"
             >
               Log In
             </div>
-          </Link>
+          </NavLink>
         </div>
 
         <Modal

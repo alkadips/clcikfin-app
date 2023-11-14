@@ -1,21 +1,100 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import FAQ from './FAq';
 
 export default function Personel() {
- 
+  const [faqs1, setFaqs1] = useState([
+    {
+      question: "Are Personal Loans a Wise Choice?",
+      answer:
+        "Personal loans can be a prudent option, especially during financial crises, as they provide quick access to funds without requiring collateral.",
+      open: true,
+    },
+    {
+      question: "How Can I Apply for a Personal Loan?",
+      answer:
+        "To apply for a personal loan, you must meet specific eligibility criteria, including age requirements, salaried employment, a good credit score, and a minimum monthly income.",
+      open: false,
+    },
+    {
+      question: "What Determines Personal Loan Eligibility?",
+      answer:
+        " Eligibility for a personal loan is based on factors such as age, employment status, credit score, and minimum monthly income.",
+      open: false,
+    },
+    {
+      question: "Do Personal Loans Affect Your Credit Score? ",
+      answer:
+        "Personal loans can impact your credit score, and missed repayments can have negative consequences due to the unsecured nature of these loans.",
+      open: false,
+    },
+    {
+      question: "How Long Does Personal Loan Approval Take? ",
+      answer:
+        " With the digitization of loan processes, personal loan approvals have become faster, often instant. However, the disbursal of funds may take up to 24 hours due to documentation procedures.",
+      open: false,
+    },
+
+    {
+      question: "Can I Repay a Personal Loan Before the Tenure Ends?",
+      answer:
+        " Yes, you can repay a personal loan before the tenure ends through prepayment. However, some lenders may charge a pre closure charges for repayment.",
+      open: false,
+    },
+    
+    {
+      question: "What Is the Average Interest Rate on Personal Loans? ",
+      answer:
+        "  The average interest rate on personal loans typically ranges from 16.00% to 32%, but this can vary among different lenders.",
+      open: false,
+    },
+    
+    {
+      question: "What Factors Do Banks Consider During Personal Loan Applications?  ",
+      answer:
+        " When applying for a personal loan, banks consider various factors, including age, monthly income, credit score, credit history, and necessary documentation.",
+      open: false,
+    },
+    {
+      question: "Which Lender Offers the Best Personal Loan Rates? ",
+      answer:
+        "  The best personal loan rates depend on the borrower’s credit profile, including a good credit score, consistent income source, and salaried employment.",
+      open: false,
+    },
+    {
+      question: "What Is the Minimum Salary Requirement for a Personal Loan?  ",
+      answer:
+        " While the minimum salary requirement may vary among lenders, most banks and NBFCs typically require a monthly income of ₹20,000 or more for personal loan approval.",
+      open: false,
+    },
+    
+  ]);
+  const toggleFAQ = (index) => {
+    setFaqs1(
+      faqs1.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
+
+        return faq;
+      })
+    );
+  };
     return (
         <div
-          className="text-center p-5 heading-para"
+          className=" p-5 text-black"
           style={{ marginTop: "100px" }}
         >
          
           <div>
-            <div className="font-bold text-4xl mt-5">
+            <div className="font-bold text-4xl mt-5 text-center">
               Benefits And Features Of Unsecured Personal Loans
-            </div>
-            <div className='p-5 bg-black rounded-xl mt-5'>
-            <div className="heading-para mt-5">
-              <div>1. No Collateral Required:</div>
+            </div >
+            <div className='p-5 bg-black rounded-xl mt-5 '>
+              <div style={{width:'50%',margin:'0 auto'}}>
+            <div className="text-white mt-5">
+              <div className='font-bold'>1. No Collateral Required:</div>
               <p>
                Unlike
                 secured loans that demand collateral, personal loans don’t require
@@ -24,47 +103,51 @@ export default function Personel() {
                 funds.
               </p>
             </div>
-            <div className="heading-para mt-5">
-              <p>
-                <span className="font-bold"> 2. Minimal Documentation:</span> In
+            <div className="text-white mt-5">
+              
+                <div className="font-bold"> 2. Minimal Documentation:</div> 
+                <div>In
                 today’s digital era, the personal loan application process has
                 become highly efficient. Minimal documentation is needed, making the
                 approval process swift and hassle-free, particularly for instant
-                personal loans.
-              </p>
+                personal loans.</div>
+            
             </div>
-            <div className="heading-para mt-5">
-              <p>
-                <span className="font-bold"> 3. Easy Approval:</span> Personal loans
+            <div className="text-white mt-5">
+              
+                <div className="font-bold"> 3. Easy Approval:</div>
+                <div> Personal loans
                 offer easy and quick approval, making them an ideal choice during
                 financial emergencies. The digitization of the process ensures
                 faster verification, enabling you to access funds when you need them
-                the most.
-              </p>
+                the most.</div>
+              
             </div>
-            <div className="heading-para mt-5">
-              <p>
-                <span className="font-bold"> 4. Multipurpose in Nature:</span> A
+            <div className="text-white mt-5">
+              
+                <div className="font-bold"> 4. Multipurpose in Nature:</div>
+                <div> A
                 significant advantage of personal loans is their versatility. Unlike
                 certain forms of credit tied to specific purposes, a personal loan
                 can be utilized for a wide range of needs. Whether it’s funding a
                 wedding, renovating your home, or addressing any immediate financial
-                requirement, a personal loan serves as a flexible solution.
-              </p>
+                requirement, a personal loan serves as a flexible solution.</div>
+              
             </div>
-            <div className="heading-para mt-5">
-              <p>
-                <span className="font-bold">5. Low-Interest Rates: </span> Meeting
+            <div className="text-white mt-5">
+             
+                <div className="font-bold">5. Low-Interest Rates: </div> 
+                <div>Meeting
                 the eligibility criteria and maintaining a good credit history can
                 help you secure a low-interest personal loan. This ensures that you
                 can borrow funds at competitive rates, saving you money in the long
-                run.
-              </p>
+                run.</div>
+             
             </div>
-            <div className="heading-para mt-5">
-              <p>
-                <span className="font-bold"> 6. Flexible Repayment Terms:</span>{" "}
-                Personal loans come with flexible repayment options, allowing you to
+            <div className="text-white mt-5">
+             
+                <div className="font-bold"> 6. Flexible Repayment Terms:</div>{" "}
+                <div>Personal loans come with flexible repayment options, allowing you to
                 choose a tenure that suits your financial capacity. This ensures
                 that you can comfortably repay the loan without straining your
                 budget. 7. Quick Disbursement: With the online application and
@@ -76,11 +159,12 @@ export default function Personel() {
                 Whether it’s an unforeseen expense or fulfilling your dreams, our
                 personal loans provide the financial flexibility you seek. Apply
                 with us today and unlock a world of possibilities.
-              </p>
+                </div>
             </div>
-            <div className="heading-para mt-5">
-              <p>
-                <span className="font-bold"> 7. Quick Disbursement: </span> With the
+            <div className="text-white mt-5">
+             
+                <div className="font-bold"> 7. Quick Disbursement: </div>
+                <div> With the
                 online application and verification process, personal loans are
                 disbursed swiftly. This is particularly beneficial in situations
                 that require immediate financial support. Embrace the freedom and
@@ -89,14 +173,15 @@ export default function Personel() {
                 burden of collateral. Whether it’s an unforeseen expense or
                 fulfilling your dreams, our personal loans provide the financial
                 flexibility you seek. Apply with us today and unlock a world of
-                possibilities.
-              </p>
+                possibilities.</div>
+           
+            </div>
             </div>
             </div>
           </div>
-          <div className="font-bold text-4xl mt-5">Personal Loan Eligibility</div>
-          <div className="mt-5 p-5 bg-black rounded-xl">
-            <p>
+          <div className="font-bold text-4xl mt-5 text-center">Personal Loan Eligibility</div>
+          <div className="mt-5 p-5 bg-black rounded-xl text-white">
+            <p style={{width:'50%',margin:'0 auto'}}>
               Personal loans are offered by most banks and NBFCs, each with their
               own specific eligibility criteria. Nonetheless, there exist certain
               common requirements across all financial institutions. The eligibility
@@ -104,8 +189,8 @@ export default function Personel() {
               self-employed individuals are:
             </p>
           </div>
-          <div className="mt-5 p-5 bg-black rounded-xl">
-            <table className="w-full">
+          <div className="mt-5 p-5 bg-black rounded-xl text-white">
+            <table style={{width:'50%',margin:'0 auto'}} >
               <tr>
                 <th>Age</th>
                 <td>21 years – 60 years</td>
@@ -137,35 +222,33 @@ export default function Personel() {
               </tr>
             </table>
           </div>
-          <div className="font-bold text-3xl mt-5">
+          <div className="font-bold text-3xl mt-5 text-center text-black">
             Documents Required For Personal Loan
           </div>
-          <div className='mt-5 p-5 bg-black rounded-xl'>
-          <div className="mt-5">
+          <div className='mt-5 p-5 bg-black rounded-xl text-white'>
+          <div className="mt-5 text-center">
             Below is a list of the typical documents needed for the approval of an
             online personal loan:
           </div>
-          <div className="font-bold mt-5">Salaried Individuals</div>
-          <div>1. Proof of Identity and Age</div>
-          <div>
-            2. Fully completed personal loan application form with a photograph
+          <div className="font-bold mt-5 text-center">Salaried Individuals</div>
+          <ol className='number-list'>
+  <li>Proof of Identity and Age</li>
+  <li>Fully completed personal loan application form with a photograph</li>
+  <li>PAN Card</li>
+  <li>Proof of Residence – Passport, driving license, Voter ID,
+            postpaid/landline bill, utility bills (electricity/water/gas)</li>
+            <li>Bank statements from the last three months (preferably from your
+            salary account)</li>
+            <li>Last three-month pay slips</li>
+</ol>  
+        
+         
           </div>
-          <div>3. PAN Card</div>
-          <div>
-            4. Proof of Residence – Passport, driving license, Voter ID,
-            postpaid/landline bill, utility bills (electricity/water/gas)
-          </div>
-          <div>
-            5. Bank statements from the last three months (preferably from your
-            salary account)
-          </div>
-          <div>6. Last three-month pay slips</div>
-          </div>
-          <div className="font-bold text-3xl mt-5">Personal Loan Details</div>
-          <div className="mt-5 p-5 bg-black rounded-xl">
+          <div className="font-bold text-3xl mt-5 text-center text-black">Personal Loan Details</div>
+          <div className="mt-5 p-5 bg-black rounded-xl text-white">
 
             
-            <table className="w-full">
+            <table style={{width:'90%',margin:'0 auto'}}>
               <tr>
                 <th>BANK/NBFC</th>
                 <th>Interest Rate(pa)</th>
@@ -203,8 +286,8 @@ export default function Personel() {
               </tr>
             </table>
           </div>
-          <div className="text-3xl font-bold mt-5">Representative Example:</div>
-          <div className='p-3 bg-black rounded-xl mt-5'>
+          <div className="text-3xl font-bold mt-5 text-center">Representative Example:</div>
+          <div className='p-3 bg-black rounded-xl mt-5 text-white' style={{width:'33%',margin:'0 auto'}}>
           <div className="mt-5 ">Loan Amount: ₹1,00,000</div>
           <div>Tenure: 36 months</div>
           <div>Interest Rate: @18%* (reducing basis)</div>
@@ -222,107 +305,21 @@ export default function Personel() {
           </div>
 
           </div>
-          <div className="font-bold text-3xl mt-5">FAQs About Personal Loans</div>
-          <div className='bg-black p-5 mt-5 rounded-xl'>
-          <div className="heading-para mt-5">
-            <p>
-              <span className="font-bold">
-                1. Are Personal Loans a Wise Choice?{" "}
-              </span>
-              Personal loans can be a prudent option, especially during financial
-              crises, as they provide quick access to funds without requiring
-              collateral.
-            </p>
-            </div>
 
-          <div className="heading-para mt-5">
-            <p>
-              <span className="font-bold">
-                2. How Can I Apply for a Personal Loan?{" "}
-              </span>
-              To apply for a personal loan, you must meet specific eligibility
-              criteria, including age requirements, salaried employment, a good
-              credit score, and a minimum monthly income.
-            </p>
-          </div>
-          <div className="heading-para mt-5">
-            <p>
-              <span className="font-bold">
-                3. What Determines Personal Loan Eligibility?
-              </span>{" "}
-              Eligibility for a personal loan is based on factors such as age,
-              employment status, credit score, and minimum monthly income.
-            </p>
-          </div>
-          <div className="heading-para mt-5">
-            <p>
-              <span className="font-bold">
-                4. Do Personal Loans Affect Your Credit Score?
-              </span>{" "}
-              Personal loans can impact your credit score, and missed repayments can
-              have negative consequences due to the unsecured nature of these loans.
-            </p>
-          </div>
-          <div className="heading-para mt-5">
-            <p>
-              <span className="font-bold">
-                5. How Long Does Personal Loan Approval Take?{" "}
-              </span>{" "}
-              With the digitization of loan processes, personal loan approvals have
-              become faster, often instant. However, the disbursal of funds may take
-              up to 24 hours due to documentation procedures.
-            </p>
-          </div>{" "}
-          <div className="heading-para mt-5">
-            <p>
-              <span className="font-bold">
-                6. Can I Repay a Personal Loan Before the Tenure Ends?
-              </span>{" "}
-              Yes, you can repay a personal loan before the tenure ends through
-              prepayment. However, some lenders may charge a pre closure charges for
-              repayment.
-            </p>
-          </div>{" "}
-          <div className="heading-para mt-5">
-            <p>
-              <span className="font-bold">
-                7. What Is the Average Interest Rate on Personal Loans?
-              </span>{" "}
-              The average interest rate on personal loans typically ranges from
-              16.00% to 32%, but this can vary among different lenders.
-            </p>
-          </div>{" "}
-          <div className="heading-para mt-5">
-            <p>
-              <span className="font-bold">
-                8. What Factors Do Banks Consider During Personal Loan Applications?
-              </span>{" "}
-              When applying for a personal loan, banks consider various factors,
-              including age, monthly income, credit score, credit history, and
-              necessary documentation.
-            </p>
-          </div>{" "}
-          <div className="heading-para mt-5">
-            <p>
-              <span className="font-bold">
-                9. Which Lender Offers the Best Personal Loan Rates?{" "}
-              </span>{" "}
-              The best personal loan rates depend on the borrower’s credit profile,
-              including a good credit score, consistent income source, and salaried
-              employment.
-            </p>
-          </div>{" "}
-          <div className="heading-para mt-5">
-            <p>
-              <span className="font-bold">
-                10. What Is the Minimum Salary Requirement for a Personal Loan?{" "}
-              </span>{" "}
-              While the minimum salary requirement may vary among lenders, most
-              banks and NBFCs typically require a monthly income of ₹20,000 or more
-              for personal loan approval.
-            </p>
-          </div>
-          </div>
+
+
+
+
+
+          <div className="faqs text-black ">
+        {faqs1.map((faq, index) => (
+          <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
+        ))}
+      </div>
+         
+          
+         
+          
           <div className="mt-5">
             Explore the world of personal loans with confidence, knowing the answers
             to these frequently asked questions. ClikFin offers a seamless loan

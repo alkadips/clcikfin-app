@@ -8,7 +8,7 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
       onClick={() => toggleFAQ(index)}
     >
       <div className="faq-question">{faq.question}</div>
-      <div className="faq-answer">{faq.answer}</div>
+      <div className="faq-answer text-white">{faq.answer}</div>
     </div>
   );
 };

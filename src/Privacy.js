@@ -1,13 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
 export default function Privacy() {
    
   return (
     
     <div className='bg-black rounded-xl p-5' style={{marginTop:'100px'}}>
-        <div className='font-bold text-4xl mt-5 text-center heading-para'>Privacy Policy</div>
-        <div className='heading-para text-center'>
+        <div className='font-bold text-4xl mt-5 text-center text-white'>Privacy Policy</div>
+        <div className='text-white'>
         <div className='mt-5'>Effective Date: March 15, 2021</div>
         <div className='mt-5'>
             <p>This Privacy Policy (“Policy”) outlines the collection, use, storage, processing, disclosure, and protection of information, including personal and business information, provided by you (“User” or “You”) while using the ClikFin website accessible at www.clikfin.com or through the mobile application (“Website”). ClikFin, also referred to as “Us,” “Our,” or “We,” is owned and operated by CygniSys Services Pvt. Ltd. Formerly known as (CygniSys OPC Pvt. Ltd.), with its registered office at #147, 3rd Floor, 7th Sector, 5th Main, HSR Layout, Bangalore, Karnataka 560102, India.</p>
