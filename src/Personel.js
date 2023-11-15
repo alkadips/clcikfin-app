@@ -83,104 +83,67 @@ export default function Personel() {
   };
     return (
         <div
-          className=" p-5 text-black"
-          style={{ marginTop: "100px" }}
-        >
+          className="text-black"
          
+        >
+         <div>
+          <img  src="./clcikfin-app/pers.jpg"></img>
+         </div>
           <div>
             <div className="font-bold text-4xl mt-5 text-center">
               Benefits And Features Of Unsecured Personal Loans
             </div >
-            <div className='p-5 bg-black rounded-xl mt-5 '>
+            <div className=' text-black rounded-xl mt-5 '>
               <div style={{width:'50%',margin:'0 auto'}}>
-            <div className="text-white mt-5">
-              <div className='font-bold'>1. No Collateral Required:</div>
+            <div className="text-black mt-5">
+              <div className='font-bold'>1.  No Collateral:</div>
               <p>
-               Unlike
-                secured loans that demand collateral, personal loans don’t require
-                you to pledge any assets. This eliminates the risk of losing
-                valuable possessions and provides peace of mind while accessing
-                funds.
+              No need to pledge assets, reducing the risk of losing valuable Asset.
               </p>
             </div>
-            <div className="text-white mt-5">
+            <div className="text-black mt-2">
               
                 <div className="font-bold"> 2. Minimal Documentation:</div> 
-                <div>In
-                today’s digital era, the personal loan application process has
-                become highly efficient. Minimal documentation is needed, making the
-                approval process swift and hassle-free, particularly for instant
-                personal loans.</div>
+                <div> Streamlined digital application process for swift approval.</div>
             
             </div>
-            <div className="text-white mt-5">
+            <div className="text-black mt-2">
               
                 <div className="font-bold"> 3. Easy Approval:</div>
-                <div> Personal loans
-                offer easy and quick approval, making them an ideal choice during
-                financial emergencies. The digitization of the process ensures
-                faster verification, enabling you to access funds when you need them
-                the most.</div>
+                <div> Quick verification for fast access to funds during emergencies.
+</div>
               
             </div>
-            <div className="text-white mt-5">
+            <div className="text-black mt-2">
               
-                <div className="font-bold"> 4. Multipurpose in Nature:</div>
-                <div> A
-                significant advantage of personal loans is their versatility. Unlike
-                certain forms of credit tied to specific purposes, a personal loan
-                can be utilized for a wide range of needs. Whether it’s funding a
-                wedding, renovating your home, or addressing any immediate financial
-                requirement, a personal loan serves as a flexible solution.</div>
+                <div className="font-bold"> Multipurpose</div>
+                <div>  Versatile use for various needs like weddings, home renovations, or immediate
+financial requirements.</div>
               
             </div>
-            <div className="text-white mt-5">
+            <div className="text-black mt-2">
              
-                <div className="font-bold">5. Low-Interest Rates: </div> 
-                <div>Meeting
-                the eligibility criteria and maintaining a good credit history can
-                help you secure a low-interest personal loan. This ensures that you
-                can borrow funds at competitive rates, saving you money in the long
-                run.</div>
+                <div className="font-bold">5. Low-Interest Rates:</div> 
+                <div>Eligibility and good credit history can secure competitive rates, saving money.</div>
              
             </div>
-            <div className="text-white mt-5">
+            <div className="text-black mt-2">
              
-                <div className="font-bold"> 6. Flexible Repayment Terms:</div>{" "}
-                <div>Personal loans come with flexible repayment options, allowing you to
-                choose a tenure that suits your financial capacity. This ensures
-                that you can comfortably repay the loan without straining your
-                budget. 7. Quick Disbursement: With the online application and
-                verification process, personal loans are disbursed swiftly. This is
-                particularly beneficial in situations that require immediate
-                financial support. Embrace the freedom and convenience of unsecured
-                personal loans. Clikfin offers a seamless and user-friendly platform
-                to access the funds you need, without the burden of collateral.
-                Whether it’s an unforeseen expense or fulfilling your dreams, our
-                personal loans provide the financial flexibility you seek. Apply
-                with us today and unlock a world of possibilities.
+                <div className="font-bold"> 6.  Flexible Repayment:</div>{" "}
+                <div>Tailored repayment terms to match your financial capacity.
                 </div>
             </div>
-            <div className="text-white mt-5">
+            <div className="text-black mt-2">
              
-                <div className="font-bold"> 7. Quick Disbursement: </div>
-                <div> With the
-                online application and verification process, personal loans are
-                disbursed swiftly. This is particularly beneficial in situations
-                that require immediate financial support. Embrace the freedom and
-                convenience of unsecured personal loans. Clikfin offers a seamless
-                and user-friendly platform to access the funds you need, without the
-                burden of collateral. Whether it’s an unforeseen expense or
-                fulfilling your dreams, our personal loans provide the financial
-                flexibility you seek. Apply with us today and unlock a world of
-                possibilities.</div>
+                <div className="font-bold"> 7.  Quick Disbursement: </div>
+                <div>  Online application and verification lead to swift fund disbursal.</div>
            
             </div>
             </div>
             </div>
           </div>
-          <div className="font-bold text-4xl mt-5 text-center">Personal Loan Eligibility</div>
-          <div className="mt-5 p-5 bg-black rounded-xl text-white">
+          <div className="font-bold text-4xl mt-2 text-center">Personal Loan Eligibility</div>
+          <div className="mt-3   rounded-xl text-black">
             <p style={{width:'50%',margin:'0 auto'}}>
               Personal loans are offered by most banks and NBFCs, each with their
               own specific eligibility criteria. Nonetheless, there exist certain
@@ -189,8 +152,8 @@ export default function Personel() {
               self-employed individuals are:
             </p>
           </div>
-          <div className="mt-5 p-5 bg-black rounded-xl text-white">
-            <table style={{width:'50%',margin:'0 auto'}} >
+          <div className="mt-5 p-5  rounded-xl text-black">
+            <table style={{width:'90%',margin:'0 auto'}} >
               <tr>
                 <th>Age</th>
                 <td>21 years – 60 years</td>
@@ -205,12 +168,15 @@ export default function Personel() {
               </tr>
               <tr>
                 <th>Minimum Net Income (Monthly)</th>
-                <td>
-                  <ul>
-                    <li>₹30,000(non-metro cities)</li>
-                    <li>₹20,000( metro cities)</li>
-                  </ul>
+               <div>
+               <td>
+                ₹30,000(non-metro cities)
                 </td>
+               </div>
+                <div>
+                <td>₹20,000( metro cities)</td>
+                </div>
+               
               </tr>
               <tr>
                 <th>Loan Amount</th>
@@ -225,12 +191,12 @@ export default function Personel() {
           <div className="font-bold text-3xl mt-5 text-center text-black">
             Documents Required For Personal Loan
           </div>
-          <div className='mt-5 p-5 bg-black rounded-xl text-white'>
-          <div className="mt-5 text-center">
-            Below is a list of the typical documents needed for the approval of an
+          <div className='  rounded-xl text-black'>
+          <div className="mt-2 text-center">
+            Below are the list of the typical documents needed for the approval of an
             online personal loan:
           </div>
-          <div className="font-bold mt-5 text-center">Salaried Individuals</div>
+          <div className="font-bold mt-2 text-center">Salaried Individuals</div>
           <ol className='number-list'>
   <li>Proof of Identity and Age</li>
   <li>Fully completed personal loan application form with a photograph</li>
@@ -244,11 +210,11 @@ export default function Personel() {
         
          
           </div>
-          <div className="font-bold text-3xl mt-5 text-center text-black">Personal Loan Details</div>
-          <div className="mt-5 p-5 bg-black rounded-xl text-white">
+         {/* <div className="font-bold text-3xl mt-5 text-center text-black">Personal Loan Details</div>
+          <div className="mt-5 p-5  rounded-xl text-black"> */}
 
             
-            <table style={{width:'90%',margin:'0 auto'}}>
+            {/* <table style={{width:'90%',margin:'0 auto'}}>
               <tr>
                 <th>BANK/NBFC</th>
                 <th>Interest Rate(pa)</th>
@@ -284,10 +250,10 @@ export default function Personel() {
                 <td>6 Month</td>
                 <td>12 to 60 months</td>
               </tr>
-            </table>
-          </div>
+            </table> */}
+          {/* </div>  */}
           <div className="text-3xl font-bold mt-5 text-center">Representative Example:</div>
-          <div className='p-3 bg-black rounded-xl mt-5 text-white' style={{width:'33%',margin:'0 auto'}}>
+          <div className=' rounded-xl mt-5 text-black' style={{width:'33%',margin:'0 auto'}}>
           <div className="mt-5 ">Loan Amount: ₹1,00,000</div>
           <div>Tenure: 36 months</div>
           <div>Interest Rate: @18%* (reducing basis)</div>
@@ -320,7 +286,7 @@ export default function Personel() {
           
          
           
-          <div className="mt-5">
+          <div className="mt-5 ml-5 text-center" style={{width:'90%',margin:'0 auto'}}>
             Explore the world of personal loans with confidence, knowing the answers
             to these frequently asked questions. ClikFin offers a seamless loan
             application process, ensuring you get the financial support you need for

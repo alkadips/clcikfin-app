@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <div>
       <div className="flex justify-around shadow-2xl ... header-wrapper ">
-        <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        {/* <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
 
         <label for="drawer-toggle" id="drawer-toggle-label"></label>
         <nav id="drawer">
@@ -87,10 +87,10 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-        </nav>
-        <div >
+        </nav> */}
+        <div className="ml-5">
           <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/" >
-            <img  alt="logo" src="/clcikfin-app/logo.png"></img>
+            <img style={{width:'150px',height:'40px'}}  alt="logo" src="/clcikfin-app/logo3.png"></img>
           </Link>{" "}
         </div>
         <div className="flex font-bold wrapper-gap" style={{gap:'20px'}}>
@@ -135,6 +135,28 @@ export default function Header() {
               Log In
             </div>
           </Link>
+             {/* <div className="flex   gap-5 justify-center">
+              <div>
+                <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+                  <img
+                    className="mobile-image"
+                    alt="google"
+                    src="./clcikfin-app/andr.png"
+                  ></img>
+                </Link>
+              </div>
+              <div>
+                <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
+                  <img
+                    className="mobile-image"
+                    alt="apple"
+                    src="./clcikfin-app/app.png"
+                  ></img>
+                </Link>
+              </div>
+            
+            </div> */}
+
         </div>
 
         <Modal

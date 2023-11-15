@@ -26,11 +26,11 @@ export default function Blog() {
       <div className=" p-5">
       <Carousel>
         <Carousel.Item>
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 shadow shadow-emerald-300">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 clickfin-para-home">
         <div className="snip1527">
           <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+          <img
+              src="./clcikfin-app/1.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -77,8 +77,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/2.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -195,8 +195,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/3.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -319,8 +319,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/4.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -424,11 +424,11 @@ export default function Blog() {
         </div>
         </Carousel.Item>
         <Carousel.Item>
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 shadow shadow-emerald-300">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 dow clickfin-para-home">
         <div className="snip1527">
           <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+          <img
+              src="./clcikfin-app/1.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -474,8 +474,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/2.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -590,8 +590,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/3.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -714,8 +714,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/4.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -755,11 +755,7 @@ export default function Blog() {
             balances can have a swift and positive effect on your credit score.
           </div>
           <div>
-            4. Don't Close Old Accounts: The length of your credit history
-            matters. Closing old credit accounts shortens your credit history,
-            potentially lowering your score. Even if you're not using a
-            particular credit card, consider keeping the account open to
-            maintain a longer credit history.
+            4. Do not multiple enquiries : If you required emergency funds do not apply to any financial institution multiple time within a month. More than 6 inquiry  in a month may be reason for rejection of your loan application.
           </div>
           <div>
             5. Diversify Your Credit Types: A mix of credit types, such as
@@ -819,11 +815,11 @@ export default function Blog() {
         </div>
         </Carousel.Item>
         <Carousel.Item>
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 shadow shadow-emerald-300">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 clickfin-para-home">
         <div className="snip1527">
           <div class="image">
             <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+              src="./clcikfin-app/1.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -869,8 +865,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/2.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -985,8 +981,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/3.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -1109,8 +1105,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/4.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -1214,11 +1210,11 @@ export default function Blog() {
         </div>
         </Carousel.Item>
         <Carousel.Item>
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 shadow shadow-emerald-300">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 clickfin-para-home">
         <div className="snip1527">
           <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+          <img
+              src="./clcikfin-app/1.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -1264,8 +1260,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/2.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -1380,8 +1376,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/3.jpg"
               alt="pr-sample25"
             />
           </div>
@@ -1504,8 +1500,8 @@ export default function Blog() {
         </div>
         <div className="snip1527">
         <div class="image">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg"
+        <img
+              src="./clcikfin-app/3.jpg"
               alt="pr-sample25"
             />
           </div>

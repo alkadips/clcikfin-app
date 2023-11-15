@@ -56,39 +56,16 @@ import getSchedule from "./Lib/AmortizationService";
   render() {
     return (
   
-    <div className="text-black text-center" style={{ marginTop: "100px" }}>
-      <div className="font-bold text-3xl mt-5">
+    <div className="text-black " style={{ marginTop: "100px" }}>
+     
+      <div className="font-bold text-3xl mt-5" style={{textAlign:'center'}}>
         EMI Calculator - Your Convenient Loan Planning Tool
       </div>
      
-      {/* <div className=" flex justify-center gap-5 p-5 mt-5">
-        <div className="shadow-2xl ... p-5" style={{width:'50%',background:'#2B4A84',color:'white'}}>
-      <div>
-        <div>Loan Amount</div>
-        <Slider   size="small" value={pAmount} onChange={(event,vAmt)=>{setpAmount(vAmt)}} defaultValue={pAmount} max={maxValue}/>
-      </div>
-      <div>
-        <div>Interest Rate %</div>
-        <Slider  value={interest} onChange={(event,vint)=>{setInterest(vint)}} defaultValue={interest} max={intmax}/>
-      </div>
-      <div>
-        <div>Tenure (Months)</div>
-        <Slider  value={duration} onChange={(event,vduration)=>{setDuration(vduration)}} defaultValue={duration} max={maxDuration}/>
-      </div>
-      </div> */}
-      {/* <div  >
-        <Table>
-          <TableRow>
-            <TableCell>
-              <EmiTable pAmount={pAmount} interest={interest} duration={duration} emi={emi}totalAmountOFInterest={totalAmountOFInterest} totalAmt={totalAmt}/>
-            </TableCell>
-          </TableRow>
-        </Table>
-      </div> */}
-      {/* </div>
-       */}
+     
 <div className="flex justify-evenly text-black gap-5 p-5">
-  <div className="shadow-2xl ... p-5" style={{width:'50%'}}>
+
+  <div className="clickfin-para-home sample-cal shadow-2xl ... p-5" style={{width:'55%',border:'1px solid'}}>
 <div><InputForm onSubmit={this.calculatePayments} />
 <div className="mt-5">
 <AmortizationSchedule
@@ -100,7 +77,9 @@ import getSchedule from "./Lib/AmortizationService";
 </div>
 </div>
 </div>
-<div className="sample-cal shadow-2xl ... p-5" style={{width:'44%'}}>
+
+<div className="clickfin-para-home sample-cal shadow-2xl ... p-5" style={{width:'44%',border:'1px solid'}}
+>
   <div>Sample Calculations</div>
   <div className="flex mt-5 gap-5 justify-between">
     <div>Loan Amount</div>
@@ -143,9 +122,13 @@ import getSchedule from "./Lib/AmortizationService";
 <div>
 
 </div>
-     <div className="p-5 bg-black text-white rounded-xl">
-      <div style={{width:'50%',margin:'0 auto'}}>
-      <div className="mt-5">
+<div className="flex">
+  <div>
+    <img src="./clcikfin-app/emi.jpeg"></img>
+  </div>
+<div className="  text-black rounded-xl">
+      <div>
+      <div className="mt-2">
 
         <p>
           Calculating the Equated Monthly Installment (EMI) for a loan has never
@@ -156,7 +139,7 @@ import getSchedule from "./Lib/AmortizationService";
         </p>
       </div>
       <div className="font-bold">Important Considerations:</div>
-      <div className="mt-5">
+      <div className="mt-2">
         
           <div className="font-bold">1. Reducing Balance Method: </div>
           <div>Our
@@ -165,7 +148,7 @@ import getSchedule from "./Lib/AmortizationService";
           reduced principal balance over time.
           </div> 
       </div>
-      <div className="mt-5">
+      <div className="mt-2">
         
           <div className="font-bold">2. Additional Charges:</div> 
           <div>Please note
@@ -174,8 +157,8 @@ import getSchedule from "./Lib/AmortizationService";
           financing institution’s rules.</div>
         
       </div>
-      <div className="mt-5 font-bold">Plan Your Loan Repayment:</div>
-      <div className="mt-5">
+      <div className="mt-3 font-bold">Plan Your Loan Repayment:</div>
+      <div className="mt-2">
         
           Using our EMI calculator, you can make informed decisions about your
           loan repayment strategy. By adjusting the loan amount and interest
@@ -195,6 +178,8 @@ import getSchedule from "./Lib/AmortizationService";
       
       </div>
       </div>
+</div>
+   
     </div>
    );
   }

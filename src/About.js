@@ -9,31 +9,52 @@ export default function About() {
         <p className=" text-3xl mt-5 font-bold" style={{  color: '#f9bd08'}}>ABOUT US</p>
             <p className="mt-2 text-xl" style={{  color: '#f9bd08'
 }}>
-              ClikFin Is A Trailblazing Digital Platform Offering Instant
-              Financial Solutions To Both Salaried Individuals And Individuals
-              In Need, In A Hassle-Free And Convenient Manner. Our Cutting-Edge
-              Personal Financing Product Aims To Alleviate Customers' Financial
-              Challenges By Making Funds Instantly Accessible To Those Who
-              Require Financial Assistance. With Our User-Friendly Digital
-              Platform, We Have Revolutionized The Conventional Loan Origination
-              Process, Reducing It To A Seamless And Frictionless 5-Minute
-              Experience.
+             Get to know the team behind Clikfin, India’s Best app to offer online credit, making credit easily
+accessible to millions of Indians right when they need it, without any collateral or complex paperwork.
+ClikFin, a venture of CygniSys Services Pvt. Ltd. (formerly CygniSys OPC Pvt. Ltd.), established in 2021,
+is an innovative online platform specializing in personal loans. Our mission is to bridge the gap
+between borrowers and lenders, securing favorable deals.
             </p>
           </div>
           <div>
-            <img style={{width:'100%',height:'250px'}} src="/clcikfin-app/logo.svg"></img>
+          <div>
+              
+              {/* <div  style={{marginTop:'70px'}}>
+                <div className="coast">
+                  <div className="wave-rel-wrap">
+                    <div className="wave"></div>
+                  </div>
+                </div>
+                <div className="coast delay">
+                  <div className="wave-rel-wrap">
+                    <div className="wave delay"></div>clikfin
+                  </div>
+                </div>
+                <div className="text text-w">C</div>
+                <div className="text text-l">l</div>
+                <div className="text text-v">i</div>
+                <div className="text text-e">k</div>
+                <div className="text text-b " style={{color:'#f9bd08'}}>F</div>
+                <div className="text text-i">i</div>
+                <div className="text text-p">n</div>
+                <div className="text text-tm ">  @tm</div>
+                         
+                
+              </div> */}
+            
+          </div>
           </div>
      </div>
     
       </div>
-      <div className="flex  mt-5 p-5 gap-5">
-        <div className="p-5 bg-black rounded-xl" style={{ width: "50%" }}>
-          <div className="font-bold text-4xl mt-5 text-white">
+      {/* <div className="flex  mt-5 p-5 gap-5">
+        <div className="p-5 text-black rounded-xl" style={{ width: "50%" }}>
+          <div className="font-bold text-4xl mt-5 ">
             Who We Are: Empowering Your Financial Journey
           </div>
         
-          <div className="mt-5 font-bold text-white">Our Commitment to You:</div>
-          <div className="mt-5 text-white">
+          <div className="mt-5 font-bold text-black">Our Commitment to You:</div>
+          <div className="mt-5 text-black">
             <p>
               At ClikFin, our dedicated team strives tirelessly to deliver the
               most hassle-free and seamless money borrowing experience to our
@@ -45,8 +66,8 @@ export default function About() {
               financial requirements and goals in the shortest possible time.
             </p>
           </div>
-          <div className="mt-5 font-bold text-white">Why Choose ClikFin?</div>
-          <div className="mt-5 text-white">
+          <div className="mt-5 font-bold text-black">Why Choose ClikFin?</div>
+          <div className="mt-5 text-black">
             <p>
               <span className="font-bold">1. Instant Money:</span> We understand
               the urgency of your financial needs. Our platform ensures quick
@@ -54,7 +75,7 @@ export default function About() {
               aspirations.
             </p>
           </div>
-          <div className="mt-5 text-white">
+          <div className="mt-5 text-black">
             <p>
               <span className="font-bold">2. Hassle-Free Process:</span> Say
               goodbye to time-consuming paperwork and complex procedures.
@@ -62,7 +83,7 @@ export default function About() {
               transfer, sparing you from unnecessary hassles.
             </p>
           </div>
-          <div className="mt-5 text-white">
+          <div className="mt-5 text-black">
             <p>
               <span className="font-bold">3. Consumer-Friendly:</span> Our
               customer-centric approach guarantees a seamless experience,
@@ -70,7 +91,7 @@ export default function About() {
               effortless.
             </p>
           </div>
-          <div className="mt-5 text-white">
+          <div className="mt-5 text-black">
             <p>
               <span className="font-bold">4. Flexible and Affordable:</span>{" "}
               With customized loan options, we empower you to choose what suits
@@ -78,10 +99,10 @@ export default function About() {
               financial well-being.
             </p>
           </div>
-          <div className="font-bold mt-5 text-white">
+          <div className="font-bold mt-5 text-black">
             Join Us on Your Financial Journey:
           </div>
-          <div className="mt-5 text-white" >
+          <div className="mt-5 text-black" >
             <p>
               Embrace the convenience and speed of ClikFin’s digital platform.
               Let us be your trusted partner in overcoming financial obstacles
@@ -95,7 +116,61 @@ export default function About() {
         <div className=" p-5" style={{background:'white'}}>
           <img alt="about" src="./clcikfin-app/about.png"></img>
         </div>
-      </div>
+      </div> */}
+
+
+<div className="flex p-5 gap-5">
+  <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+  <div className="font-bold text-center"> Our Vision</div>
+<div className="mt-3"> Empower individuals to achieve their aspirations through financial tools and support.
+Dedicated to exceptional customer service, ClikFin is your trusted companion for informed financial
+decisions. Explore our range of products today for a  brighter financial future.</div>
+  </div>
+
+  <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+  <div className="font-bold text-center">Our Mission</div>
+<div className="mt-3">At ClikFin, our mission is to seamlessly connect borrowers and lenders, ensuring access to the besttailored financial solutions. We are dedicated to empowering individuals by
+providing efficient and transparent financial services that help them achieve their goals.
+</div>
+  </div>
+
+  <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+  <div className="font-bold text-center"> Who We Are
+</div>
+<div className="mt-3">ClikFin, a venture by CygniSys Services Pvt. Ltd. is a leading online platform specializing in personal
+loans. We pride ourselves on bridging the gap between financial aspirations and practical solutions,
+ensuring a seamless and empowering experience for our users.</div>
+  </div>
+
+ 
+</div>
+
+{/* <div className="font-bold mt-5 text-center text-2xl">People Behind ClikFin</div> */}
+{/* <div className="flex justify-center mt-5 font-bold gap-5">
+<div>
+  <div>
+    <img style={{height:'150px'}} src='./clcikfin-app/co.png'></img>
+  </div>
+<div className="text-green-600 text-3xl mt-3">
+Sumit Behera
+</div>
+<div className="mt-2">Co-Founder</div>
+
+</div>
+<div>
+<div>
+    <img style={{height:'150px'}} src='./clcikfin-app/co2.png'></img>
+  </div>
+<div className="text-green-600 text-3xl mt-3">
+Devendra Kumar
+</div>
+<div className="mt-2">Co-Founder</div>
+
+</div>
+</div> */}
+
+
+
       <div className="text-center">
         <div className="font-bold mt-5 text-4xl ">
           Discover The Possibilities With Our Instant Loan Service
@@ -105,14 +180,14 @@ export default function About() {
           For You. You Can Use The Funds For A Wide Range Of Purposes,
           Including:
         </div>
-        <div className="p-5 bg-black rounded-xl mt-5">
-          <div className="flex justify-center gap-5 text-white"> 
-        <div className="mt-5" style={{width:'25%'}}>
-          <div className="font-bold text-white">Vacation: </div>
+        <div className="p-2  rounded-xl mt-2">
+          <div className="flex justify-center gap-5 text-black"> 
+        <div className="mt-2" style={{width:'25%'}}>
+          <div className="font-bold text-black">Vacation: </div>
           <div >Fulfill your wanderlust
           and embark on that dream vacation you’ve been longing for.</div>
         </div>
-        <div className="mt-5" style={{width:'25%'}}>
+        <div className="mt-2" style={{width:'25%'}}>
           <div className="font-bold">Home Remodeling: </div>
           <div>Give your home a
           refreshing makeover or undertake those much-needed renovations.</div>
@@ -122,7 +197,7 @@ export default function About() {
        
 
 
-          <div className="flex justify-center gap-5 text-white"> 
+          <div className="flex justify-center gap-5 text-black"> 
         <div className="mt-5" style={{width:'25%'}}>
           <div className="font-bold">Debt Consolidation: </div>
           <div>Streamline your
@@ -138,7 +213,7 @@ export default function About() {
           </div>
 
 
-          <div className="flex justify-center gap-5 text-white"> 
+          <div className="flex justify-center gap-5 text-black"> 
         <div className="mt-5" style={{width:'25%'}}>
           <div className="font-bold">Medical Emergencies:</div>
           <div>In times of
@@ -159,7 +234,7 @@ export default function About() {
 
 
 
-        <div className="mt-5 text-white" >
+        <div className="mt-5 text-black" >
           <p style={{margin:'0 auto',width:'33%'}}>
             The power to choose lies with you, and ClikFin is here to provide
             the financial assistance you need to turn your dreams into reality.
@@ -169,14 +244,14 @@ export default function About() {
             of your financial journey today!
           </p>
         </div>
-        <div className="font-bold text-3xl mt-5 text-white">
+        <div className="font-bold text-3xl mt-5 text-black">
           How To Apply For A Personal Loan With ClikFin:
         </div>
-        <div className="mt-5 font-bold text-white">
+        <div className="mt-5 font-bold text-black">
           Applying For A Personal Loan With ClikFin Is Quick And Effortless.
           Just Follow These Simple Steps:
         </div>
-        <div className="text-white" style={{margin:'0 auto',width:'33%'}}>
+        <div className="text-black" style={{margin:'0 auto',width:'50%'}}>
         <div className="mt-5">
         
             <div className="font-bold">1. Download the App:</div> 
@@ -210,14 +285,14 @@ export default function About() {
           
         </div>
         </div>
-        <div className="our-mission text-center font-bold text-4xl text-white">
+        {/* <div className="our-mission text-center font-bold text-4xl text-black">
           Our Vision & Mission - Empowering Your Financial Well-Being
         </div>
-        <div className="flex font-bold mt-5 justify-around text-white">
+        <div className="flex font-bold mt-5 justify-around text-black">
           <div>Our Vision</div>
           <div>Our Mission</div>
-        </div>
-        <div className="flex  mt-5 justify-around p-5 gap-5 text-white">
+        </div> */}
+        {/* <div className="flex  mt-5 justify-around p-5 gap-5 text-black">
           <div className="text-center">
             At Insight Loan Advisors, our vision is to provide individuals with
             access to personal loans at minimal rates, ensuring we cater to
@@ -233,8 +308,8 @@ export default function About() {
             consistently delivering high customer satisfaction and fostering
             long-lasting relationships.
           </div>
-        </div>
-        <div className="flex mt-5 justify-around text-white">
+        </div> */}
+        <div className="flex mt-5 justify-around text-black">
           <div>
             <img className="mobile-image" alt="happy" src="./clcikfin-app/happ.png"></img>
           </div>
@@ -264,19 +339,19 @@ export default function About() {
         <div>100% Confidential</div>
         <div>Flexible Repayment Plans</div>
       </div>
-      <div className="flex justify-around p-5 gap-5">
-        <div className="text-center p-5 bg-black rounded-xl text-white">
+      <div className="flex justify-around  gap-5">
+        <div className="text-center p-2  rounded-xl text-black">
           Your privacy and security are our utmost priorities. Our loan
           procedure is designed to be easy and straightforward, and once your
           submitted documents are approved, we ensure instant processing to get
           you the funds you need.
         </div>
-        <div className="text-center p-5 bg-black rounded-xl text-white">
+        <div className="text-center p-2  rounded-xl text-black">
           We value the privacy of your personal data and adhere to a strict
           private data policy. Rest assured that your information is handled
           with the utmost confidentiality and care.
         </div>
-        <div className="text-center p-5 bg-black rounded-xl text-white">
+        <div className="text-center p-2  rounded-xl text-black">
           We understand that every individual’s financial situation is unique.
           Hence, when we approve loans, we offer flexible repayment plans
           tailored to suit your financial capacity and preferences.

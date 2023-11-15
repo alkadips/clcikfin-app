@@ -90,7 +90,7 @@ export default class InputForm extends React.Component {
         <div
         
          
-          className="full-width get-loan-now p-3 mt-5 font-bold"
+          className=" get-loan-now p-2 mt-5 font-bold rounded-full ..."
           onClick={this.submitForm}
           style={{margin:'0 auto',cursor:'pointer'}} 
         >

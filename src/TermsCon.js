@@ -4,15 +4,18 @@ import { Link } from "react-router-dom";
 export default function TermsCon() {
 
   return (
-    <div style={{ marginTop: "100px" }}>
-      <div className="p-5 bg-black  rounded-xl" >
-      <div className="font-bold text-4xl mt-5 text-center text-white">
+    <div style={{ marginTop: "20px" }}>
+      {/* <div>
+        <img src="./clcikfin-app/terms.jpg"/>
+      </div> */}
+      <div className="p-5  rounded-xl" >
+      <div className="font-bold text-4xl mt-5 text-center text-black">
         Terms & Condition
       </div>
      
-      <div className="text-white p-5 text-center">
+      <div className="text-black p-5 text-center">
         <div style={{width:'50%',margin:'0 auto'}}>
-        <div className="mt-5">
+        <div>
           <p>
             Welcome to ClikFin! These Terms and Conditions (“Terms”) outline the
             rules and regulations for using our website, accessible at

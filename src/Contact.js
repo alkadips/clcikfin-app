@@ -10,16 +10,17 @@ export default function Contact() {
   
   return (
     <div style={{ marginTop: "100px" }}>
+    
       <div className="font-bold text-4xl mt-5 text-center text-black">Get In Touch</div>
       <div className="font-bold text-center mt-5 text-black">
         Reach Out To Us & We Will Respond As Soon As We Can.
       </div>
      
       <div >
-        <div className="flex p-5 gap-5 justify-around mt-5">
-          <div style={{ width: "50%" }}>
+        <div className="flex  gap-5 p-5">
+          <div style={{width:'50%'}}>
             <div className="font-bold mt-5 text-black">About </div>
-            <div className="mt-5 p-5 bg-black rounded-xl text-white">
+            <div className="mt-3  rounded-xl text-black">
               <p>
                 Clikfin brand is 100% owned by CygniSys Service’s Pvt Ltd
                 formerly known as ( CygniSys OPC Pvt Ltd ) incorporated in 2021,
@@ -33,53 +34,27 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          <div>
-            <div className="font-bold">Follow Us</div>
-            <div className="flex justify-center mt-5 gap-5">
-              <div>
-                <Link to="https://www.facebook.com/ClikFin/">
-                  <IoLogoFacebook />
-                </Link>
-              </div>
-              <div>
-                <Link to="https://twitter.com/clikfin?lang=en">
-                  <IoLogoTwitter />
-                </Link>
-              </div>
-              <div>
-                <Link to="https://www.instagram.com/clikfin/?hl=en">
-                  <IoLogoInstagram />
-                </Link>
-              </div>
-              <div>
-                <Link to="https://www.linkedin.com/company/clikfin/">
-                  <IoLogoLinkedin />
-                </Link>
-              </div>
-              <div>
-                <Link to="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=support@clikfin.com">
-                  <IoIosMail />
-                </Link>
-              </div>
+          <div style={{width:'50%'}}>
+              <img style={{marginTop:'-145px'}} src="./clcikfin-app/mobile2.png"></img>
             </div>
+          <div>
+        
           </div>
         </div>
-        <div className="font-bold text-4xl mt-5 text-center">
-          We Are Here To Help You
-        </div>
+       
         <div className="font-bold mt-5 text-center">
           We Would Love To Hear Your Suggestions Or Complaints. Please Let Us
           Try To Help You.
         </div>
         <div className="flex justify-around mt-5">
           <div>
-            <img alt="branch" style={{ height: "100px" }} src="./clcikfin-app/branch.png"></img>
+            <img className="h-24" alt="branch"  src="./clcikfin-app/branch.png"></img>
           </div>
           <div>
-            <img alt="call" style={{ height: "100px" }} src="./clcikfin-app/call.png"></img>
+            <img  className="h-24" alt="call" src="./clcikfin-app/call.png"></img>
           </div>
           <div>
-            <img alt="email" style={{ height: "100px" }} src="./clcikfin-app/email.png"></img>
+            <img className="h-24" alt="email" src="./clcikfin-app/email.png"></img>
           </div>
         </div>
         <div className="flex justify-around mt-3 font-bold">
@@ -88,7 +63,7 @@ export default function Contact() {
           <div>EMAIL ADDRESS</div>
         </div>
         <div className="flex justify-around mt-3 gap-5 p-5">
-          <div style={{ width: "20%", textAlign: "center" }}>
+          <div className="text-center" style={{ width: "20%", textAlign: "center" }}>
             47, 7th sector 5th Main, HSR layout Bangalore – 560102 Karnataka,
             India
           </div>

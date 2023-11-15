@@ -57,20 +57,24 @@ export default function Faqs() {
  
 
   return (
-    <div style={{ marginTop: "100px" }}>
-      <div className="text-center">
-        <div className="font-bold text-4xl mt-5 text-black">
-        Frequently Asked Questions
-        </div>
+    <div className="faq-section flex" 
+    style={{marginTop:'100px'}}
+    >
+      <div>
+      <div>
+        <img src='./clcikfin-app/faq2.avif'></img>
+      </div>
+      </div>
+    
+      <div>
        
-        <div className="font-bold text-3xl mt-5 text-black" style={{color: '#f9bd08'}}>
-          How To Apply For A Loan With ClikFin?
-        </div>
-        <div className="font-bold text-2xl mt-5 text-black">
+       
+       
+        <div className="font-bold text-2xl text-black">
           To Apply For A Loan With ClikFin, Follow These Simple Steps:
         </div>
-        <div className="text-white p-5 bg-black rounded-xl mt-5">
-          <div className="mt-5 ">
+        <div className="text-black  rounded-xl mt-3">
+          <div className="mt-3 ">
             <p>
               1. Install the ClikFin App from Google Play Store and register an
               account with basic KYC details.
