@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/clcikfin-app/static/css/main.253f9863.css",
-    "main.js": "/clcikfin-app/static/js/main.85af4776.js",
+    "main.css": "/clcikfin-app/static/css/main.601733a9.css",
+    "main.js": "/clcikfin-app/static/js/main.95b2acdf.js",
     "static/js/787.efcd5bf8.chunk.js": "/clcikfin-app/static/js/787.efcd5bf8.chunk.js",
     "index.html": "/clcikfin-app/index.html",
-    "static/media/index.js": "/clcikfin-app/static/media/index.f73b7bfc1d0563ce93ba.js",
-    "main.253f9863.css.map": "/clcikfin-app/static/css/main.253f9863.css.map",
-    "main.85af4776.js.map": "/clcikfin-app/static/js/main.85af4776.js.map",
+    "main.601733a9.css.map": "/clcikfin-app/static/css/main.601733a9.css.map",
+    "main.95b2acdf.js.map": "/clcikfin-app/static/js/main.95b2acdf.js.map",
     "787.efcd5bf8.chunk.js.map": "/clcikfin-app/static/js/787.efcd5bf8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.253f9863.css",
-    "static/js/main.85af4776.js"
+    "static/css/main.601733a9.css",
+    "static/js/main.95b2acdf.js"
   ]
 }
