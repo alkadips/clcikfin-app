@@ -83,12 +83,12 @@ export default function Personel() {
   };
     return (
         <div
-          className="text-black"
+          className="text-black per-loan-back mt-24"
          
         >
-         <div>
-          <img  src="./clcikfin-app/pers.jpg"></img>
-         </div>
+         {/* <div>
+          <img  src="./clcikfin-app/1.jpg"></img>
+         </div> */}
           <div>
             <div className="font-bold text-4xl mt-5 text-center">
               Benefits And Features Of Unsecured Personal Loans

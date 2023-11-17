@@ -11,6 +11,7 @@ import Privacy from "./Privacy";
 import Contact from "./Contact";
 import Personel from "./Personel";
 import Blog from "./Blog";
+import DuplicateCusLead from "./DuplicateCusLead";
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +27,8 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/duplicate" element={<DuplicateCusLead />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>

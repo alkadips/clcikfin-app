@@ -132,6 +132,13 @@ export default function Header() {
           >
             <div className="home">Blog</div>
           </Link>
+          {/* <Link
+            className="no-underline"
+            style={{ color: "#2B4A84" }}
+            to="/duplicate"
+          >
+            <div className="home">Duplicate</div>
+          </Link> */}
           <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}

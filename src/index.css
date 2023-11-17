@@ -14,7 +14,9 @@ html {
   width: 190px;
   color: white;
 }
-
+/* .per-loan-back{
+  background-image: url('./assets/8.jpg');
+} */
 .get-cash-now:hover {
   background-color: #426097;
 }

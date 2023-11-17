@@ -103,6 +103,8 @@ export default function Footer() {
           </Link>
         </div>
         <div>
+        <div className="font-bold">CONTACT US</div>
+
           <div className="flex   mt-5 gap-5 justify-center">
             <div>
               <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
