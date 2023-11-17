@@ -13,10 +13,10 @@ import Personel from "./Personel";
 import Blog from "./Blog";
 function App() {
   return (
-    <BrowserRouter >
+    <BrowserRouter>
       <Header />
 
-      <Routes >
+      <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route path="/personelloan" element={<Personel />} />
         <Route path="/emicalculator" element={<EmiCalc />} />
@@ -26,9 +26,6 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
-
-
-
       </Routes>
       <Footer />
     </BrowserRouter>

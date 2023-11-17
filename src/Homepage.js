@@ -5,7 +5,7 @@ export default function Homepage() {
   const [value, setValue] = useState(0);
   const [upwords, setupwords] = useState(false);
   const [laontap, setLoanTap] = useState(false);
- 
+
   const toggleupword = () => {
     setupwords(!upwords);
   };
@@ -15,69 +15,35 @@ export default function Homepage() {
   };
 
   return (
-    <div >
-      <div >
-      {/* <Carousel >
-        <Carousel.Item>
-        
-           <img
-            alt=""
-            style={{width:'100%'}}
-            src="./clcikfin-app/sli22.jpg"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            alt=""
-            style={{width:'100%'}}
-            src="./clcikfin-app/loa.webp"
-          />
-        </Carousel.Item>
-       
-        <Carousel.Item>
-        <img
-            style={{width:'100%'}}
-            src="./clcikfin-app/sli11.jpg"
-          />
-        </Carousel.Item>
-      </Carousel> */}
-      </div>
-    
-     
+    <div>
       <div className="p-5 flex  mt-2 gap-5  justify-between">
         <div>
-          <div >
-           
-           
-           
-          </div>
           <div>
-              <img src="./clcikfin-app/8.jpg"></img>
-            </div>
+            <img src="./clcikfin-app/8.jpg"></img>
+          </div>
         </div>
-        <div style={{ width: "50%" }}>
-        <div className="flex   mt-5 gap-5 justify-center">
-              <div>
-                <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
-                  <img
-                    className="mobile-image"
-                    alt="google"
-                    src="./clcikfin-app/andr.png"
-                  ></img>
-                </Link>
-              </div>
-              <div>
-                <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
-                  <img
-                    className="mobile-image"
-                    alt="apple"
-                    src="./clcikfin-app/app.png"
-                  ></img>
-                </Link>
-              </div>
-            
+        <div className="w-2/4">
+          <div className="flex   mt-5 gap-5 justify-center">
+            <div>
+              <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+                <img
+                  className="mobile-image"
+                  alt="google"
+                  src="./clcikfin-app/andr.png"
+                ></img>
+              </Link>
             </div>
-          
+            <div>
+              <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
+                <img
+                  className="mobile-image"
+                  alt="apple"
+                  src="./clcikfin-app/app.png"
+                ></img>
+              </Link>
+            </div>
+          </div>
+
           <div className="font-bold text-3xl ml-3 mt-5 text-black">
             Welcome To ClikFin – Your Instant Life Upgrade
           </div>
@@ -87,7 +53,7 @@ export default function Homepage() {
               <li>Instant Transfer to Bank</li>
             </ul>
           </div>
-          <div style={{border:'1px solid'}} className="clickfin-para-home p-5  rounded text-black">
+          <div className="clickfin-para-home p-5  rounded text-black border-2 border-solid ">
             <p>
               At ClikFin, we understand that life can present unexpected
               challenges and opportunities, and that’s why we’re here to offer
@@ -97,18 +63,13 @@ export default function Homepage() {
             </p>
           </div>
           <NavLink
-            style={{ textDecoration: "none" }}
+            className="no-underline"
             to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication"
-          >
-         
-          </NavLink>
+          ></NavLink>
         </div>
       </div>
 
-      <div
-        className=" text-center text-4xl text-black"
-       
-      >
+      <div className=" text-center text-4xl text-black">
         Why Choose Instant Loan?
       </div>
       <div className="text-center mt-3 text-black">
@@ -122,10 +83,7 @@ export default function Homepage() {
         </p>
       </div>
 
-      <div
-        className=" text-center text-4xl text-black"
-        style={{ marginTop: "100px" }}
-      >
+      <div className=" text-center text-4xl text-black mt-24">
         Our Awesome Testimonials
       </div>
       <div className="text-center mt-3 text-black">
@@ -138,7 +96,7 @@ export default function Homepage() {
         <Carousel>
           <Carousel.Item>
             <div className="flex gap-5 mt-3 justify-center text-black p-5">
-              <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -149,43 +107,36 @@ export default function Homepage() {
                 <div className="flex justify-center">
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                 </div>
                 <div className="flex gap-5 mt-5">
-                  {/* <div>
-                    <img
-                      alt="test1"
-                      style={{ height: "50px" }}
-                      src="./clcikfin-app/testm.png"
-                    ></img>
-                  </div> */}
                   <div>
                     <div className="text-yellow-600 font-bold text-xl">
                       Swati Joshi
@@ -194,7 +145,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -205,43 +156,36 @@ export default function Homepage() {
                 <div className="flex justify-center">
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                 </div>
                 <div className="flex gap-5 mt-5">
-                  {/* <div>
-                    <img
-                      alt="test2"
-                      style={{ height: "50px" }}
-                      src="./clcikfin-app/testm.png"
-                    ></img>
-                  </div> */}
                   <div>
                     <div className="text-yellow-600 font-bold text-xl font-bold">
                       Purnima Rawat
@@ -250,7 +194,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -261,43 +205,36 @@ export default function Homepage() {
                 <div className="flex justify-center">
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                 </div>
                 <div className="flex gap-5 mt-5">
-                  {/* <div>
-                    <img
-                      alt="test3"
-                      style={{ height: "50px" }}
-                      src="./clcikfin-app/testm.png"
-                    ></img>
-                  </div> */}
                   <div>
                     <div className="text-yellow-600 font-bold text-xl font-bold">
                       Kartik Patel
@@ -310,7 +247,7 @@ export default function Homepage() {
           </Carousel.Item>
           <Carousel.Item>
             <div className="flex gap-5 mt-3 justify-center text-black p-5">
-              <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -321,43 +258,36 @@ export default function Homepage() {
                 <div className="flex justify-center">
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                 </div>
                 <div className="flex gap-5 mt-5">
-                  {/* <div>
-                    <img
-                      alt="test1"
-                      style={{ height: "50px" }}
-                      src="./clcikfin-app/testm.png"
-                    ></img>
-                  </div> */}
                   <div>
                     <div className="text-yellow-600 font-bold text-xl font-bold">
                       Swati Joshi
@@ -366,7 +296,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -377,43 +307,36 @@ export default function Homepage() {
                 <div className="flex justify-center">
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                 </div>
                 <div className="flex gap-5 mt-5">
-                  {/* <div>
-                    <img
-                      alt="test2"
-                      style={{ height: "50px" }}
-                      src="./clcikfin-app/testm.png"
-                    ></img>
-                  </div> */}
                   <div>
                     <div className="text-yellow-600 font-bold text-xl font-bold">
                       Purnima Rawat
@@ -422,7 +345,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -433,43 +356,36 @@ export default function Homepage() {
                 <div className="flex justify-center">
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                 </div>
                 <div className="flex gap-5 mt-5">
-                  {/* <div>
-                    <img
-                      alt="test3"
-                      style={{ height: "50px" }}
-                      src="./clcikfin-app/testm.png"
-                    ></img>
-                  </div> */}
                   <div>
                     <div className="text-yellow-600 font-bold text-xl font-bold">
                       Kartik Patel
@@ -482,7 +398,7 @@ export default function Homepage() {
           </Carousel.Item>
           <Carousel.Item>
             <div className="flex gap-5 mt-3 justify-center text-black p-5">
-              <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -493,43 +409,36 @@ export default function Homepage() {
                 <div className="flex justify-center">
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                 </div>
                 <div className="flex gap-5 mt-5">
-                  {/* <div>
-                    <img
-                      alt="test1"
-                      style={{ height: "50px" }}
-                      src="./clcikfin-app/testm.png"
-                    ></img>
-                  </div> */}
                   <div>
                     <div className="text-yellow-600 font-bold text-xl font-bold">
                       Swati Joshi
@@ -538,7 +447,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -549,43 +458,36 @@ export default function Homepage() {
                 <div className="flex justify-center">
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                 </div>
                 <div className="flex gap-5 mt-5">
-                  {/* <div>
-                    <img
-                      alt="test2"
-                      style={{ height: "50px" }}
-                      src="./clcikfin-app/testm.png"
-                    ></img>
-                  </div> */}
                   <div>
                     <div className="text-yellow-600 font-bold text-xl font-bold">
                       Purnima Rawat
@@ -594,7 +496,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div style={{border:'1px solid black'}} className=" p-5 rounded-lg ... clickfin-para-home text-black">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -605,43 +507,36 @@ export default function Homepage() {
                 <div className="flex justify-center">
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                   <div>
                     <img
-                      style={{ width: "20px", height: "20px" }}
+                      className="w-5 h-5"
                       src="./clcikfin-app/star1.png"
                     ></img>
                   </div>
                 </div>
                 <div className="flex gap-5 mt-5">
-                  {/* <div>
-                    <img
-                      alt="test3"
-                      style={{ height: "50px" }}
-                      src="./clcikfin-app/profile.png"
-                    ></img>
-                  </div> */}
                   <div>
                     <div className="text-yellow-600 font-bold text-xl font-bold">
                       Kartik Patel
@@ -654,10 +549,7 @@ export default function Homepage() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div
-        className="font-bold text-center text-4xl text-black"
-        style={{ marginTop: "50px" }}
-      >
+      <div className="font-bold text-center text-4xl text-black mt-12">
         Our Partners
       </div>
 
@@ -665,24 +557,21 @@ export default function Homepage() {
         <div>
           <img
             onClick={toggleupword}
-            style={{ width: "150px", cursor: "pointer" }}
-            className="mobile-image"
+            className="mobile-image cursor-pointer w-36"
             src="./clcikfin-app/part1.png"
           ></img>
         </div>
         <div>
           <img
             onClick={toggleloantap}
-            style={{ width: "150px", cursor: "pointer" }}
-            className="mobile-image"
+            className="mobile-image cursor-pointer w-36"
             src="./clcikfin-app/par3.jpg"
           ></img>
         </div>
 
         <div>
           <img
-            style={{ width: "60px", cursor: "pointer" }}
-            className="mobile-image"
+            className="mobile-image w-16 cursor-pointer"
             src="./clcikfin-app/par2.jpeg"
           ></img>
         </div>
@@ -690,7 +579,7 @@ export default function Homepage() {
 
       {upwords && (
         <div className="mt-5">
-          <table style={{ margin: "0 auto", width: "90%" }}>
+          <table className="m-auto w-11/12">
             <tr>
               <th>BANK/NBFC</th>
               <th>Interest Rate(pa)</th>
@@ -716,7 +605,7 @@ export default function Homepage() {
       )}
       {laontap && (
         <div className="mt-5">
-          <table style={{ width: "90%", margin: "0 auto" }}>
+          <table className="m-auto w-11/12">
             <tr>
               <th>BANK/NBFC</th>
               <th>Interest Rate(pa)</th>
@@ -746,21 +635,15 @@ export default function Homepage() {
           </table>
         </div>
       )}
-      <div
-        className="font-bold text-center text-4xl text-black"
-        style={{ marginTop: "50px" }}
-      >
+      <div className="font-bold text-center text-4xl text-black mt-12">
         Introducing ClikFin - Your Gateway To Financial Solutions
       </div>
-      <div
-        className="flex font-bold justify-around text-black"
-        style={{ marginTop: "50px" }}
-      >
+      <div className="flex font-bold justify-around text-black mt-12">
         <div>About</div>
         <div>What Makes Us Unique?</div>
       </div>
-      <div className="flex gap-5 justify-around mt-3 text-black">
-        <div className="  rounded" style={{ width: "40%" }}>
+      <div className="flex gap-5 justify-around mt-3 text-black ">
+        <div className="  rounded w-2/5">
           <div>
             <p>
               ClikFin, a proud venture wholly owned by CygniSys Services Pvt.
@@ -791,38 +674,51 @@ export default function Homepage() {
             </p>
           </div>
         </div>
-        <div className="rounded" style={{ width: "40%" }}>
+        <div className="rounded w-2/5">
           <div className="text-black">
             <p>
-              <span className="font-bold "> 1. Transparency: </span> Clear and open communication throughout the loan process, ensuring you understand every step .
+              <span className="font-bold "> 1. Transparency: </span> Clear and
+              open communication throughout the loan process, ensuring you
+              understand every step .
             </p>
           </div>
           <div className="mt-3 text-black">
             <p>
-              <span className="font-bold "> 2. Super-Fast Loan Disbursement:  : </span> :
-              We understand your requirement, We ensure that your application is fast-tracked and the funds reaches your account within promised timeline
+              <span className="font-bold ">
+                {" "}
+                2. Super-Fast Loan Disbursement: :{" "}
+              </span>{" "}
+              : We understand your requirement, We ensure that your application
+              is fast-tracked and the funds reaches your account within promised
+              timeline
             </p>
           </div>
           <div className="mt-3 text-black">
             <p>
               <span className="font-bold "> 3. Great Customer Success: </span>{" "}
-              Customer Obsession is the back bone of our organization, We always listen to the customer and provide swift response for a hassle-free loan 
+              Customer Obsession is the back bone of our organization, We always
+              listen to the customer and provide swift response for a
+              hassle-free loan
             </p>
           </div>
           <div className="mt-3 text-black">
             <p>
-              <span className="font-bold "> 4. We Do What We Promise: </span>A commitment to delivering on our promises, providing reliability and trustworthiness in our services.
+              <span className="font-bold "> 4. We Do What We Promise: </span>A
+              commitment to delivering on our promises, providing reliability
+              and trustworthiness in our services.
             </p>
           </div>
           <div className="mt-3 text-black">
             <p>
-              <span className="font-bold "> 5. Not an NBFC: </span>It is essential to understand that ClikFin is not an NBFC itself. We do not engage in co-lending or FLDG based lending. Our expertise lies in connecting you with reputable lenders to meet your borrowing requirements.
+              <span className="font-bold "> 5. Not an NBFC: </span>It is
+              essential to understand that ClikFin is not an NBFC itself. We do
+              not engage in co-lending or FLDG based lending. Our expertise lies
+              in connecting you with reputable lenders to meet your borrowing
+              requirements.
             </p>
           </div>
         </div>
       </div>
-
-     
     </div>
   );
 }

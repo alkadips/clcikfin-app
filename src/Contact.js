@@ -7,20 +7,20 @@ import { IoIosMail } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 export default function Contact() {
-  
   return (
-    <div style={{ marginTop: "100px" }}>
-    
-      <div className="font-bold text-4xl mt-5 text-center text-black">Get In Touch</div>
+    <div className="mt-24">
+      <div className="font-bold text-4xl mt-5 text-center text-black">
+        Get In Touch
+      </div>
       <div className="font-bold text-center mt-5 text-black">
         Reach Out To Us & We Will Respond As Soon As We Can.
       </div>
-     
-      <div >
+
+      <div>
         <div className="flex  gap-5 p-5">
-          <div style={{width:'50%'}}>
-            <div className="font-bold mt-5 text-black">About </div>
-            <div className="mt-3  rounded-xl text-black">
+          <div className="w-2/4">
+            <div className="font-bold text-black">About </div>
+            <div className=" rounded-xl text-black">
               <p>
                 Clikfin brand is 100% owned by CygniSys Service’s Pvt Ltd
                 formerly known as ( CygniSys OPC Pvt Ltd ) incorporated in 2021,
@@ -34,27 +34,36 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          <div style={{width:'50%'}}>
-              <img style={{marginTop:'-145px'}} src="./clcikfin-app/mobile2.png"></img>
-            </div>
-          <div>
-        
+          <div className="w-2/4">
+            <img src="./clcikfin-app/mobile2.png"></img>
           </div>
         </div>
-       
+
         <div className="font-bold mt-5 text-center">
           We Would Love To Hear Your Suggestions Or Complaints. Please Let Us
           Try To Help You.
         </div>
         <div className="flex justify-around mt-5">
           <div>
-            <img className="h-24" alt="branch"  src="./clcikfin-app/branch.png"></img>
+            <img
+              className="h-24"
+              alt="branch"
+              src="./clcikfin-app/branch.png"
+            ></img>
           </div>
           <div>
-            <img  className="h-24" alt="call" src="./clcikfin-app/call.png"></img>
+            <img
+              className="h-24"
+              alt="call"
+              src="./clcikfin-app/call.png"
+            ></img>
           </div>
           <div>
-            <img className="h-24" alt="email" src="./clcikfin-app/email.png"></img>
+            <img
+              className="h-24"
+              alt="email"
+              src="./clcikfin-app/email.png"
+            ></img>
           </div>
         </div>
         <div className="flex justify-around mt-3 font-bold">
@@ -63,17 +72,12 @@ export default function Contact() {
           <div>EMAIL ADDRESS</div>
         </div>
         <div className="flex justify-around mt-3 gap-5 p-5">
-          <div className="text-center" style={{ width: "20%", textAlign: "center" }}>
+          <div className="text-center w-1/4">
             47, 7th sector 5th Main, HSR layout Bangalore – 560102 Karnataka,
             India
           </div>
-          <div style={{ width: "20%", textAlign: "center" }}>
-            {" "}
-            Available Soon
-          </div>
-          <div style={{ width: "20%", textAlign: "center" }}>
-            support@clikfin.com
-          </div>
+          <div className="text-center w-1/4"> Available Soon</div>
+          <div className="text-center w-1/4">support@clikfin.com</div>
         </div>
       </div>
       <div>

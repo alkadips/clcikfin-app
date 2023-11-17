@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import FAQ from "./FAq";
 export default function Faqs() {
   const [faqs1, setFaqs1] = useState([
@@ -28,8 +28,7 @@ export default function Faqs() {
     },
     {
       question: " How to track your loan application?",
-      answer:
-        "you can track on our app 'clikfin'",
+      answer: "you can track on our app 'clikfin'",
       open: false,
     },
     {
@@ -39,7 +38,7 @@ export default function Faqs() {
       open: false,
     },
   ]);
- 
+
   const toggleFAQ = (index) => {
     setFaqs1(
       faqs1.map((faq, i) => {
@@ -53,23 +52,15 @@ export default function Faqs() {
     );
   };
 
- 
- 
-
   return (
-    <div className="faq-section flex" 
-    style={{marginTop:'100px'}}
-    >
+    <div className="faq-section flex mt-24">
       <div>
-      <div>
-        <img src='./clcikfin-app/faq2.avif'></img>
+        <div>
+          <img src="./clcikfin-app/faq2.avif"></img>
+        </div>
       </div>
-      </div>
-    
+
       <div>
-       
-       
-       
         <div className="font-bold text-2xl text-black">
           To Apply For A Loan With ClikFin, Follow These Simple Steps:
         </div>
@@ -106,8 +97,6 @@ export default function Faqs() {
           <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
         ))}
       </div>
-
-    
     </div>
   );
 }

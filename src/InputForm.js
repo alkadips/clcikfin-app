@@ -53,7 +53,7 @@ export default class InputForm extends React.Component {
           </Col>
         </Form.Group>
 
-        <Form.Group style={{marginTop:'20px'}}  as={Row} controlId="formAprPercentage">
+        <Form.Group className='mt-5'  as={Row} controlId="formAprPercentage">
           <Form.Label column sm="2">Interest Rate</Form.Label>
           <Col sm="10">
             <InputGroup>
@@ -70,7 +70,7 @@ export default class InputForm extends React.Component {
           </Col>
         </Form.Group>
 
-        <Form.Group style={{marginTop:'20px'}}  as={Row} controlId="formTermYear">
+        <Form.Group  className='mt-5'  as={Row} controlId="formTermYear">
           <Form.Label column sm="2">Term</Form.Label>
           <Col sm="10">
             <InputGroup>
@@ -90,9 +90,8 @@ export default class InputForm extends React.Component {
         <div
         
          
-          className=" get-loan-now p-2 mt-5 font-bold rounded-full ..."
+          className=" get-loan-now p-2 mt-5 font-bold rounded-full ... m-auto cursor-pointer"
           onClick={this.submitForm}
-          style={{margin:'0 auto',cursor:'pointer'}} 
         >
           Calculate
         </div>

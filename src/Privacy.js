@@ -3,7 +3,7 @@ export default function Privacy() {
    
   return (
     
-    <div className=' p-5' style={{marginTop:'100px'}}>
+    <div className=' p-5 m-24'>
         <div className='font-bold text-4xl mt-5 text-center text-black'>Privacy Policy</div>
         <div className='text-black'>
         <div className='mt-5 font-bold'>Effective Date: March 15, 2021</div>

@@ -94,7 +94,7 @@ export default function Personel() {
               Benefits And Features Of Unsecured Personal Loans
             </div >
             <div className=' text-black rounded-xl mt-5 '>
-              <div style={{width:'50%',margin:'0 auto'}}>
+              <div className='m-auto w-2/4'>
             <div className="text-black mt-5">
               <div className='font-bold'>1.  No Collateral:</div>
               <p>
@@ -143,8 +143,8 @@ financial requirements.</div>
             </div>
           </div>
           <div className="font-bold text-4xl mt-2 text-center">Personal Loan Eligibility</div>
-          <div className="mt-3   rounded-xl text-black">
-            <p style={{width:'50%',margin:'0 auto'}}>
+          <div className="mt-3   rounded-xl text-black m-auto w-2/4">
+            <p >
               Personal loans are offered by most banks and NBFCs, each with their
               own specific eligibility criteria. Nonetheless, there exist certain
               common requirements across all financial institutions. The eligibility
@@ -153,7 +153,7 @@ financial requirements.</div>
             </p>
           </div>
           <div className="mt-5 p-5  rounded-xl text-black">
-            <table style={{width:'90%',margin:'0 auto'}} >
+            <table className='m-auto w-11/12'  >
               <tr>
                 <th>Age</th>
                 <td>21 years – 60 years</td>
@@ -210,50 +210,9 @@ financial requirements.</div>
         
          
           </div>
-         {/* <div className="font-bold text-3xl mt-5 text-center text-black">Personal Loan Details</div>
-          <div className="mt-5 p-5  rounded-xl text-black"> */}
-
-            
-            {/* <table style={{width:'90%',margin:'0 auto'}}>
-              <tr>
-                <th>BANK/NBFC</th>
-                <th>Interest Rate(pa)</th>
-                <th>Loan Amount </th>
-                <th>Processing Fees </th>
-                <th>Part Payment</th>
-                <th>Pre-closure Charges</th>
-                <th>Locking Period</th>
-                <th>Tenure</th>
-              </tr>
-              <tr>
-                <td>Upwards</td>
-                <td>16.00 % to 32%</td>
-                <td>20,000 Thousand to 5 Lakhs</td>
-                <td>Up to 2 % to 4 % of the loan amount</td>
-                <td>Up to 40% of loan amount every year</td>
-                <td>Upto 5% on your principal outstanding + GST</td>
-                <td>3 Month</td>
-                <td>12 to 48 months</td>
-              </tr>
-              <tr>
-                <td>Loan Tap</td>
-                <td>16.00 % to 24%</td>
-                <td>50 Thousand to 10 Lakhs</td>
-                <td>2 % of the loan amount</td>
-                <td>Up to 40% of loan amount every year</td>
-                <td>
-                  <ul>
-                    <li>0-6 Months – 5% of Principal Outstanding</li>
-                    <li>6 months – 0%</li>
-                  </ul>
-                </td>
-                <td>6 Month</td>
-                <td>12 to 60 months</td>
-              </tr>
-            </table> */}
-          {/* </div>  */}
+       
           <div className="text-3xl font-bold mt-5 text-center">Representative Example:</div>
-          <div className=' rounded-xl mt-5 text-black' style={{width:'33%',margin:'0 auto'}}>
+          <div className=' rounded-xl mt-5 text-black m-auto w-1/3' >
           <div className="mt-5 ">Loan Amount: ₹1,00,000</div>
           <div>Tenure: 36 months</div>
           <div>Interest Rate: @18%* (reducing basis)</div>
@@ -286,7 +245,7 @@ financial requirements.</div>
           
          
           
-          <div className="mt-5 ml-5 text-center" style={{width:'90%',margin:'0 auto'}}>
+          <div className="mt-5 ml-5 text-center m-auto w-11/12">
             Explore the world of personal loans with confidence, knowing the answers
             to these frequently asked questions. ClikFin offers a seamless loan
             application process, ensuring you get the financial support you need for

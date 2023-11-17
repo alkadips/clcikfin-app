@@ -3,10 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-
-
-
-  
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -89,45 +85,74 @@ export default function Header() {
           </ul>
         </nav> */}
         <div className="ml-5">
-          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/" >
-            <img style={{width:'150px',height:'40px'}}  alt="logo" src="/clcikfin-app/logo3.png"></img>
+          <Link className="no-underline" style={{ color: "#2B4A84" }} to="/">
+            <img
+              className="w-36 h-10"
+              alt="logo"
+              src="/clcikfin-app/logo3.png"
+            ></img>
           </Link>{" "}
         </div>
-        <div className="flex font-bold wrapper-gap" style={{gap:'20px'}}>
-          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/" >
+        <div className="flex font-bold wrapper-gap" style={{ gap: "20px" }}>
+          <Link className="no-underline" style={{ color: "#2B4A84" }} to="/">
             <div className="home">Home</div>
           </Link>
-          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/about" >
+          <Link
+            className="no-underline"
+            style={{ color: "#2B4A84" }}
+            to="/about"
+          >
             <div className="home">About</div>
           </Link>
-          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/personelloan">
+          <Link
+            className="no-underline"
+            style={{ color: "#2B4A84" }}
+            to="/personelloan"
+          >
             <div className="home">Personal Loan</div>
           </Link>
-          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/emicalculator">
+          <Link
+            className="no-underline"
+            style={{ color: "#2B4A84" }}
+            to="/emicalculator"
+          >
             <div className="home">EMI Calculator</div>
           </Link>
-          {/* <Link to="/terms">
-            <div className="home">Terms & condition</div>
-          </Link>
-          <Link to="/privacy">
-            <div className="home">Privacy Policy</div>
-          </Link> */}
-          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/faqs">
+          <Link
+            className="no-underline"
+            style={{ color: "#2B4A84" }}
+            to="/faqs"
+          >
             <div className="home">FAQs</div>
           </Link>
-          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/blog">
+          <Link
+            className="no-underline"
+            style={{ color: "#2B4A84" }}
+            to="/blog"
+          >
             <div className="home">Blog</div>
           </Link>
-          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/contact">
+          <Link
+            className="no-underline"
+            style={{ color: "#2B4A84" }}
+            to="/contact"
+          >
             <div className="home">Contact</div>
           </Link>
-        
-          <Link style={{textDecoration:'none',color:'#2B4A84'}} to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+
+          <Link
+            className="no-underline"
+            style={{ color: "#2B4A84" }}
+            to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication"
+          >
             <div className="get-cash-now rounded-full ... p-2">
               Get Cash Now
             </div>
           </Link>
-          <Link  style={{ cursor: "pointer",textDecoration:'none',color:'#2B4A84' }}>
+          <Link
+            className="cursor-pointer no-underline"
+            style={{ color: "#2B4A84" }}
+          >
             <div
               onClick={handleOpen}
               className="get-cash-now rounded-full ... p-2"
@@ -135,7 +160,7 @@ export default function Header() {
               Log In
             </div>
           </Link>
-             {/* <div className="flex   gap-5 justify-center">
+          {/* <div className="flex   gap-5 justify-center">
               <div>
                 <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
                   <img
@@ -156,7 +181,6 @@ export default function Header() {
               </div>
             
             </div> */}
-
         </div>
 
         <Modal
