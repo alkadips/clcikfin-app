@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/clcikfin-app/static/css/main.49ce3752.css",
-    "main.js": "/clcikfin-app/static/js/main.b0e6e0de.js",
-    "static/js/787.efcd5bf8.chunk.js": "/clcikfin-app/static/js/787.efcd5bf8.chunk.js",
-    "index.html": "/clcikfin-app/index.html",
-    "main.49ce3752.css.map": "/clcikfin-app/static/css/main.49ce3752.css.map",
-    "main.b0e6e0de.js.map": "/clcikfin-app/static/js/main.b0e6e0de.js.map",
-    "787.efcd5bf8.chunk.js.map": "/clcikfin-app/static/js/787.efcd5bf8.chunk.js.map"
+    "main.css": "./static/css/main.09dddf70.css",
+    "main.js": "./static/js/main.b931660f.js",
+    "static/js/787.efcd5bf8.chunk.js": "./static/js/787.efcd5bf8.chunk.js",
+    "index.html": "./index.html",
+    "main.09dddf70.css.map": "./static/css/main.09dddf70.css.map",
+    "main.b931660f.js.map": "./static/js/main.b931660f.js.map",
+    "787.efcd5bf8.chunk.js.map": "./static/js/787.efcd5bf8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49ce3752.css",
-    "static/js/main.b0e6e0de.js"
+    "static/css/main.09dddf70.css",
+    "static/js/main.b931660f.js"
   ]
 }
