@@ -233,12 +233,12 @@ export default function DuplicateCusLead() {
   };
   useEffect(() => {
     checkDuplicatelead();
-    preAprovalApi();
-    createCustomer();
-    addingMurchantIdDeactivate();
-    customerStatus();
-    customerBlukStatus();
-    documentUpload();
+    // preAprovalApi();
+    // createCustomer();
+    // addingMurchantIdDeactivate();
+    // customerStatus();
+    // customerBlukStatus();
+    // documentUpload();
   }, []);
   return <div>DuplicateCusLead</div>;
 }

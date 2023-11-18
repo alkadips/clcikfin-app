@@ -1,5 +1,5 @@
 import { Box, Modal } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -17,6 +17,9 @@ export default function Header() {
     boxShadow: 24,
     p: 4,
   };
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div>
       <div className="flex justify-around shadow-2xl ... header-wrapper ">
@@ -89,7 +92,8 @@ export default function Header() {
             <img
               className="w-36 h-10"
               alt="logo"
-              src="/clcikfin-app/logo3.png"
+              src={process.env.PUBLIC_URL + '/assets/images/logo3.png'}
+
             ></img>
           </Link>{" "}
         </div>
@@ -101,6 +105,9 @@ export default function Header() {
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="/about"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
           >
             <div className="home">About</div>
           </Link>
@@ -115,6 +122,9 @@ export default function Header() {
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="/emicalculator"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
           >
             <div className="home">EMI Calculator</div>
           </Link>
@@ -122,6 +132,9 @@ export default function Header() {
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="/faqs"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
           >
             <div className="home">FAQs</div>
           </Link>
@@ -129,20 +142,29 @@ export default function Header() {
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="/blog"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
           >
             <div className="home">Blog</div>
           </Link>
-          <Link
+          {/* <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="/duplicate"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
           >
             <div className="home">Duplicate</div>
-          </Link>
+          </Link> */}
           <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="/contact"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
           >
             <div className="home">Contact</div>
           </Link>
@@ -167,27 +189,9 @@ export default function Header() {
               Log In
             </div>
           </Link>
-          {/* <div className="flex   gap-5 justify-center">
-              <div>
-                <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
-                  <img
-                    className="mobile-image"
-                    alt="google"
-                    src="./clcikfin-app/andr.png"
-                  ></img>
-                </Link>
-              </div>
-              <div>
-                <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
-                  <img
-                    className="mobile-image"
-                    alt="apple"
-                    src="./clcikfin-app/app.png"
-                  ></img>
-                </Link>
-              </div>
+        
             
-            </div> */}
+           
         </div>
 
         <Modal

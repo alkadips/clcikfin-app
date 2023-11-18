@@ -88,7 +88,8 @@ export default function Personel() {
         >
           <div className='flex gap-5'>
           <div style={{width:'50%'}}>
-          <img  src="./clcikfin-app/bacr.png"></img>
+          <img             src={process.env.PUBLIC_URL + '/assets/images/bacr.png'}
+  ></img>
          </div>
          <div style={{width:'50%'}}>
          <div>

@@ -22,7 +22,10 @@ export default function Footer() {
               }}
               to="/"
             >
-              <img style={{width:"150px"}} alt="logo" src="/clcikfin-app/white.png"></img>
+              <img style={{width:"150px"}} alt="logo" 
+                           src={process.env.PUBLIC_URL + '/assets/images/white.png'}
+
+              ></img>
             </Link>
           </div>
         </div>
@@ -111,7 +114,8 @@ export default function Footer() {
                 <img
                   className="mobile-image"
                   alt="google"
-                  src="./clcikfin-app/andr.png"
+                  src={process.env.PUBLIC_URL + '/assets/images/andr.png'}
+
                 ></img>
               </Link>
             </div>
@@ -120,7 +124,8 @@ export default function Footer() {
                 <img
                   className="mobile-image"
                   alt="apple"
-                  src="./clcikfin-app/app.png"
+                  src={process.env.PUBLIC_URL + '/assets/images/app.png'}
+
                 ></img>
               </Link>
             </div>

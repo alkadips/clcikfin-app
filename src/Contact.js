@@ -28,7 +28,9 @@ export default function Contact() {
             </div>
           </div>
           <div className="w-2/4">
-            <img style={{width:'60%'}} src="./clcikfin-app/contact.png"></img>
+            <img style={{width:'60%'}} 
+            src={process.env.PUBLIC_URL + '/assets/images/contact.png'}
+            ></img>
           </div>
         </div>
 
@@ -36,29 +38,7 @@ export default function Contact() {
           We Would Love To Hear Your Suggestions Or Complaints. Please Let Us
           Try To Help You.
         </div>
-        {/* <div className="flex justify-around mt-5">
-          <div>
-            <img
-              className="h-24"
-              alt="branch"
-              src="./clcikfin-app/branch.png"
-            ></img>
-          </div>
-          <div>
-            <img
-              className="h-24"
-              alt="call"
-              src="./clcikfin-app/call.png"
-            ></img>
-          </div>
-          <div>
-            <img
-              className="h-24"
-              alt="email"
-              src="./clcikfin-app/email.png"
-            ></img>
-          </div>
-        </div> */}
+      
         <div className="flex justify-around mt-3 font-bold">
           <div>BRANCH OFFICE</div>
           <div>CALL US AT</div>

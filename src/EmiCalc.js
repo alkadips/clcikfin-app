@@ -113,7 +113,9 @@ class EmiCalc extends React.Component {
         <div></div>
         <div className="flex">
           <div>
-            <img src="./clcikfin-app/emi2.png"></img>
+            <img 
+             src={process.env.PUBLIC_URL + '/assets/images/emi2.png'}
+            ></img>
           </div>
           <div className="  text-white rounded-xl">
             <div>

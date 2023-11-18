@@ -24,7 +24,10 @@ export default function About() {
           </div>
           <div>
            
-              <img style={{width:'100%',height:'100%'}} src="./clcikfin-app/bg.png"></img>
+              <img style={{width:'100%',height:'100%'}} 
+                                src={process.env.PUBLIC_URL + '/assets/images/bg.png'}
+
+              ></img>
             
           </div>
         </div>
@@ -173,58 +176,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          {/* <div className="our-mission text-center font-bold text-4xl text-white">
-          Our Vision & Mission - Empowering Your Financial Well-Being
-        </div>
-        <div className="flex font-bold mt-5 justify-around text-white">
-          <div>Our Vision</div>
-          <div>Our Mission</div>
-        </div> */}
-          {/* <div className="flex  mt-5 justify-around p-5 gap-5 text-white">
-          <div className="text-center">
-            At Insight Loan Advisors, our vision is to provide individuals with
-            access to personal loans at minimal rates, ensuring we cater to
-            their diverse needs. We strive to be a trusted partner in your
-            financial journey, offering an instant loan service that brings you
-            one step closer to achieving your aspirations.
-          </div>
-          <div className="text-center">
-            Our mission is to create a positive impact on the lives of our
-            customers. Every day, we welcome new customers, and our goal is to
-            ensure their satisfaction through exceptional service and tailored
-            loan solutions. We aim to maintain a strong reputation by
-            consistently delivering high customer satisfaction and fostering
-            long-lasting relationships.
-          </div>
-        </div> */}
-          {/* <div className="flex mt-5 justify-around text-white">
-            <div>
-              <img
-                className="mobile-image"
-                alt="happy"
-                src="./clcikfin-app/happ.png"
-              ></img>
-            </div>
-            <div>
-              <img
-                className="mobile-image"
-                alt="cus"
-                src="./clcikfin-app/cus2.png"
-              ></img>
-            </div>
-            <div>
-              <img
-                className="mobile-image"
-                alt="cus2"
-                src="./clcikfin-app/cus.png"
-              ></img>
-            </div>
-          </div> */}
-          {/* <div className="flex justify-around  font-bold">
-            <div>Happy Customers</div>
-            <div>New Customers Everyday</div>
-            <div>Customer Ratings</div>
-          </div> */}
+          
         </div>
       </div>
       <div className="our-mission text-center font-bold text-4xl">

@@ -2,24 +2,23 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 export default function Homepage() {
-  const [value, setValue] = useState(0);
   const [upwords, setupwords] = useState(false);
   const [laontap, setLoanTap] = useState(false);
-
   const toggleupword = () => {
     setupwords(!upwords);
   };
-
+  
   const toggleloantap = () => {
     setLoanTap(!laontap);
   };
 
+  
   return (
     <div>
       <div className="p-5 flex  mt-5 gap-5  justify-between">
         <div>
           <div>
-            <img src="./clcikfin-app/home.png"></img>
+            <img src={process.env.PUBLIC_URL + '/assets/images/home.png'}></img>
           </div>
         </div>
         <div className="w-2/4">
@@ -29,7 +28,8 @@ export default function Homepage() {
                 <img
                   className="mobile-image"
                   alt="google"
-                  src="./clcikfin-app/andr.png"
+                  src={process.env.PUBLIC_URL + '/assets/images/andr.png'}
+
                 ></img>
               </Link>
             </div>
@@ -38,7 +38,8 @@ export default function Homepage() {
                 <img
                   className="mobile-image"
                   alt="apple"
-                  src="./clcikfin-app/app.png"
+                  src={process.env.PUBLIC_URL + '/assets/images/app.png'}
+
                 ></img>
               </Link>
             </div>
@@ -108,31 +109,32 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                 </div>
@@ -157,31 +159,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                 </div>
@@ -206,31 +208,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                 </div>
@@ -259,31 +261,33 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                 </div>
@@ -308,31 +312,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                 </div>
@@ -357,31 +361,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                 </div>
@@ -410,31 +414,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                 </div>
@@ -459,31 +463,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                 </div>
@@ -508,31 +512,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src="./clcikfin-app/star1.png"
+                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
                     ></img>
                   </div>
                 </div>
@@ -558,21 +562,24 @@ export default function Homepage() {
           <img
             onClick={toggleupword}
             className="mobile-image cursor-pointer w-36"
-            src="./clcikfin-app/part1.png"
+            src={process.env.PUBLIC_URL + '/assets/images/part1.png'}
+
           ></img>
         </div>
         <div>
           <img
             onClick={toggleloantap}
             className="mobile-image cursor-pointer w-36"
-            src="./clcikfin-app/par3.jpg"
+            src={process.env.PUBLIC_URL + '/assets/images/par3.jpg'}
+
           ></img>
         </div>
 
         <div>
           <img
             className="mobile-image w-16 cursor-pointer"
-            src="./clcikfin-app/par2.jpeg"
+            src={process.env.PUBLIC_URL + '/assets/images/par2.jpeg'}
+
           ></img>
         </div>
       </div>

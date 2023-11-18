@@ -27,7 +27,9 @@ export default function Blog() {
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 clickfin-para-home">
               <div className="snip1527">
                 <div class="image">
-                  <img src="./clcikfin-app/1.jpg" alt="pr-sample25" />
+                  <img 
+                  src={process.env.PUBLIC_URL + '/assets/images/1.jpg'}
+                   alt="pr-sample25" />
                 </div>
 
                 <figcaption>
@@ -73,7 +75,9 @@ export default function Blog() {
               </div>
               <div className="snip1527">
                 <div class="image">
-                  <img src="./clcikfin-app/2.jpg" alt="pr-sample25" />
+                  <img 
+                  src={process.env.PUBLIC_URL + '/assets/images/2.jpg'}
+                   alt="pr-sample25" />
                 </div>
                 <figcaption>
                   <div className="font-bold">
@@ -195,7 +199,9 @@ export default function Blog() {
               </div>
               <div className="snip1527">
                 <div class="image">
-                  <img src="./clcikfin-app/3.jpg" alt="pr-sample25" />
+                  <img 
+                  src={process.env.PUBLIC_URL + '/assets/images/3.jpg'}
+                   alt="pr-sample25" />
                 </div>
                 <figcaption>
                   <div className="font-bold">
@@ -326,7 +332,9 @@ export default function Blog() {
               </div>
               <div className="snip1527">
                 <div class="image">
-                  <img src="./clcikfin-app/4.jpg" alt="pr-sample25" />
+                  <img 
+                  src={process.env.PUBLIC_URL + '/assets/images/4.jpg'}
+                   alt="pr-sample25" />
                 </div>
                 <figcaption>
                   <div className="font-bold">

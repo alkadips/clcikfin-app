@@ -54,11 +54,7 @@ export default function Faqs() {
 
   return (
     <div className="faq-section flex mt-24 gap-5 p-5">
-      {/* <div>
-        <div>
-          <img src="./clcikfin-app/faq2.avif"></img>
-        </div>
-      </div> */}
+     
 
       <div>
         <div className="font-bold text-2xl text-white">
