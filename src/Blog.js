@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
-
 export default function Blog() {
   const [iswhy, setiswhy] = useState(false);
   const [howtobuild, setHowtoBuild] = useState(false);
@@ -23,9 +21,8 @@ export default function Blog() {
   return (
     <div>
       <div className=" p-5">
-      
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 clickfin-para-home">
-              <div className="snip1527">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 clickfin-para-home" style={{border:'1px solid black'}}>
+              <div className="snip1527 clickfin-para-home" style={{border:'1px solid black'}}>
                 <div class="image">
                   <img 
                   src={process.env.PUBLIC_URL + '/assets/images/1.jpg'}
@@ -67,13 +64,13 @@ export default function Blog() {
                     </div>
                   )}
                   <div className="mt-3">
-                    <button className="bg-blue-500 p-2" onClick={toggleiswhy}>
+                    <button className="bg-blue-500 p-2 rounded-full ... text-white" onClick={toggleiswhy}>
                       {iswhy ? "Read Less" : "Read More..."}
                     </button>
                   </div>
                 </figcaption>
               </div>
-              <div className="snip1527">
+              <div className="snip1527 clickfin-para-home" style={{border:'1px solid black'}}>
                 <div class="image">
                   <img 
                   src={process.env.PUBLIC_URL + '/assets/images/2.jpg'}
@@ -189,7 +186,7 @@ export default function Blog() {
                   )}
                   <div className="mt-3">
                     <button
-                      className="bg-blue-500 p-2"
+                      className="bg-blue-500 p-2 rounded-full ... text-white"
                       onClick={togglehowtobuld}
                     >
                       {howtobuild ? "Read Less" : "Read More..."}
@@ -197,7 +194,7 @@ export default function Blog() {
                   </div>
                 </figcaption>
               </div>
-              <div className="snip1527">
+              <div className="snip1527 clickfin-para-home" style={{border:'1px solid black'}}>
                 <div class="image">
                   <img 
                   src={process.env.PUBLIC_URL + '/assets/images/3.jpg'}
@@ -322,7 +319,7 @@ export default function Blog() {
                   )}
                   <div className="mt-3 ">
                     <button
-                      className="bg-blue-500 p-2"
+                      className="bg-blue-500 p-2 rounded-full ... text-white"
                       onClick={togglediffernttype}
                     >
                       {differntType ? "Read Less" : "Read More..."}
@@ -330,7 +327,7 @@ export default function Blog() {
                   </div>
                 </figcaption>
               </div>
-              <div className="snip1527">
+              <div className="snip1527 clickfin-para-home" style={{border:'1px solid black'}}>
                 <div class="image">
                   <img 
                   src={process.env.PUBLIC_URL + '/assets/images/4.jpg'}
@@ -442,7 +439,7 @@ export default function Blog() {
                   )}
                   <div className="mt-3">
                     <button
-                      className="bg-blue-500 p-2"
+                      className="bg-blue-500 p-2 rounded-full ... text-white"
                       onClick={togglesimpleIntegration}
                     >
                       {simpleintegration ? "Read Less" : "Read More..."}
@@ -451,7 +448,6 @@ export default function Blog() {
                 </figcaption>
               </div>
             </div>
-       
       </div>
     </div>
   );

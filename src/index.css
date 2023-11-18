@@ -59,8 +59,8 @@ html {
 
 .main-wrapper{
     /* background-image: url('./assets/sli1.jpg'); */
-    background-color: #2b4a84;
-    color: #fff;
+    background-color: white;
+    color: black;
   }
 .number-list {
   text-align: left;
@@ -93,6 +93,7 @@ html {
 .footer {
   padding: 10px;
   color: white;
+  background-color: black;
 }
 
 .pers-loan {
@@ -103,21 +104,21 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  border: 1px solid;
 }
 
 td,
 tr {
   text-align: left;
   padding: 8px;
-  border: 1px solid white;
 }
 
 th {
-  border: 1px solid white;
 }
 
 tr:nth-child(even) {
-  border: 1px solid white;
+  background-color: #2b4a84;
+  color: white;
 }
 
 .get-loan-now {
@@ -137,7 +138,7 @@ tr:nth-child(even) {
 table,
 th,
 td {
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 th,
@@ -206,7 +207,6 @@ tr:hover {
 }
 
 .about-back {
-  background-color: #2b4a84;
   height: 350px;
 }
 
@@ -430,8 +430,7 @@ tr:hover {
 @import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
 
 .snip1527 {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  color: white;
+  color: black;
   float: left;
   font-family: "Lato", Arial, sans-serif;
   font-size: 16px;

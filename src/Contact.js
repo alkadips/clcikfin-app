@@ -2,18 +2,18 @@ import React from "react";
 export default function Contact() {
   return (
     <div className="mt-24">
-      <div className="font-bold text-4xl mt-5 text-center text-white">
+      <div className="font-bold text-4xl mt-5 text-center text-black">
         Get In Touch
       </div>
-      <div className="font-bold text-center mt-5 text-white">
+      <div className="font-bold text-center mt-5 text-black">
         Reach Out To Us & We Will Respond As Soon As We Can.
       </div>
 
       <div>
         <div className="flex  gap-5 p-5">
           <div className="w-2/4">
-            <div className="font-bold text-white">About </div>
-            <div className=" rounded-xl text-white">
+            <div className="font-bold text-black">About </div>
+            <div className=" rounded-xl text-black">
               <p>
                 Clikfin brand is 100% owned by CygniSys Service’s Pvt Ltd
                 formerly known as ( CygniSys OPC Pvt Ltd ) incorporated in 2021,

@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import FAQ from './FAq';
+import React, { useState } from "react";
+import FAQ from "./FAq";
 
 export default function Personel() {
   const [faqs1, setFaqs1] = useState([
@@ -40,16 +40,17 @@ export default function Personel() {
         " Yes, you can repay a personal loan before the tenure ends through prepayment. However, some lenders may charge a pre closure charges for repayment.",
       open: false,
     },
-    
+
     {
       question: "What Is the Average Interest Rate on Personal Loans? ",
       answer:
         "  The average interest rate on personal loans typically ranges from 16.00% to 32%, but this can vary among different lenders.",
       open: false,
     },
-    
+
     {
-      question: "What Factors Do Banks Consider During Personal Loan Applications?  ",
+      question:
+        "What Factors Do Banks Consider During Personal Loan Applications?  ",
       answer:
         " When applying for a personal loan, banks consider various factors, including age, monthly income, credit score, credit history, and necessary documentation.",
       open: false,
@@ -66,7 +67,6 @@ export default function Personel() {
         " While the minimum salary requirement may vary among lenders, most banks and NBFCs typically require a monthly income of ₹20,000 or more for personal loan approval.",
       open: false,
     },
-    
   ]);
   const toggleFAQ = (index) => {
     setFaqs1(
@@ -81,184 +81,172 @@ export default function Personel() {
       })
     );
   };
-    return (
-        <div
-          className="text-white per-loan-back mt-16"
-         
-        >
-          <div className='flex gap-5'>
-          <div style={{width:'50%'}}>
-          <img             src={process.env.PUBLIC_URL + '/assets/images/bacr.png'}
-  ></img>
-         </div>
-         <div style={{width:'50%'}}>
-         <div>
+  return (
+    <div className="text-black per-loan-back mt-16">
+      <div className="flex gap-5">
+        <div style={{ width: "50%" }}>
+          <div>
+            <img src={process.env.PUBLIC_URL + "/assets/images/bacr.png"}></img>
+          </div>
+          <div className="ml-5 text-center">
+            <div className="text-black mt-2">
+              <div className="font-bold"> Multipurpose</div>
+              <div>
+                {" "}
+                Versatile use for various needs like weddings, home renovations,
+                or immediate financial requirements.
+              </div>
+            </div>
+            <div className="text-black mt-2">
+              <div className="font-bold">5. Low-Interest Rates:</div>
+              <div>
+                Eligibility and good credit history can secure competitive
+                rates, saving money.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style={{ width: "50%" }}>
+          <div>
             <div className="font-bold text-4xl mt-5 text-center">
               Benefits And Features Of Unsecured Personal Loans
-            </div >
-            <div className=' text-white rounded-xl mt-5 '>
-              <div className='m-auto w-2/4'>
-            <div className="text-white mt-5">
-              <div className='font-bold'>1.  No Collateral:</div>
-              <p>
-              No need to pledge assets, reducing the risk of losing valuable Asset.
-              </p>
             </div>
-            <div className="text-white mt-2">
-              
-                <div className="font-bold"> 2. Minimal Documentation:</div> 
-                <div> Streamlined digital application process for swift approval.</div>
-            
-            </div>
-            <div className="text-white mt-2">
-              
-                <div className="font-bold"> 3. Easy Approval:</div>
-                <div> Quick verification for fast access to funds during emergencies.
-</div>
-              
-            </div>
-            <div className="text-white mt-2">
-              
-                <div className="font-bold"> Multipurpose</div>
-                <div>  Versatile use for various needs like weddings, home renovations, or immediate
-financial requirements.</div>
-              
-            </div>
-            <div className="text-white mt-2">
-             
-                <div className="font-bold">5. Low-Interest Rates:</div> 
-                <div>Eligibility and good credit history can secure competitive rates, saving money.</div>
-             
-            </div>
-            <div className="text-white mt-2">
-             
-                <div className="font-bold"> 6.  Flexible Repayment:</div>{" "}
-                <div>Tailored repayment terms to match your financial capacity.
+            <div className=" text-black rounded-xl mt-5 ">
+              <div className="m-auto w-2/4">
+                <div className="text-black mt-5">
+                  <div className="font-bold">1. No Collateral:</div>
+                  <p>
+                    No need to pledge assets, reducing the risk of losing
+                    valuable Asset.
+                  </p>
                 </div>
-            </div>
-            <div className="text-white mt-2">
-             
-                <div className="font-bold"> 7.  Quick Disbursement: </div>
-                <div>  Online application and verification lead to swift fund disbursal.</div>
-           
-            </div>
-            </div>
-            </div>
-          </div>
-        
-         </div>
-          </div>
-          <div className="font-bold text-4xl mt-5 text-center">Personal Loan Eligibility</div>
-          <div className="mt-3   rounded-xl text-white m-auto w-2/4">
-            <p >
-              Personal loans are offered by most banks and NBFCs, each with their
-              own specific eligibility criteria. Nonetheless, there exist certain
-              common requirements across all financial institutions. The eligibility
-              criteria to get an online personal loan approval for salaried and
-              self-employed individuals are:
-            </p>
-          </div>
-         
-          <div className="mt-5 p-5  rounded-xl text-white">
-            <table className='m-auto w-11/12' style={{border:'1px solid white'}} >
-              <tr>
-                <th>Age</th>
-                <td>21 years – 60 years</td>
-              </tr>
-              <tr>
-                <th>Employment Type</th>
-                <td>1. Salaried</td>
-              </tr>
-              <tr>
-                <th>Credit score</th>
-                <td>750 or above with a good credit history</td>
-              </tr>
-              <tr>
-                <th>Minimum Net Income (Monthly)</th>
-               <div>
-               <td>
-                ₹30,000(non-metro cities)
-                </td>
-               </div>
-                <div>
-                <td>₹20,000( metro cities)</td>
+                <div className="text-black mt-2">
+                  <div className="font-bold"> 2. Minimal Documentation:</div>
+                  <div>
+                    {" "}
+                    Streamlined digital application process for swift approval.
+                  </div>
                 </div>
-               
-              </tr>
-              <tr>
-                <th>Loan Amount</th>
-                <td>Up to ₹10 lacs depending on the credit profile</td>
-              </tr>
-              <tr>
-                <th>Work Experience</th>
-                <td>Employed at current company for at least 6/12 months</td>
-              </tr>
-            </table>
+                <div className="text-black mt-2">
+                  <div className="font-bold"> 3. Easy Approval:</div>
+                  <div>
+                    {" "}
+                    Quick verification for fast access to funds during
+                    emergencies.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="font-bold text-3xl mt-5 text-center text-white">
-            Documents Required For Personal Loan
-          </div>
-          <div className='  rounded-xl text-white'>
-          <div className="mt-2 text-center">
-            Below are the list of the typical documents needed for the approval of an
-            online personal loan:
-          </div>
-          <div className="font-bold mt-2 text-center">Salaried Individuals</div>
-          <ol className='number-list'>
-  <li>Proof of Identity and Age</li>
-  <li>Fully completed personal loan application form with a photograph</li>
-  <li>PAN Card</li>
-  <li>Proof of Residence – Passport, driving license, Voter ID,
-            postpaid/landline bill, utility bills (electricity/water/gas)</li>
-            <li>Bank statements from the last three months (preferably from your
-            salary account)</li>
-            <li>Last three-month pay slips</li>
-</ol>  
-        
-         
-          </div>
-       
-          <div className="text-3xl font-bold mt-5 text-center">Representative Example:</div>
-          <div className=' rounded-xl mt-5 text-white m-auto w-1/3' >
-          <div className="mt-5 ">Loan Amount: ₹1,00,000</div>
-          <div>Tenure: 36 months</div>
-          <div>Interest Rate: @18%* (reducing basis)</div>
-          <div>EMI: ₹3,615</div>
-          <div>
-            Total Interest Payable: ₹3,615 x 36 months – ₹1,00,000 Principal =
-            ₹30,140
-          </div>
-          <div>Processing fee (@ 2%) = ₹2,000 + GST = ₹2,360</div>
-          <div>Disbursed Amount: ₹1,00,000 – ₹2,360 = ₹97,640</div>
-          <div>Total Amount Payable: ₹3,615 x 36 months = ₹1,30,140</div>
-          <div>
-            Total Cost of the Loan = Interest Amount + Processing Fees = ₹30,140 +
-            ₹2,360 = ₹32,500
-          </div>
+        </div>
+      </div>
+      <div className="font-bold text-4xl mt-5 text-center">
+        Personal Loan Eligibility
+      </div>
+      <div className="mt-3   rounded-xl text-black m-auto w-2/4">
+        <p>
+          Personal loans are offered by most banks and NBFCs, each with their
+          own specific eligibility criteria. Nonetheless, there exist certain
+          common requirements across all financial institutions. The eligibility
+          criteria to get an online personal loan approval for salaried and
+          self-employed individuals are:
+        </p>
+      </div>
 
-          </div>
+      <div className="mt-5 p-5  rounded-xl text-black">
+        <table className="m-auto w-11/12" style={{ border: "1px solid black" }}>
+          <tr>
+            <th>Age</th>
+            <td>21 years – 60 years</td>
+          </tr>
+          <tr>
+            <th>Employment Type</th>
+            <td>1. Salaried</td>
+          </tr>
+          <tr>
+            <th>Credit score</th>
+            <td>750 or above with a good credit history</td>
+          </tr>
+          <tr>
+            <th>Minimum Net Income (Monthly)</th>
+            <div>
+              <td>₹30,000(non-metro cities)</td>
+            </div>
+            <div >
+              <td>₹20,000( metro cities)</td>
+            </div>
+          </tr>
+          <tr>
+            <th>Loan Amount</th>
+            <td>Up to ₹10 lacs depending on the credit profile</td>
+          </tr>
+          <tr>
+            <th>Work Experience</th>
+            <td>Employed at current company for at least 6/12 months</td>
+          </tr>
+        </table>
+      </div>
+      <div className="font-bold text-3xl mt-5 text-center text-black">
+        Documents Required For Personal Loan
+      </div>
+      <div className="  rounded-xl text-black">
+        <div className="mt-2 text-center">
+          Below are the list of the typical documents needed for the approval of
+          an online personal loan:
+        </div>
+        <div className="font-bold mt-2 text-center">Salaried Individuals</div>
+        <ol className="number-list">
+          <li>Proof of Identity and Age</li>
+          <li>
+            Fully completed personal loan application form with a photograph
+          </li>
+          <li>PAN Card</li>
+          <li>
+            Proof of Residence – Passport, driving license, Voter ID,
+            postpaid/landline bill, utility bills (electricity/water/gas)
+          </li>
+          <li>
+            Bank statements from the last three months (preferably from your
+            salary account)
+          </li>
+          <li>Last three-month pay slips</li>
+        </ol>
+      </div>
 
+      <div className="text-3xl font-bold mt-5 text-center">
+        Representative Example:
+      </div>
+      <div className=" rounded-xl mt-5 text-black m-auto w-1/3">
+        <div className="mt-5 ">Loan Amount: ₹1,00,000</div>
+        <div>Tenure: 36 months</div>
+        <div>Interest Rate: @18%* (reducing basis)</div>
+        <div>EMI: ₹3,615</div>
+        <div>
+          Total Interest Payable: ₹3,615 x 36 months – ₹1,00,000 Principal =
+          ₹30,140
+        </div>
+        <div>Processing fee (@ 2%) = ₹2,000 + GST = ₹2,360</div>
+        <div>Disbursed Amount: ₹1,00,000 – ₹2,360 = ₹97,640</div>
+        <div>Total Amount Payable: ₹3,615 x 36 months = ₹1,30,140</div>
+        <div>
+          Total Cost of the Loan = Interest Amount + Processing Fees = ₹30,140 +
+          ₹2,360 = ₹32,500
+        </div>
+      </div>
 
-
-
-
-
-          <div className="faqs text-white ">
+      <div className="faqs text-black ">
         {faqs1.map((faq, index) => (
           <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
         ))}
       </div>
-         
-          
-         
-          
-          <div className="mt-5 ml-5 text-center m-auto w-11/12">
-            Explore the world of personal loans with confidence, knowing the answers
-            to these frequently asked questions. ClikFin offers a seamless loan
-            application process, ensuring you get the financial support you need for
-            various purposes. Apply now and experience the convenience of our
-            instant personal loan service.
-          </div>
-        </div>
-      );
+
+      <div className="mt-5 ml-5 text-center m-auto w-11/12">
+        Explore the world of personal loans with confidence, knowing the answers
+        to these frequently asked questions. ClikFin offers a seamless loan
+        application process, ensuring you get the financial support you need for
+        various purposes. Apply now and experience the convenience of our
+        instant personal loan service.
+      </div>
+    </div>
+  );
 }

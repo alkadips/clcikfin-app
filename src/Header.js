@@ -89,10 +89,10 @@ export default function Header() {
         </nav> */}
         <div className="ml-5">
           <Link className="no-underline" style={{ color: "#2B4A84" }} to="/">
-            <img
-              className="w-36 h-10"
+            <img style={{marginTop:'20px'}}
+              className="w-40"
               alt="logo"
-              src={process.env.PUBLIC_URL + '/assets/images/logo3.png'}
+              src={process.env.PUBLIC_URL + '/assets/images/newlogo.png'}
 
             ></img>
           </Link>{" "}

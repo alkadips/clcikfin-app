@@ -6,12 +6,12 @@ export default function About() {
         <div className="flex">
           <div className="mt-2  ml-5 w-2/4">
             <p
-              className=" text-3xl mt-5 font-bold text-white"
+              className=" text-3xl mt-5 font-bold text-black"
              
             >
               ABOUT US
             </p>
-            <p className="mt-2 text-xl text-white" >
+            <p className="mt-2 text-xl text-black" >
               Get to know the team behind Clikfin, India’s Best app to offer
               online credit, making credit easily accessible to millions of
               Indians right when they need it, without any collateral or complex
@@ -34,7 +34,7 @@ export default function About() {
       </div>
 
       <div className="flex p-5 gap-5">
-        <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid ">
+        <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid ">
           <div className="font-bold text-center"> Our Vision</div>
           <div className="mt-3">
             {" "}
@@ -45,7 +45,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid ">
+        <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid ">
           <div className="font-bold text-center">Our Mission</div>
           <div className="mt-3">
             At ClikFin, our mission is to seamlessly connect borrowers and
@@ -55,7 +55,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid ">
+        <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid ">
           <div className="font-bold text-center"> Who We Are</div>
           <div className="mt-3">
             ClikFin, a venture by CygniSys Services Pvt. Ltd. is a leading
@@ -77,9 +77,9 @@ export default function About() {
           Including:
         </div>
         <div className="p-2  rounded-xl mt-2">
-          <div className="flex justify-center gap-5 text-white">
+          <div className="flex justify-center gap-5 text-black">
             <div className="mt-2 w-1/4">
-              <div className="font-bold text-white">Vacation: </div>
+              <div className="font-bold text-black">Vacation: </div>
               <div>
                 Fulfill your wanderlust and embark on that dream vacation you’ve
                 been longing for.
@@ -94,7 +94,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex justify-center gap-5 text-white">
+          <div className="flex justify-center gap-5 text-black">
             <div className="mt-5 w-1/4">
               <div className="font-bold">Debt Consolidation: </div>
               <div>
@@ -111,7 +111,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex justify-center gap-5 text-white">
+          <div className="flex justify-center gap-5 text-black">
             <div className="mt-5 w-1/4">
               <div className="font-bold">Medical Emergencies:</div>
               <div>
@@ -129,7 +129,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mt-5 text-white">
+          <div className="mt-5 text-black">
             <p className="m-auto w-1/3">
               The power to choose lies with you, and ClikFin is here to provide
               the financial assistance you need to turn your dreams into
@@ -139,14 +139,14 @@ export default function About() {
               take control of your financial journey today!
             </p>
           </div>
-          <div className="font-bold text-3xl mt-5 text-white">
+          <div className="font-bold text-3xl mt-5 text-black">
             How To Apply For A Personal Loan With ClikFin:
           </div>
-          <div className="mt-5 font-bold text-white">
+          <div className="mt-5 font-bold text-black">
             Applying For A Personal Loan With ClikFin Is Quick And Effortless.
             Just Follow These Simple Steps:
           </div>
-          <div className="text-white m-auto w-2/4">
+          <div className="text-black m-auto w-2/4">
             <div className="mt-5">
               <div className="font-bold">1. Download the App:</div>
               <div>
@@ -192,18 +192,18 @@ export default function About() {
         <div>Flexible Repayment Plans</div>
       </div>
       <div className="flex justify-around  gap-5">
-        <div className="text-center p-2  rounded-xl text-white">
+        <div className="text-center p-2  rounded-xl text-black">
           Your privacy and security are our utmost priorities. Our loan
           procedure is designed to be easy and straightforward, and once your
           submitted documents are approved, we ensure instant processing to get
           you the funds you need.
         </div>
-        <div className="text-center p-2  rounded-xl text-white">
+        <div className="text-center p-2  rounded-xl text-black">
           We value the privacy of your personal data and adhere to a strict
           private data policy. Rest assured that your information is handled
           with the utmost confidentiality and care.
         </div>
-        <div className="text-center p-2  rounded-xl text-white">
+        <div className="text-center p-2  rounded-xl text-black">
           We understand that every individual’s financial situation is unique.
           Hence, when we approve loans, we offer flexible repayment plans
           tailored to suit your financial capacity and preferences.

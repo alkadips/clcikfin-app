@@ -13,7 +13,7 @@ export default function Footer() {
   }, []);
   return (
     <div className="footer mt-5">
-      <div className=" flex justify-around border-2 border-solid mt-5 p-5">
+      <div className=" flex justify-around   mt-3 p-2">
         <div>
           <div>
             <Link
@@ -175,7 +175,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="text-center mt-5 text-sm">
+      <div className="text-center text-sm">
         Copyright © 2023 | Powered by CygniSys
       </div>
     </div>

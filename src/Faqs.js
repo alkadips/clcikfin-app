@@ -57,10 +57,10 @@ export default function Faqs() {
      
 
       <div>
-        <div className="font-bold text-2xl text-white">
+        <div className="font-bold text-2xl text-black">
           To Apply For A Loan With ClikFin, Follow These Simple Steps:
         </div>
-        <div className="text-white  rounded-xl mt-3">
+        <div className="text-black  rounded-xl mt-3">
           <div className="mt-3 ">
             <p>
               1. Install the ClikFin App from Google Play Store and register an
@@ -88,7 +88,7 @@ export default function Faqs() {
         </div>
       </div>
 
-      <div className="faqs text-white ">
+      <div className="faqs text-black ">
         {faqs1.map((faq, index) => (
           <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
         ))}

@@ -15,7 +15,7 @@ export default function Homepage() {
   
   return (
     <div>
-      <div className="p-5 flex  mt-5 gap-5  justify-between">
+      <div className="p-5 flex  mt-5 gap-5  justify-between" style={{background:'#ecebeb'}}>
         <div>
           <div>
             <img src={process.env.PUBLIC_URL + '/assets/images/home.png'}></img>
@@ -28,6 +28,7 @@ export default function Homepage() {
                 <img
                   className="mobile-image"
                   alt="google"
+                  style={{width:'80%'}}
                   src={process.env.PUBLIC_URL + '/assets/images/andr.png'}
 
                 ></img>
@@ -45,16 +46,16 @@ export default function Homepage() {
             </div>
           </div>
 
-          <div className="font-bold text-3xl ml-3 mt-5 text-white">
+          <div className="font-bold text-3xl ml-3 mt-5 text-black">
             Welcome To ClikFin – Your Instant Life Upgrade
           </div>
           <div className="list-item-demo">
-            <ul style={{ listStyle: "initial", color: "#2B4A84" }}>
+            <ul className="text-black" style={{ listStyle: "initial",  }}>
               <li>Up to ₹10 Lakhs</li>
               <li>Instant Transfer to Bank</li>
             </ul>
           </div>
-          <div className="clickfin-para-home p-5  rounded text-white border-2 border-solid ">
+          <div className="clickfin-para-home p-3  rounded text-black border-5 border-solid ">
             <p>
               At ClikFin, we understand that life can present unexpected
               challenges and opportunities, and that’s why we’re here to offer
@@ -70,10 +71,10 @@ export default function Homepage() {
         </div>
       </div>
 
-      <div className=" text-center text-4xl text-white font-bold" >
+      <div className=" text-center text-4xl text-black font-bold mt-5" >
         Why Choose Instant Loan?
       </div>
-      <div className="text-center mt-3 text-white m-auto" style={{width:'50%'}}>
+      <div className="text-center mt-3 text-black m-auto" style={{width:'50%'}}>
         <p>
           It's A Rapidly Evolving Digital Age, And Clikfin Offers You A Truly
           Modern, Sensible Personal Loan Option. No Lengthy Paperwork, Instant
@@ -84,20 +85,20 @@ export default function Homepage() {
         </p>
       </div>
 
-      <div className=" text-center text-4xl text-white mt-24 font-bold">
+      <div className=" text-center text-4xl text-black mt-24 font-bold">
         Our Awesome Testimonials
       </div>
-      <div className="text-center mt-3 text-white">
+      <div className="text-center mt-3 text-black">
         <p>
           We Believe Helping People During Need Is A Best Deed, Thus Your
           Blessings Makes Us Unique.
         </p>
       </div>
-      <div className="flex gap-5  justify-center text-white p-3">
+      <div className="flex gap-5  justify-center text-black p-3">
         <Carousel>
           <Carousel.Item>
-            <div className="flex gap-5  justify-center text-white p-3">
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid">
+            <div className="flex gap-5  justify-center text-black p-3">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -147,7 +148,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -196,7 +197,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -248,8 +249,8 @@ export default function Homepage() {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="flex gap-5 justify-center text-white p-3">
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid">
+            <div className="flex gap-5 justify-center text-black p-3">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -300,7 +301,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -349,7 +350,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -401,8 +402,8 @@ export default function Homepage() {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="flex gap-5  justify-center text-white p-3">
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid">
+            <div className="flex gap-5  justify-center text-black p-3">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -451,7 +452,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -500,7 +501,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-white border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -553,7 +554,7 @@ export default function Homepage() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className="font-bold text-center text-4xl text-white mt-12">
+      <div className="font-bold text-center text-4xl text-black mt-12">
         Our Partners
       </div>
 
@@ -642,14 +643,14 @@ export default function Homepage() {
           </table>
         </div>
       )}
-      <div className="font-bold text-center text-4xl text-white mt-12">
+      <div className="font-bold text-center text-4xl text-black mt-12">
         Introducing ClikFin - Your Gateway To Financial Solutions
       </div>
-      <div className="flex font-bold justify-around text-white mt-12">
+      <div className="flex font-bold justify-around text-black mt-12">
         <div>About</div>
         <div>What Makes Us Unique?</div>
       </div>
-      <div className="flex gap-5 justify-around mt-3 text-white ">
+      <div className="flex gap-5 justify-around mt-3 text-black ">
         <div className="  rounded w-2/5">
           <div>
             <p>
@@ -671,7 +672,7 @@ export default function Homepage() {
               service and guidance throughout your financial voyage.
             </p>
           </div>
-          <div className="text-white mt-2">
+          <div className="text-black mt-2">
             <p>
               Experience the power of choice with ClikFin. Let us be your
               trusted companion in making informed financial decisions. Begin
@@ -682,14 +683,14 @@ export default function Homepage() {
           </div>
         </div>
         <div className="rounded w-2/5">
-          <div className="text-white">
+          <div className="text-black">
             <p>
               <span className="font-bold "> 1. Transparency: </span> Clear and
               open communication throughout the loan process, ensuring you
               understand every step .
             </p>
           </div>
-          <div className="mt-3 text-white">
+          <div className="mt-3 text-black">
             <p>
               <span className="font-bold ">
                 {" "}
@@ -700,7 +701,7 @@ export default function Homepage() {
               timeline
             </p>
           </div>
-          <div className="mt-3 text-white">
+          <div className="mt-3 text-black">
             <p>
               <span className="font-bold "> 3. Great Customer Success: </span>{" "}
               Customer Obsession is the back bone of our organization, We always
@@ -708,14 +709,14 @@ export default function Homepage() {
               hassle-free loan
             </p>
           </div>
-          <div className="mt-3 text-white">
+          <div className="mt-3 text-black">
             <p>
               <span className="font-bold "> 4. We Do What We Promise: </span>A
               commitment to delivering on our promises, providing reliability
               and trustworthiness in our services.
             </p>
           </div>
-          <div className="mt-3 text-white">
+          <div className="mt-3 text-black">
             <p>
               <span className="font-bold "> 5. Not an NBFC: </span>It is
               essential to understand that ClikFin is not an NBFC itself. We do
