@@ -52,12 +52,12 @@ class EmiCalc extends React.Component {
   };
   render() {
     return (
-      <div className="text-black mt-24">
+      <div className="text-white mt-24">
         <div className="font-bold text-3xl mt-5 text-center">
           EMI Calculator - Your Convenient Loan Planning Tool
         </div>
 
-        <div className="flex justify-evenly text-black gap-5 p-5">
+        <div className="flex justify-evenly text-white gap-5 p-5">
           <div className="clickfin-para-home sample-cal shadow-2xl ... p-5 w-2/4 border-2 border-solid ">
             <div>
               <InputForm onSubmit={this.calculatePayments} />
@@ -113,9 +113,9 @@ class EmiCalc extends React.Component {
         <div></div>
         <div className="flex">
           <div>
-            <img src="./clcikfin-app/emi.jpeg"></img>
+            <img src="./clcikfin-app/emi2.png"></img>
           </div>
-          <div className="  text-black rounded-xl">
+          <div className="  text-white rounded-xl">
             <div>
               <div className="mt-2">
                 <p>

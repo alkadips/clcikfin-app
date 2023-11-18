@@ -1,26 +1,19 @@
 import React from "react";
-import { IoLogoFacebook } from "react-icons/io";
-import { IoLogoTwitter } from "react-icons/io";
-import { IoLogoInstagram } from "react-icons/io";
-import { IoLogoLinkedin } from "react-icons/io";
-import { IoIosMail } from "react-icons/io";
-import { Link } from "react-router-dom";
-
 export default function Contact() {
   return (
     <div className="mt-24">
-      <div className="font-bold text-4xl mt-5 text-center text-black">
+      <div className="font-bold text-4xl mt-5 text-center text-white">
         Get In Touch
       </div>
-      <div className="font-bold text-center mt-5 text-black">
+      <div className="font-bold text-center mt-5 text-white">
         Reach Out To Us & We Will Respond As Soon As We Can.
       </div>
 
       <div>
         <div className="flex  gap-5 p-5">
           <div className="w-2/4">
-            <div className="font-bold text-black">About </div>
-            <div className=" rounded-xl text-black">
+            <div className="font-bold text-white">About </div>
+            <div className=" rounded-xl text-white">
               <p>
                 Clikfin brand is 100% owned by CygniSys Service’s Pvt Ltd
                 formerly known as ( CygniSys OPC Pvt Ltd ) incorporated in 2021,
@@ -35,7 +28,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="w-2/4">
-            <img src="./clcikfin-app/mobile2.png"></img>
+            <img style={{width:'60%'}} src="./clcikfin-app/contact.png"></img>
           </div>
         </div>
 
@@ -43,7 +36,7 @@ export default function Contact() {
           We Would Love To Hear Your Suggestions Or Complaints. Please Let Us
           Try To Help You.
         </div>
-        <div className="flex justify-around mt-5">
+        {/* <div className="flex justify-around mt-5">
           <div>
             <img
               className="h-24"
@@ -65,13 +58,13 @@ export default function Contact() {
               src="./clcikfin-app/email.png"
             ></img>
           </div>
-        </div>
+        </div> */}
         <div className="flex justify-around mt-3 font-bold">
           <div>BRANCH OFFICE</div>
           <div>CALL US AT</div>
           <div>EMAIL ADDRESS</div>
         </div>
-        <div className="flex justify-around mt-3 gap-5 p-5">
+        <div className="flex justify-around mt-2 gap-5 p-3">
           <div className="text-center w-1/4">
             47, 7th sector 5th Main, HSR layout Bangalore – 560102 Karnataka,
             India

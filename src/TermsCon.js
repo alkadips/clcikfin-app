@@ -7,11 +7,11 @@ export default function TermsCon() {
     <div className="mt-5" >
      
       <div className="p-5  rounded-xl" >
-      <div className="font-bold text-4xl mt-5 text-center text-black">
+      <div className="font-bold text-4xl mt-5 text-center text-white">
         Terms & Condition
       </div>
      
-      <div className="text-black p-5 text-center">
+      <div className="text-white p-5 text-center">
         <div className="m-auto w-2/4">
         <div>
           <p>

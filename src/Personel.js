@@ -83,57 +83,59 @@ export default function Personel() {
   };
     return (
         <div
-          className="text-black per-loan-back mt-24"
+          className="text-white per-loan-back mt-16"
          
         >
-         {/* <div>
-          <img  src="./clcikfin-app/1.jpg"></img>
-         </div> */}
-          <div>
+          <div className='flex gap-5'>
+          <div style={{width:'50%'}}>
+          <img  src="./clcikfin-app/bacr.png"></img>
+         </div>
+         <div style={{width:'50%'}}>
+         <div>
             <div className="font-bold text-4xl mt-5 text-center">
               Benefits And Features Of Unsecured Personal Loans
             </div >
-            <div className=' text-black rounded-xl mt-5 '>
+            <div className=' text-white rounded-xl mt-5 '>
               <div className='m-auto w-2/4'>
-            <div className="text-black mt-5">
+            <div className="text-white mt-5">
               <div className='font-bold'>1.  No Collateral:</div>
               <p>
               No need to pledge assets, reducing the risk of losing valuable Asset.
               </p>
             </div>
-            <div className="text-black mt-2">
+            <div className="text-white mt-2">
               
                 <div className="font-bold"> 2. Minimal Documentation:</div> 
                 <div> Streamlined digital application process for swift approval.</div>
             
             </div>
-            <div className="text-black mt-2">
+            <div className="text-white mt-2">
               
                 <div className="font-bold"> 3. Easy Approval:</div>
                 <div> Quick verification for fast access to funds during emergencies.
 </div>
               
             </div>
-            <div className="text-black mt-2">
+            <div className="text-white mt-2">
               
                 <div className="font-bold"> Multipurpose</div>
                 <div>  Versatile use for various needs like weddings, home renovations, or immediate
 financial requirements.</div>
               
             </div>
-            <div className="text-black mt-2">
+            <div className="text-white mt-2">
              
                 <div className="font-bold">5. Low-Interest Rates:</div> 
                 <div>Eligibility and good credit history can secure competitive rates, saving money.</div>
              
             </div>
-            <div className="text-black mt-2">
+            <div className="text-white mt-2">
              
                 <div className="font-bold"> 6.  Flexible Repayment:</div>{" "}
                 <div>Tailored repayment terms to match your financial capacity.
                 </div>
             </div>
-            <div className="text-black mt-2">
+            <div className="text-white mt-2">
              
                 <div className="font-bold"> 7.  Quick Disbursement: </div>
                 <div>  Online application and verification lead to swift fund disbursal.</div>
@@ -142,8 +144,11 @@ financial requirements.</div>
             </div>
             </div>
           </div>
-          <div className="font-bold text-4xl mt-2 text-center">Personal Loan Eligibility</div>
-          <div className="mt-3   rounded-xl text-black m-auto w-2/4">
+        
+         </div>
+          </div>
+          <div className="font-bold text-4xl mt-5 text-center">Personal Loan Eligibility</div>
+          <div className="mt-3   rounded-xl text-white m-auto w-2/4">
             <p >
               Personal loans are offered by most banks and NBFCs, each with their
               own specific eligibility criteria. Nonetheless, there exist certain
@@ -152,8 +157,9 @@ financial requirements.</div>
               self-employed individuals are:
             </p>
           </div>
-          <div className="mt-5 p-5  rounded-xl text-black">
-            <table className='m-auto w-11/12'  >
+         
+          <div className="mt-5 p-5  rounded-xl text-white">
+            <table className='m-auto w-11/12' style={{border:'1px solid white'}} >
               <tr>
                 <th>Age</th>
                 <td>21 years – 60 years</td>
@@ -188,10 +194,10 @@ financial requirements.</div>
               </tr>
             </table>
           </div>
-          <div className="font-bold text-3xl mt-5 text-center text-black">
+          <div className="font-bold text-3xl mt-5 text-center text-white">
             Documents Required For Personal Loan
           </div>
-          <div className='  rounded-xl text-black'>
+          <div className='  rounded-xl text-white'>
           <div className="mt-2 text-center">
             Below are the list of the typical documents needed for the approval of an
             online personal loan:
@@ -212,7 +218,7 @@ financial requirements.</div>
           </div>
        
           <div className="text-3xl font-bold mt-5 text-center">Representative Example:</div>
-          <div className=' rounded-xl mt-5 text-black m-auto w-1/3' >
+          <div className=' rounded-xl mt-5 text-white m-auto w-1/3' >
           <div className="mt-5 ">Loan Amount: ₹1,00,000</div>
           <div>Tenure: 36 months</div>
           <div>Interest Rate: @18%* (reducing basis)</div>
@@ -236,7 +242,7 @@ financial requirements.</div>
 
 
 
-          <div className="faqs text-black ">
+          <div className="faqs text-white ">
         {faqs1.map((faq, index) => (
           <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
         ))}

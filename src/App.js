@@ -14,6 +14,7 @@ import Blog from "./Blog";
 import DuplicateCusLead from "./DuplicateCusLead";
 function App() {
   return (
+    <div className="main-wrapper">
     <BrowserRouter>
       <Header />
 
@@ -32,6 +33,7 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
+    </div>
   );
 }
 export default App;

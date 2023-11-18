@@ -22,7 +22,7 @@ export default function Footer() {
               }}
               to="/"
             >
-              <img alt="logo" src="/clcikfin-app/logo.png"></img>
+              <img style={{width:"150px"}} alt="logo" src="/clcikfin-app/white.png"></img>
             </Link>
           </div>
         </div>

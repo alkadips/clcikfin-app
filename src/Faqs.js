@@ -53,18 +53,18 @@ export default function Faqs() {
   };
 
   return (
-    <div className="faq-section flex mt-24">
-      <div>
+    <div className="faq-section flex mt-24 gap-5 p-5">
+      {/* <div>
         <div>
           <img src="./clcikfin-app/faq2.avif"></img>
         </div>
-      </div>
+      </div> */}
 
       <div>
-        <div className="font-bold text-2xl text-black">
+        <div className="font-bold text-2xl text-white">
           To Apply For A Loan With ClikFin, Follow These Simple Steps:
         </div>
-        <div className="text-black  rounded-xl mt-3">
+        <div className="text-white  rounded-xl mt-3">
           <div className="mt-3 ">
             <p>
               1. Install the ClikFin App from Google Play Store and register an
@@ -92,7 +92,7 @@ export default function Faqs() {
         </div>
       </div>
 
-      <div className="faqs text-black ">
+      <div className="faqs text-white ">
         {faqs1.map((faq, index) => (
           <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
         ))}

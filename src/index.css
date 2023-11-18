@@ -57,9 +57,11 @@ html {
     4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
 }
 
-/* body{
-    background-image: url('./assets/sli1.jpg');
-  } */
+.main-wrapper{
+    /* background-image: url('./assets/sli1.jpg'); */
+    background-color: #2b4a84;
+    color: #fff;
+  }
 .number-list {
   text-align: left;
   align-items: center;
@@ -79,7 +81,7 @@ html {
   margin-top: 20px;
 }
 
-.text-black {
+.text-white {
   color: white;
 }
 
@@ -90,7 +92,6 @@ html {
 
 .footer {
   padding: 10px;
-  background-color: black;
   color: white;
 }
 
@@ -106,18 +107,17 @@ table {
 
 td,
 tr {
-  border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
-  border-right: 1px solid black;
+  border: 1px solid white;
 }
 
 th {
-  border-right: 1px solid black;
+  border: 1px solid white;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  border: 1px solid white;
 }
 
 .get-loan-now {
@@ -137,7 +137,7 @@ tr:nth-child(even) {
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 th,
@@ -147,7 +147,6 @@ td {
 }
 
 tr:hover {
-  background-color: #f9bd08;
   border: 1px solid;
 }
 
@@ -432,7 +431,7 @@ tr:hover {
 
 .snip1527 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  color: black;
+  color: white;
   float: left;
   font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
