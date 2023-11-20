@@ -44,7 +44,7 @@ export default function Privacy() {
 </div>
 <div className='mt-2'>
     <p>
-   <span className='font-bold'>4. Children’s Privacy: </span> ClikFin’s Services do not address anyone under the age of 13, and we do not knowingly collect personally identifiable information from children under 13. If we discover such information, we will promptly delete it from our servers.
+   <span className='font-bold'>4. Children’s Privacy: </span> ClikFin’s Services do not address anyone under the age of 21, and we do not knowingly collect personally identifiable information from children under 21. If we discover such information, we will promptly delete it from our servers.
     </p>
 </div>
 <div className='mt-2'>

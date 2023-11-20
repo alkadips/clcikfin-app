@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = React.useState(false);
+  
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const style = {
@@ -20,8 +21,11 @@ export default function Header() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+  const hideNav=()=>{
+    document.getElementById('drawer-toggle-label').click()
+  }
   return (
-    <div>
+    <div className="sticky-header">
       
       <div className="flex justify-evenly shadow-2xl ... header-wrapper ">
        
@@ -43,54 +47,54 @@ export default function Header() {
             ></img> */}
 <label for="drawer-toggle" id="drawer-toggle-label"></label>
 <nav id="drawer">
-  <ul>
+  <ul className="sidemenu">
     <li>
-      <Link style={{textDecoration:'none'}} to="/">
+      <Link onClick={()=>hideNav()} style={{textDecoration:'none'}} to="/">
         <div>Home</div>
       </Link>
     </li>
     <li>
-      <Link style={{textDecoration:'none'}} to="/about">
+      <Link onClick={()=>hideNav()} style={{textDecoration:'none'}} to="/about">
         <div>About</div>
       </Link>
     </li>
     <li>
-      <Link style={{textDecoration:'none'}} to="/personelloan">
+      <Link onClick={()=>hideNav()} style={{textDecoration:'none'}} to="/personelloan">
         <div>Personal Loan</div>
       </Link>
     </li>
     <li>
-      <Link style={{textDecoration:'none'}} to="/emicalculator">
+      <Link onClick={()=>hideNav()} style={{textDecoration:'none'}} to="/emicalculator">
         <div>EMI Calculator</div>
       </Link>
     </li>
     <li>
-      <Link style={{textDecoration:'none'}} to="/blog">
+      <Link onClick={()=>hideNav()} style={{textDecoration:'none'}} to="/blog">
         <div>Blog</div>
       </Link>
     </li>
     <li>
-      <Link style={{textDecoration:'none'}} to="/terms">
+      <Link onClick={()=>hideNav()} style={{textDecoration:'none'}} to="/terms">
         <div>Terms & condition</div>
       </Link>
     </li>
     <li>
-      <Link style={{textDecoration:'none'}} to="/privacy">
+      <Link onClick={()=>hideNav()} style={{textDecoration:'none'}} to="/privacy">
         <div>Privacy Policy</div>
       </Link>
     </li>
     <li>
-      <Link style={{textDecoration:'none'}} to="/faqs">
+      <Link onClick={()=>hideNav()} style={{textDecoration:'none'}} to="/faqs">
         <div>FAQS</div>
       </Link>
     </li>
     <li>
-      <Link style={{textDecoration:'none'}} to="/contact">
+      <Link onClick={()=>hideNav()} style={{textDecoration:'none'}} to="/contact">
         <div>Contact</div>
       </Link>
     </li>
     <li >
-      <Link style={{textDecoration:'none'}}  to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+      <Link onClick={()=>hideNav()} style={{textDecoration:'none'}}  to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
         <div  className="get-cash-now rounded-full ... p-2">
           GET CASH NOW
         </div>

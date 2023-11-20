@@ -84,9 +84,9 @@ export default function Personel() {
   return (
     <div className="text-black per-loan-back mt-16">
       <div className="main-per gap-5">
-        <div style={{ width: "50%" }}>
+        <div >
           <div>
-            <img src={process.env.PUBLIC_URL + "/assets/images/bacr.png"}></img>
+            <img className="text-center" src={process.env.PUBLIC_URL + "/assets/images/bacr.png"}></img>
           </div>
           <div className="ml-5 text-center">
             <div className="text-black mt-2">
@@ -106,13 +106,13 @@ export default function Personel() {
             </div>
           </div>
         </div>
-        <div style={{ width: "50%" }}>
+        <div>
           <div>
             <div className="font-bold text-3xl mt-5 text-center">
               Benefits And Features Of Unsecured Personal Loans
             </div>
-            <div className=" text-black rounded-xl mt-5 ">
-              <div className="m-auto no-contra">
+            <div className=" text-black rounded-xl mt-2 ">
+              <div className="m-auto no-contra p-2">
                 <div className="text-black mt-5">
                   <div className="font-bold">1. No Collateral:</div>
                   <p>
