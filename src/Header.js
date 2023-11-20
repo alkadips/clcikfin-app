@@ -159,7 +159,7 @@ export default function Header() {
           >
             <div className="home">Blog</div>
           </Link> */}
-          <Link
+          {/* <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="/duplicate"
@@ -168,7 +168,7 @@ export default function Header() {
             }}
           >
             <div className="home">Duplicate</div>
-          </Link> 
+          </Link>  */}
           <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}
