@@ -1,18 +1,18 @@
 import React from "react";
 export default function Contact() {
   return (
-    <div className="mt-24">
-      <div className="font-bold text-4xl mt-5 text-center text-black">
+    <div className="mt-10">
+      <div className="font-bold text-3xl mt-5 text-center text-black">
         Get In Touch
       </div>
-      <div className="font-bold text-center mt-5 text-black">
+      <div className="font-bold text-center mt-3 text-black">
         Reach Out To Us & We Will Respond As Soon As We Can.
       </div>
 
       <div>
-        <div className="flex  gap-5 p-5">
-          <div className="w-2/4">
-            <div className="font-bold text-black">About </div>
+        <div className="contact-main  gap-5 p-5">
+          <div >
+            <div className="font-bold text-black">About Clikfin </div>
             <div className=" rounded-xl text-black">
               <p>
                 Clikfin brand is 100% owned by CygniSys Service’s Pvt Ltd
@@ -27,11 +27,11 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          <div className="w-2/4">
-            <img style={{width:'60%'}} 
+          {/* <div >
+            <img  
             src={process.env.PUBLIC_URL + '/assets/images/contact.png'}
             ></img>
-          </div>
+          </div> */}
         </div>
 
         <div className="font-bold mt-5 text-center">

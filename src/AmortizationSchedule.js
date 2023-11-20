@@ -10,7 +10,7 @@ const AmortizationSchedule = (props) => (
       justify
     >
       <Tab eventKey="monthly" title="Monthly Breakdown">
-        <Table striped bordered hover size="sm" variant="dark">
+        <Table striped bordered hover size="lg" className="tabs-emi">
           <thead>
             <tr>
               {props.columns.map((column) => (
@@ -25,7 +25,6 @@ const AmortizationSchedule = (props) => (
                 <td>{row.principalPaymentRounded()}</td>
                 <td>{row.interestPaymentRounded()}</td>
                 <td>{row.paymentRounded()}</td>
-                <td>{row.remainingBalanceRounded()}</td>
               </tr>
             ))}
           </tbody>
@@ -33,7 +32,7 @@ const AmortizationSchedule = (props) => (
       </Tab>
 
       <Tab eventKey="yearly" title="Yearly">
-        <Table striped bordered hover size="sm">
+        <Table striped bordered hover size="lg" className="tabs-emi">
           <thead>
             <tr>
               {props.columns.map((column) => (
@@ -48,7 +47,6 @@ const AmortizationSchedule = (props) => (
                 <td>{row.principalPaymentRounded()}</td>
                 <td>{row.interestPaymentRounded()}</td>
                 <td>{row.paymentRounded()}</td>
-                <td>{row.remainingBalanceRounded()}</td>
               </tr>
             ))}
           </tbody>

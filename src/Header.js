@@ -22,81 +22,92 @@ export default function Header() {
   }, []);
   return (
     <div>
-      <div className="flex justify-around shadow-2xl ... header-wrapper ">
-        {/* <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
-
-        <label for="drawer-toggle" id="drawer-toggle-label"></label>
-        <nav id="drawer">
-          <ul>
-            <li>
-              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/">
-                <div>Home</div>
-              </Link>
-            </li>
-            <li>
-              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/about">
-                <div>About</div>
-              </Link>
-            </li>
-            <li>
-              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/personelloan">
-                <div>Personal Loan</div>
-              </Link>
-            </li>
-            <li>
-              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/emicalculator">
-                <div>EMI Calculator</div>
-              </Link>
-            </li>
-            <li>
-              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/terms">
-                <div>Terms & condition</div>
-              </Link>
-            </li>
-            <li>
-              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/privacy">
-                <div>Privacy Policy</div>
-              </Link>
-            </li>
-            <li>
-              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/faqs">
-                <div>FAQS</div>
-              </Link>
-            </li>
-            <li>
-              <Link style={{textDecoration:'none',color:'#2B4A84'}} to="/contact">
-                <div>Contact</div>
-              </Link>
-            </li>
-            <li >
-              <Link style={{textDecoration:'none',color:'#2B4A84'}}  to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
-                <div  className="get-cash-now rounded-full ... p-2">
-                  GET CASH NOW
-                </div>
-              </Link>
-            </li>
-            <li>
-              <Link style={{ cursor: "pointer",textDecoration:'none',color:'#2B4A84' }}>
-                <div
-                  onClick={handleOpen}
-                  className="get-cash-now rounded-full ... p-2"
-                >
-                  Log In
-                </div>
-              </Link>
-            </li>
-          </ul>
-        </nav> */}
-        <div className="ml-5">
+      
+      <div className="flex justify-evenly shadow-2xl ... header-wrapper ">
+       
+        <div>
           <Link className="no-underline" style={{ color: "#2B4A84" }} to="/">
             <img style={{marginTop:'20px'}}
-              className="w-40"
+              className="w-40 ml-5"
               alt="logo"
               src={process.env.PUBLIC_URL + '/assets/images/newlogo.png'}
 
             ></img>
           </Link>{" "}
         </div>
+        <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        {/* <img style={{width:'15px',height:'15px'}}
+              className="w-40 drawer-toggle"
+              alt="logo"
+              src={process.env.PUBLIC_URL + '/assets/images/cross.png'}
+            ></img> */}
+<label for="drawer-toggle" id="drawer-toggle-label"></label>
+<nav id="drawer">
+  <ul>
+    <li>
+      <Link style={{textDecoration:'none'}} to="/">
+        <div>Home</div>
+      </Link>
+    </li>
+    <li>
+      <Link style={{textDecoration:'none'}} to="/about">
+        <div>About</div>
+      </Link>
+    </li>
+    <li>
+      <Link style={{textDecoration:'none'}} to="/personelloan">
+        <div>Personal Loan</div>
+      </Link>
+    </li>
+    <li>
+      <Link style={{textDecoration:'none'}} to="/emicalculator">
+        <div>EMI Calculator</div>
+      </Link>
+    </li>
+    <li>
+      <Link style={{textDecoration:'none'}} to="/blog">
+        <div>Blog</div>
+      </Link>
+    </li>
+    <li>
+      <Link style={{textDecoration:'none'}} to="/terms">
+        <div>Terms & condition</div>
+      </Link>
+    </li>
+    <li>
+      <Link style={{textDecoration:'none'}} to="/privacy">
+        <div>Privacy Policy</div>
+      </Link>
+    </li>
+    <li>
+      <Link style={{textDecoration:'none'}} to="/faqs">
+        <div>FAQS</div>
+      </Link>
+    </li>
+    <li>
+      <Link style={{textDecoration:'none'}} to="/contact">
+        <div>Contact</div>
+      </Link>
+    </li>
+    <li >
+      <Link style={{textDecoration:'none'}}  to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+        <div  className="get-cash-now rounded-full ... p-2">
+          GET CASH NOW
+        </div>
+      </Link>
+    </li>
+    {/* <li>
+      <Link style={{ cursor: "pointer",textDecoration:'none' }}>
+        <div
+          onClick={handleOpen}
+          className="get-cash-now rounded-full ... p-2"
+        >
+          Log In
+        </div>
+      </Link>
+    </li> */}
+  </ul>
+</nav>
         <div className="flex font-bold wrapper-gap" style={{ gap: "20px" }}>
           <Link className="no-underline" style={{ color: "#2B4A84" }} to="/">
             <div className="home">Home</div>
@@ -128,7 +139,7 @@ export default function Header() {
           >
             <div className="home">EMI Calculator</div>
           </Link>
-          <Link
+          {/* <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="/faqs"
@@ -137,8 +148,8 @@ export default function Header() {
             }}
           >
             <div className="home">FAQs</div>
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="/blog"
@@ -147,8 +158,8 @@ export default function Header() {
             }}
           >
             <div className="home">Blog</div>
-          </Link>
-          {/* <Link
+          </Link> */}
+          <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="/duplicate"
@@ -157,7 +168,7 @@ export default function Header() {
             }}
           >
             <div className="home">Duplicate</div>
-          </Link> */}
+          </Link> 
           <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}
@@ -178,7 +189,7 @@ export default function Header() {
               Get Cash Now
             </div>
           </Link>
-          <Link
+          {/* <Link
             className="cursor-pointer no-underline"
             style={{ color: "#2B4A84" }}
           >
@@ -189,7 +200,7 @@ export default function Header() {
               Log In
             </div>
           </Link>
-        
+         */}
             
            
         </div>

@@ -83,7 +83,7 @@ export default function Personel() {
   };
   return (
     <div className="text-black per-loan-back mt-16">
-      <div className="flex gap-5">
+      <div className="main-per gap-5">
         <div style={{ width: "50%" }}>
           <div>
             <img src={process.env.PUBLIC_URL + "/assets/images/bacr.png"}></img>
@@ -108,11 +108,11 @@ export default function Personel() {
         </div>
         <div style={{ width: "50%" }}>
           <div>
-            <div className="font-bold text-4xl mt-5 text-center">
+            <div className="font-bold text-3xl mt-5 text-center">
               Benefits And Features Of Unsecured Personal Loans
             </div>
             <div className=" text-black rounded-xl mt-5 ">
-              <div className="m-auto w-2/4">
+              <div className="m-auto no-contra">
                 <div className="text-black mt-5">
                   <div className="font-bold">1. No Collateral:</div>
                   <p>
@@ -140,11 +140,11 @@ export default function Personel() {
           </div>
         </div>
       </div>
-      <div className="font-bold text-4xl mt-5 text-center">
+      <div className="font-bold text-3xl mt-5 text-center">
         Personal Loan Eligibility
       </div>
-      <div className="mt-3   rounded-xl text-black m-auto w-2/4">
-        <p>
+      <div className="mt-3  ml-5 rounded-xl text-black m-auto w-2/4">
+        <p className="ml-5">
           Personal loans are offered by most banks and NBFCs, each with their
           own specific eligibility criteria. Nonetheless, there exist certain
           common requirements across all financial institutions. The eligibility
@@ -216,7 +216,7 @@ export default function Personel() {
       <div className="text-3xl font-bold mt-5 text-center">
         Representative Example:
       </div>
-      <div className=" rounded-xl mt-5 text-black m-auto w-1/3">
+      <div className=" rounded-xl mt-5 text-black m-auto example">
         <div className="mt-5 ">Loan Amount: ₹1,00,000</div>
         <div>Tenure: 36 months</div>
         <div>Interest Rate: @18%* (reducing basis)</div>

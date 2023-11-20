@@ -2,16 +2,11 @@ import React from "react";
 export default function About() {
   return (
     <div className="mt-16">
-      <div className="about-back">
-        <div className="flex">
-          <div className="mt-2  ml-5 w-2/4">
-            <p
-              className=" text-3xl mt-5 font-bold text-black"
-             
-            >
-              ABOUT US
-            </p>
-            <p className="mt-2 text-xl text-black" >
+      <div>
+        <div className="about-main">
+          <div className="mt-2  ml-5">
+            <p className=" text-3xl mt-5 font-bold text-black">ABOUT US</p>
+            <p className="mt-2 text-xl text-black">
               Get to know the team behind Clikfin, India’s Best app to offer
               online credit, making credit easily accessible to millions of
               Indians right when they need it, without any collateral or complex
@@ -22,18 +17,13 @@ export default function About() {
               securing favorable deals.
             </p>
           </div>
-          <div>
-           
-              <img style={{width:'100%',height:'100%'}} 
-                                src={process.env.PUBLIC_URL + '/assets/images/bg.png'}
-
-              ></img>
-            
-          </div>
+          {/* <div>
+            <img src={process.env.PUBLIC_URL + "/assets/images/bg.png"}></img>
+          </div> */}
         </div>
       </div>
 
-      <div className="flex p-5 gap-5">
+      <div className=" p-5 gap-5 about-para">
         <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid ">
           <div className="font-bold text-center"> Our Vision</div>
           <div className="mt-3">
@@ -68,7 +58,7 @@ export default function About() {
       </div>
 
       <div className="text-center">
-        <div className="font-bold mt-5 text-4xl ">
+        <div className="font-bold mt-5 text-3xl ">
           Discover The Possibilities With Our Instant Loan Service
         </div>
         <div className="font-bold mt-3 ">
@@ -176,22 +166,21 @@ export default function About() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
-      <div className="our-mission text-center font-bold text-4xl">
+      <div className="our-mission text-center font-bold text-3xl">
         Why Apply With Us?
       </div>
       <div className="text-center font-bold mt-5">
         There Are Not Only One Or Couples Of Reason, We Understand To Provide
         Best Services As Much As We Can.
       </div>
-      <div className="flex justify-around mt-5 font-bold">
+      <div className="flex justify-around mt-5 font-bold p-2 gap-5">
         <div>Secure And Easy Process</div>
         <div>100% Confidential</div>
         <div>Flexible Repayment Plans</div>
       </div>
-      <div className="flex justify-around  gap-5">
+      <div className="last-about-para  gap-5">
         <div className="text-center p-2  rounded-xl text-black">
           Your privacy and security are our utmost priorities. Our loan
           procedure is designed to be easy and straightforward, and once your

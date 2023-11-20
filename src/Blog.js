@@ -19,9 +19,9 @@ export default function Blog() {
   };
 
   return (
-    <div>
-      <div className=" p-5">
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 p-5 mt-5 clickfin-para-home" style={{border:'1px solid black'}}>
+    <div className="p-5">
+    
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 pb-20 mt-5 blog-main">
               <div className="snip1527 clickfin-para-home" style={{border:'1px solid black'}}>
                 <div class="image">
                   <img 
@@ -449,6 +449,6 @@ export default function Blog() {
               </div>
             </div>
       </div>
-    </div>
+    
   );
 }

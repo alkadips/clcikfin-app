@@ -23,10 +23,7 @@ class EmiCalc extends React.Component {
         Header: "Total Payments",
         accessor: "paymentRounded",
       },
-      {
-        Header: "Remaining Balance",
-        accessor: "principalBalanceRounded",
-      },
+    
     ],
     amortizationSchedule: [],
     loanResponse: {
@@ -57,8 +54,8 @@ class EmiCalc extends React.Component {
           EMI Calculator - Your Convenient Loan Planning Tool
         </div>
 
-        <div className="flex justify-evenly text-black gap-5 p-5">
-          <div className="clickfin-para-home sample-cal shadow-2xl ... p-5 w-2/4 border-2 border-solid ">
+        <div className=" emi-main text-black p-3">
+          <div className="clickfin-para-home sample-cal shadow-2xl ... p-5  border-2 border-solid ">
             <div>
               <InputForm onSubmit={this.calculatePayments} />
               <div className="mt-5">
@@ -72,7 +69,7 @@ class EmiCalc extends React.Component {
             </div>
           </div>
 
-          <div className="clickfin-para-home sample-cal shadow-2xl ... p-5 w-2/4 border-2 border-solid">
+          <div className="clickfin-para-home sample-cal shadow-2xl ... p-5  border-2 border-solid">
             <div>Sample Calculations</div>
             <div className="flex mt-5 gap-5 justify-between">
               <div>Loan Amount</div>
@@ -111,15 +108,15 @@ class EmiCalc extends React.Component {
         </div>
 
         <div></div>
-        <div className="flex">
+        <div className=" mt-5 gap-5 p-5 emi-glance">
           <div>
             <img 
-             src={process.env.PUBLIC_URL + '/assets/images/emi2.png'}
+             src={process.env.PUBLIC_URL + '/assets/images/emi2.jpeg'}
             ></img>
           </div>
           <div className="  text-black rounded-xl">
             <div>
-              <div className="mt-2">
+              <div>
                 <p>
                   Calculating the Equated Monthly Installment (EMI) for a loan
                   has never been easier. With our user-friendly EMI calculator,

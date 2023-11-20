@@ -7,30 +7,29 @@ export default function Homepage() {
   const toggleupword = () => {
     setupwords(!upwords);
   };
-  
+
   const toggleloantap = () => {
     setLoanTap(!laontap);
   };
 
-  
   return (
     <div>
-      <div className="p-5 flex  mt-5 gap-5  justify-between" style={{background:'#ecebeb'}}>
-        <div>
-          <div>
-            <img src={process.env.PUBLIC_URL + '/assets/images/home.png'}></img>
-          </div>
+      <div
+        className="p-5  gap-5 main-home"
+        style={{ background: "#ecebeb" }}
+      >
+        <div >
+          <img src={process.env.PUBLIC_URL + "/assets/images/home.png"}></img>
         </div>
-        <div className="w-2/4">
+
+        <div>
           <div className="flex   mt-5 gap-5 justify-center">
             <div>
               <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
                 <img
                   className="mobile-image"
                   alt="google"
-                  style={{width:'80%'}}
-                  src={process.env.PUBLIC_URL + '/assets/images/andr.png'}
-
+                  src={process.env.PUBLIC_URL + "/assets/images/andr.png"}
                 ></img>
               </Link>
             </div>
@@ -39,23 +38,22 @@ export default function Homepage() {
                 <img
                   className="mobile-image"
                   alt="apple"
-                  src={process.env.PUBLIC_URL + '/assets/images/app.png'}
-
+                  src={process.env.PUBLIC_URL + "/assets/images/app.png"}
                 ></img>
               </Link>
             </div>
           </div>
 
-          <div className="font-bold text-3xl ml-3 mt-5 text-black">
+          <div className="font-bold text-3xl ml-3 mt-5 text-black welcome">
             Welcome To ClikFin – Your Instant Life Upgrade
           </div>
           <div className="list-item-demo">
-            <ul className="text-black" style={{ listStyle: "initial",  }}>
+            <ul className="text-black" style={{ listStyle: "initial" }}>
               <li>Up to ₹10 Lakhs</li>
               <li>Instant Transfer to Bank</li>
             </ul>
           </div>
-          <div className="clickfin-para-home p-3  rounded text-black border-5 border-solid ">
+          <div className="clickfin-para-home p-3  rounded text-black  border-solid "style={{border:'1px solid'}}>
             <p>
               At ClikFin, we understand that life can present unexpected
               challenges and opportunities, and that’s why we’re here to offer
@@ -71,10 +69,13 @@ export default function Homepage() {
         </div>
       </div>
 
-      <div className=" text-center text-4xl text-black font-bold mt-5" >
+      <div className=" text-center text-3xl text-black font-bold mt-5">
         Why Choose Instant Loan?
       </div>
-      <div className="text-center mt-3 text-black m-auto" style={{width:'50%'}}>
+      <div
+        className="text-center mt-3 text-black m-auto"
+        style={{ width: "50%" }}
+      >
         <p>
           It's A Rapidly Evolving Digital Age, And Clikfin Offers You A Truly
           Modern, Sensible Personal Loan Option. No Lengthy Paperwork, Instant
@@ -85,7 +86,7 @@ export default function Homepage() {
         </p>
       </div>
 
-      <div className=" text-center text-4xl text-black mt-24 font-bold">
+      <div className=" text-center text-3xl text-black mt-24 font-bold">
         Our Awesome Testimonials
       </div>
       <div className="text-center mt-3 text-black">
@@ -94,10 +95,10 @@ export default function Homepage() {
           Blessings Makes Us Unique.
         </p>
       </div>
-      <div className="flex gap-5  justify-center text-black p-3">
+      <div className="flex gap-5  justify-center text-black p-3 ">
         <Carousel>
           <Carousel.Item>
-            <div className="flex gap-5  justify-center text-black p-3">
+            <div className=" gap-5  justify-center text-black p-3 testmonials">
               <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
@@ -110,32 +111,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
-
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                 </div>
@@ -160,31 +160,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                 </div>
@@ -209,31 +209,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                 </div>
@@ -249,7 +249,7 @@ export default function Homepage() {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="flex gap-5 justify-center text-black p-3">
+            <div className=" gap-5 justify-center text-black p-3 testmonials">
               <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
@@ -262,33 +262,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
-
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
-
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                 </div>
@@ -313,31 +311,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                 </div>
@@ -362,31 +360,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                 </div>
@@ -402,7 +400,7 @@ export default function Homepage() {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="flex gap-5  justify-center text-black p-3">
+            <div className=" gap-5  justify-center text-black p-3 testmonials">
               <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
                 <div>
                   <p>
@@ -415,31 +413,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                 </div>
@@ -464,31 +462,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                 </div>
@@ -513,31 +511,31 @@ export default function Homepage() {
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                   <div>
                     <img
                       className="w-5 h-5"
-                      src={process.env.PUBLIC_URL + '/assets/images/star1.png'}
+                      src={process.env.PUBLIC_URL + "/assets/images/star1.png"}
                     ></img>
                   </div>
                 </div>
@@ -554,7 +552,7 @@ export default function Homepage() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className="font-bold text-center text-4xl text-black mt-12">
+      <div className="font-bold text-center text-3xl text-black mt-12">
         Our Partners
       </div>
 
@@ -563,24 +561,21 @@ export default function Homepage() {
           <img
             onClick={toggleupword}
             className="mobile-image cursor-pointer w-36"
-            src={process.env.PUBLIC_URL + '/assets/images/part1.png'}
-
+            src={process.env.PUBLIC_URL + "/assets/images/part1.png"}
           ></img>
         </div>
         <div>
           <img
             onClick={toggleloantap}
             className="mobile-image cursor-pointer w-36"
-            src={process.env.PUBLIC_URL + '/assets/images/par3.jpg'}
-
+            src={process.env.PUBLIC_URL + "/assets/images/par3.jpg"}
           ></img>
         </div>
 
         <div>
           <img
             className="mobile-image w-16 cursor-pointer"
-            src={process.env.PUBLIC_URL + '/assets/images/par2.jpeg'}
-
+            src={process.env.PUBLIC_URL + "/assets/images/par2.jpeg"}
           ></img>
         </div>
       </div>
@@ -590,22 +585,34 @@ export default function Homepage() {
           <table className="m-auto w-11/12">
             <tr>
               <th>BANK/NBFC</th>
-              <th>Interest Rate(pa)</th>
-              <th>Loan Amount </th>
-              <th>Processing Fees </th>
-              <th>Part Payment</th>
-              <th>Pre-closure Charges</th>
-              <th>Locking Period</th>
-              <th>Tenure</th>
+              <td>Upwards</td>
             </tr>
             <tr>
-              <td>Upwards</td>
+              <th>Interest Rate(pa)</th>
               <td>16.00 % to 32%</td>
+            </tr>
+            <tr>
+              <th>Loan Amount </th>
               <td>20,000 Thousand to 5 Lakhs</td>
+            </tr>
+            <tr>
+              <th>Processing Fees </th>
               <td>Up to 2 % to 4 % of the loan amount</td>
+            </tr>
+            <tr>
+              <th>Part Payment</th>
               <td>Up to 40% of loan amount every year</td>
+            </tr>
+            <tr>
+              <th>Pre-closure Charges</th>
               <td>Upto 5% on your principal outstanding + GST</td>
+            </tr>
+            <tr>
+              <th>Locking Period</th>
               <td>3 Month</td>
+            </tr>
+            <tr>
+              <th>Tenure</th>
               <td>12 to 48 months</td>
             </tr>
           </table>
@@ -616,34 +623,47 @@ export default function Homepage() {
           <table className="m-auto w-11/12">
             <tr>
               <th>BANK/NBFC</th>
-              <th>Interest Rate(pa)</th>
-              <th>Loan Amount </th>
-              <th>Processing Fees </th>
-              <th>Part Payment</th>
-              <th>Pre-closure Charges</th>
-              <th>Locking Period</th>
-              <th>Tenure</th>
-            </tr>
-
-            <tr>
               <td>Loan Tap</td>
+            </tr>
+            <tr>
+              <th>Interest Rate(pa)</th>
               <td>16.00 % to 24%</td>
+            </tr>
+            <tr>
+              <th>Loan Amount </th>
               <td>50 Thousand to 10 Lakhs</td>
+            </tr>
+            <tr>
+              <th>Processing Fees </th>
               <td>2 % of the loan amount</td>
+            </tr>
+            <tr>
+              <th>Part Payment</th>
               <td>Up to 40% of loan amount every year</td>
+            </tr>
+            <tr>
+              <th>Pre-closure Charges</th>
               <td>
                 <ul>
                   <li>0-6 Months – 5% of Principal Outstanding</li>
                   <li>6 months – 0%</li>
                 </ul>
               </td>
+            </tr>
+            <tr>
+              <th>Locking Period</th>
               <td>6 Month</td>
+            </tr>
+
+            <tr>
+              <th>Tenure</th>
+
               <td>12 to 60 months</td>
             </tr>
           </table>
         </div>
       )}
-      <div className="font-bold text-center text-4xl text-black mt-12">
+      <div className="font-bold text-center text-3xl text-black mt-12">
         Introducing ClikFin - Your Gateway To Financial Solutions
       </div>
       <div className="flex font-bold justify-around text-black mt-12">

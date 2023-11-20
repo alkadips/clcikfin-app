@@ -4,9 +4,10 @@ export default function DuplicateCusLead() {
   const [name, setName] = useState();
   const [mobile, setMobile] = useState();
   const [email, setEmail] = useState();
-  const checkDuplicatelead = () => {
-    axios
-      .post(
+  
+  const checkDuplicatelead = async() => {
+
+    axios.post(
         "https://test-partners.cashe.co.in/partner/checkDuplicateCustomerLead",
         {
           partner_name: "TestPartner",
@@ -19,7 +20,27 @@ export default function DuplicateCusLead() {
       .catch((error) => {
         console.log("error while customer duplication lead", error);
       });
-  };
+
+//    const data={
+//        partner_name: "TestPartner",
+//       mobile_no: "9119225448"       
+//     }
+//       await axios.post("https://test-partners.cashe.co.in/partner/checkDuplicateCustomerLead", {
+//       headers: {
+//           'Content-Type': 'application/json',
+//           'Check-Sum':'rKVpRHVHgkMlayrNviKePu40OXI='
+//       },
+//       data
+//   })      
+//   .then((response) => {
+//       // dispatch({type: FOUND_USER, data: response.data[0]})
+// console.log(response)
+//   })
+//   .catch((error) => {
+//       // dispatch({type: ERROR_FINDING_USER})
+//       console.log(error)
+//   })
+}
   const preAprovalApi = () => {
     axios
       .post("https://test-partners.cashe.co.in/report/getLoanApprovalDetails", {

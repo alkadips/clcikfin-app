@@ -53,7 +53,7 @@ export default function Faqs() {
   };
 
   return (
-    <div className="faq-section flex mt-24 gap-5 p-5">
+    <div className="faq-section  mt-10 gap-5 p-5">
      
 
       <div>

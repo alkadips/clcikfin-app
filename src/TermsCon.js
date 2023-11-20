@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 export default function TermsCon() {
 
   return (
-    <div className="mt-5" >
+    <div >
      
-      <div className="p-5  rounded-xl" >
-      <div className="font-bold text-4xl mt-5 text-center text-white">
+      <div className="p-5  rounded-xl terms-main" >
+      <div className="font-bold text-3xl mt-5 text-center text-black">
         Terms & Condition
       </div>
      
-      <div className="text-white p-5 text-center">
-        <div className="m-auto w-2/4">
+      <div className="text-black  text-center">
+        <div >
         <div>
-          <p>
+          <p className="mt-5">
             Welcome to ClikFin! These Terms and Conditions (“Terms”) outline the
             rules and regulations for using our website, accessible at
             <Link to="www.clikfin.com" style={{ color: "blue" }}>

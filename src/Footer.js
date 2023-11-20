@@ -13,9 +13,9 @@ export default function Footer() {
   }, []);
   return (
     <div className="footer mt-5">
-      <div className=" flex justify-around   mt-3 p-2">
-        <div>
-          <div>
+      <div className="footer-wrapper   mt-3 p-2">
+      
+          <div className="footer-logo">
             <Link
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -28,7 +28,7 @@ export default function Footer() {
               ></img>
             </Link>
           </div>
-        </div>
+        
         <div>
           <div className="font-bold">PRODUCTS</div>
           <Link
@@ -38,7 +38,16 @@ export default function Footer() {
             }}
             to="/personelloan"
           >
-            <div className="mt-5 text-xs">Personal Loan</div>
+            <div className="mt-3 text-xs">Personal Loan</div>
+          </Link>
+          <Link
+            className="no-underline text-white"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            to="/blog"
+          >
+            <div className="mt-3 text-xs">Blog</div>
           </Link>
         </div>
         <div>
@@ -50,7 +59,7 @@ export default function Footer() {
             }}
             to="/emicalculator"
           >
-            <div className="mt-5 text-xs">Emi Calculator</div>
+            <div className="mt-3 text-xs">Emi Calculator</div>
           </Link>
           <Link
             className="no-underline text-white"
@@ -71,7 +80,7 @@ export default function Footer() {
             }}
             to="/about"
           >
-            <div className="mt-5 text-xs">About Clikfin</div>
+            <div className="mt-3 text-xs">About Clikfin</div>
           </Link>
           <Link
             className="no-underline text-white"
@@ -93,7 +102,7 @@ export default function Footer() {
             }}
             to="/privacy"
           >
-            <div className="mt-5 text-xs">Privacy Policy</div>
+            <div className="mt-3 text-xs">Privacy Policy</div>
           </Link>
           <Link
             className="no-underline text-white"
@@ -108,11 +117,11 @@ export default function Footer() {
         <div>
         <div className="font-bold">CONTACT US</div>
 
-          <div className="flex   mt-5 gap-5 justify-center">
+          <div className="flex   mt-3 gap-5 justify-center">
             <div>
               <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
                 <img
-                  className="mobile-image"
+                  className="mobile-i3mage"
                   alt="google"
                   src={process.env.PUBLIC_URL + '/assets/images/andr.png'}
 
@@ -131,7 +140,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex justify-center mt-5 gap-2">
+          <div className="flex justify-center mt-3 gap-2">
             <div>
               <Link
                 className="text-white no-underline"
