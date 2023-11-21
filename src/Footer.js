@@ -41,7 +41,7 @@ export default function Footer() {
 
 
           {/* <ReactLink  to= "/personelloan" >Personal Loan</ReactLink> */}
-          <NavLink target="_blank" to="/personelloan">personelloan</NavLink>
+          <NavLink target="_blank" to="personelloan">personelloan</NavLink>
           {/* <a href="/personelloan" target="_blank">Personal Loan</a> */}
           {/* <Link
             className="no-underline text-white"
