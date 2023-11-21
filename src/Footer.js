@@ -40,7 +40,8 @@ export default function Footer() {
           </Link> */}
 
 
-          <ReactLink  to= "personelloan" >Personal Loan</ReactLink>
+          {/* <ReactLink  to= "/personelloan" >Personal Loan</ReactLink> */}
+          <a href="/personelloan" target="_blank">Personal Loan</a>
           {/* <Link
             className="no-underline text-white"
             onClick={() => {
