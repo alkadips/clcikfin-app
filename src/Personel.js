@@ -90,7 +90,7 @@ export default function Personel() {
           </div>
           <div className="ml-5 text-center">
             <div className="text-black mt-2">
-              <div className="font-bold"> Multipurpose</div>
+              <div className="font-bold">4. Multipurpose</div>
               <div>
                 {" "}
                 Versatile use for various needs like weddings, home renovations,
