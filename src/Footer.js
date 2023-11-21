@@ -35,7 +35,7 @@ export default function Footer() {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            href="/#/personelloan"
+            to="/#/personelloan"
           >
             <div className="mt-3 text-xs">Personal Loan</div>
           </Link>
