@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import { IoLogoFacebook } from "react-icons/io";
 import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io";
@@ -31,15 +30,15 @@ export default function Footer() {
         
         <div>
           <div className="font-bold">PRODUCTS</div>
-          <Link
+          <a
             className="no-underline text-white"
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            to="personelloan"
+            href="/personelloan"
           >
             <div className="mt-3 text-xs">Personal Loan</div>
-          </Link>
+          </a>
           <Link
             className="no-underline text-white"
             onClick={() => {
@@ -87,7 +86,7 @@ export default function Footer() {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            to="contact"
+            to="contact"  
           >
             <div className="text-xs mt-3">Contact Us</div>
           </Link>
