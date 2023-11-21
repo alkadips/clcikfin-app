@@ -36,7 +36,7 @@ export default function Footer() {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            to="/personelloan"
+            to="personelloan"
           >
             <div className="mt-3 text-xs">Personal Loan</div>
           </Link>
@@ -57,7 +57,7 @@ export default function Footer() {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            to="/emicalculator"
+            to="emicalculator"
           >
             <div className="mt-3 text-xs">Emi Calculator</div>
           </Link>
@@ -66,7 +66,7 @@ export default function Footer() {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            to="/faqs"
+            to="faqs"
           >
             <div className="text-xs mt-3">Faqs</div>
           </Link>
@@ -78,7 +78,7 @@ export default function Footer() {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            to="/about"
+            to="about"
           >
             <div className="mt-3 text-xs">About Clikfin</div>
           </Link>
@@ -87,7 +87,7 @@ export default function Footer() {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            to="/contact"
+            to="contact"
           >
             <div className="text-xs mt-3">Contact Us</div>
           </Link>
@@ -100,7 +100,7 @@ export default function Footer() {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            to="/privacy"
+            to="privacy"
           >
             <div className="mt-3 text-xs">Privacy Policy</div>
           </Link>
@@ -109,7 +109,7 @@ export default function Footer() {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            to="/terms"
+            to="terms"
           >
             <div className="text-xs mt-3">Terms & condition</div>
           </Link>

@@ -1,7 +1,7 @@
 import React from "react";
 export default function Contact() {
   return (
-    <div className="mt-10">
+    <div className="mt-24">
       <div className="font-bold text-3xl mt-5 text-center text-black">
         Get In Touch
       </div>
