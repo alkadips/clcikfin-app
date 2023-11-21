@@ -4,7 +4,7 @@ import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
-import {Link as ReactLink} from "react-router-dom"
+import {NavLink, Link as ReactLink} from "react-router-dom"
 export default function Footer() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -41,7 +41,8 @@ export default function Footer() {
 
 
           {/* <ReactLink  to= "/personelloan" >Personal Loan</ReactLink> */}
-          <a href="/personelloan" target="_blank">Personal Loan</a>
+          <NavLink target="_blank" to="/personelloan">personelloan</NavLink>
+          {/* <a href="/personelloan" target="_blank">Personal Loan</a> */}
           {/* <Link
             className="no-underline text-white"
             onClick={() => {
