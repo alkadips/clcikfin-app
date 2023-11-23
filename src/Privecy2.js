@@ -8,14 +8,14 @@ export default function Privacy2() {
           Privacy Policy
         </div>
         <div className="text-black">
-          <div className="font-bold mt-5">1. Introduction</div>
+          <div className="font-bold mt-5">Introduction</div>
           <div className="mt-3">
             CYGNISYS SERVICES PRIVATE LIMITED, a company established under the Companies Act, March 2013,
             with its registered office situated at 147, 3rd Floor, 7th Sector, 5th Main, HSR Layout, Bangalore,
             Karnataka 560102, India, and branch office at Sacred World Mall, Wanwadi, Pune, Maharashtra,
             exclusively owns and operates this digital platform.
           </div>
-          <div className="font-bold">Last Updated on 21 November 2023</div>
+          <div className="font-bold mt-5">Last Updated on 21 November 2023</div>
           <div className="mt-3">
             This privacy policy (“Policy”) is in accordance with the Information Technology Act, 2000, the
             Information Technology (Reasonable security practices and procedures and sensitive personal data
@@ -69,7 +69,7 @@ export default function Privacy2() {
           </div>
 
           <div className="font-bold mt-5">Services</div>
-          <div className="mt-2">ClikFin is in the business of inter alia, providing services (“Services”) in the nature of:</div>
+          <div>ClikFin is in the business of inter alia, providing services (“Services”) in the nature of:</div>
 
 
 
@@ -90,12 +90,12 @@ export default function Privacy2() {
           <div className="mt-2">On provision of information as mentioned in this Clause, You provide your express consent to Us to
             use the information for the purposes stated in this Clause in accordance with this Policy.
           </div>
-          <div className="font-bold">2. Facilitating the Provision of Loan and credit cards</div>
+          <div className="font-bold mt-5">2. Facilitating the Provision of Loan </div>
           <div className="mt-2">
             a) ClikFin has partnered with LoanTap, CREDIT SAISON and UPWARDS (collectively, “Lending
             Partners”) ClikFin acts as an intermediary for the purposes of connecting You with the
             Lending Partners and enabling You to avail products offered by Lending Partners such as
-            loans and credit cards and their other financial products, as the case maybe.
+            loans  and their other financial products, as the case maybe.
             b) Information that We Collect: We collect the following information from You with Your explicit
             consent per instructions from Lending Partners for processing Your loan application
           </div>
@@ -199,14 +199,14 @@ export default function Privacy2() {
             </div>
             <div className="mt-2">With respect to the information collected by Us to provide Services, You have the following rights
               available to You:</div>
-            <div className="mt-2 font-bold">1. Right to deny:</div>
+            <div className="mt-2 font-bold">a) Right to deny:</div>
             <div className="mt-2">
               You may deny providing any information required by Us, restrain Us from sharing information with
               Lending Partners or third parties (as the case maybe), deny storage of information or not provide Us
               the right to contact You.
             </div>
             <div className="font-bold mt-3">
-              2. Right to withdraw consent with respect to use of information and right to be forgotten
+              b) Right to withdraw consent with respect to use of information and right to be forgotten
             </div>
             <div className="mt-2">You have the right to withdraw consent previously provided to Us with respect to Our usage of Your
               information and You have the right to require the Platform to delete/ forget the data relating to You.
@@ -235,7 +235,7 @@ export default function Privacy2() {
               outsourced any services in relation to its credit products such as collection of dues to Us and in such
               cases, we will be required to retain Your information
             </div>
-            <div className="font-bold mt-5">3. Right to rectify</div>
+            <div className="font-bold mt-5">c) Right to rectify</div>
             <div className="mt-2">We urge You to review information provided by You. In the event that any information provided by
               You is inaccurate, incomplete or outdated, You have the right to provide Us with accurate, complete
               and up to date information and have Us rectify or amend such information at Our end immediately
@@ -296,26 +296,16 @@ export default function Privacy2() {
               same level of protection that is adhered to by Us which in no case shall be less than the standards
               mentioned under applicable laws. However, We are not responsible for any breach of security or for
               any actions of any third parties that receive Your personal information</div>
-            <div className="mt-5 font-bold">9. Grievance Redressal
-            </div>
-            <div>If You have any grievance with respect to Your personal information, please write to the Grievance
-              Redressal Officer (“GRO”), whose details are mentioned below:</div>
-            <div className="mt-2 font-bold">
-              Email ID: support@ClikFin.com
-              Address: Sacred World, SACRED WORLD MALL, Vitthal Rao Shivarkar Road, Parmar Nagar, Wanwadi,
-              Pune, Maharashtra 41104
-            </div>
-            <div>If You require any further information or clarification, You may also contact us at
-              support@ClikFin.com</div>
-            <div className="mt-2">Please allow us time of 72 (seventy-two) hours to process Your request and take required action</div>
-            <div className="font-bold mt-5">10. Phishing</div>
+            
+           
+            <div className="font-bold mt-5">9. Phishing</div>
             <div>“Phishing” usually occurs when users of a website are induced by an individual/entity into divulging
               sensitive personal information or personal information by using fraudulent websites and/ or e-mail
               addresses. In the event You provide information to a website or respond to an e-mail which does not
               belong to Us or is not connected with Us in any manner, You will be a victim of Phishing. We do not
               send e-mails requesting a User for payment information, user name or passwords</div>
             <div className="mt-5 font-bold">
-              11. Severability and Exclusion
+              10. Severability and Exclusion
             </div>
             <div>We have taken every effort to ensure that this Policy adheres to applicable laws, rules and
               regulations. The invalidity or unenforceability of any part of this Policy shall not prejudice or affect
@@ -325,15 +315,15 @@ export default function Privacy2() {
               other means. This includes, but is not limited to, information posted in any public areas of the
               Platform. All unsolicited information shall be deemed to be non-confidential and ClikFin shall be free
               to use and/ or disclose such unsolicited information without any limitations.</div>
-            <div className="mt-5 font-bold">12. No Waiver</div>
+            <div className="mt-5 font-bold">11. No Waiver</div>
             <div>The rights and remedies available under this Policy may be exercised as often as necessary and are
               cumulative and not exclusive of rights or remedies provided by law. It may be waived only in writing.
               Delay in exercising or non-exercise of any such right or remedy does not constitute a waiver of that
               right or remedy, or any other right or remedy</div>
-            <div className="mt-5 font-bold">13. Governing Law and Dispute Resolution</div>
+            <div className="mt-5 font-bold">12. Governing Law and Dispute Resolution</div>
             <div>This Policy shall be governed by and construed in accordance with laws and courts mentioned in the
               ‘Terms and Conditions’.</div>
-            <div className="font-bold mt-5"> 14. Applicability of local laws</div>
+            <div className="font-bold mt-5"> 13. Applicability of local laws</div>
             <div>The Company is corporated and registered under Companies Act, 2013 with its registered office at
               Bangalore, Karnataka , India, By browsing/using the Platform, You hereby acknowledge that ClikFin is
               not responsible or liable in any manner to comply with any local laws of Your territory except India</div>
