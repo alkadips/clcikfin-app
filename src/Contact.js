@@ -15,14 +15,14 @@ export default function Contact() {
             <div className="font-bold text-black">About Clikfin </div>
             <div className=" rounded-xl text-black">
               <p>
-                Clikfin brand is 100% owned by CygniSys Service’s Pvt Ltd
+                Clikfin brand is 100% owned by CygniSys Services Pvt Ltd
                 formerly known as ( CygniSys OPC Pvt Ltd ) incorporated in 2021,
                 we are an online platform that provides customers with financial
                 products and services such as personal loans. We connect
                 borrowers with lenders to help them get the best deal possible.
                 We have partnered with RBI Approved NBFCs to distribute various
                 types of loans. We are not a NBFC, we do not do any co-lending /
-                FLDG based lending ourselves. We don’ do any sort of collections
+                FLDG based lending ourselves. We don't do any sort of collections
                 / recovery of loans we distribute..
               </p>
             </div>
@@ -40,7 +40,7 @@ export default function Contact() {
         </div>
 
         <div className="flex justify-around mt-3 font-bold">
-          <div>Corporate Office</div>
+          <div>CORPORATE OFFICE</div>
 
           <div>BRANCH OFFICE</div>
 

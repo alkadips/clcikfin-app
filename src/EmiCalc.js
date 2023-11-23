@@ -55,7 +55,7 @@ class EmiCalc extends React.Component {
         </div>
 
         <div className=" emi-main text-black p-3">
-          <div className="clickfin-para-home sample-cal shadow-2xl ... p-5  border-2 border-solid ">
+          <div className="clickfin-para-home sample-cal shadow-2xl ... p-5  border-2 border-solid " style={{fontSize:'14px'}}>
             <div>
               <InputForm onSubmit={this.calculatePayments} />
               <div className="mt-5">
@@ -69,7 +69,7 @@ class EmiCalc extends React.Component {
             </div>
           </div>
 
-          <div className="clickfin-para-home sample-cal shadow-2xl ... p-5  border-2 border-solid">
+          <div className="clickfin-para-home sample-cal shadow-2xl ... p-5  border-2 border-solid" style={{fontSize:'14px'}}>
             <div>Sample Calculations</div>
             <div className="flex mt-5 gap-5 justify-between">
               <div>Loan Amount</div>

@@ -10,7 +10,7 @@ const AmortizationSchedule = (props) => (
       justify
     >
       <Tab eventKey="monthly" title="Monthly Breakdown">
-        <Table striped bordered hover size="lg" className="tabs-emi" style={{fontSize:'16px'}}>
+        <Table striped bordered hover size="lg" className="tabs-emi" style={{fontSize:'14px'}}>
           <thead>
             <tr>
               {props.columns.map((column) => (
@@ -32,7 +32,7 @@ const AmortizationSchedule = (props) => (
       </Tab>
 
       <Tab eventKey="yearly" title="Yearly">
-        <Table striped bordered hover size="lg" className="tabs-emi" style={{fontSize:'16px'}}>
+        <Table striped bordered hover size="lg" className="tabs-emi" style={{fontSize:'14px'}}>
           <thead>
             <tr>
               {props.columns.map((column) => (

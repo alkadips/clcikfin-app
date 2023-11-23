@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
         
         <div>
-          <div className="font-bold">PRODUCTS</div>
+          <div className="font-bold text-xs">PRODUCTS</div>
           <Link target="_blank"
             className="no-underline text-white"
             onClick={() => {
@@ -51,7 +51,7 @@ export default function Footer() {
           </Link>
         </div>
         <div>
-          <div className="font-bold">RESOURCES</div>
+          <div className="font-bold text-xs">RESOURCES</div>
           <Link target="_blank"
             className="no-underline text-white"
             onClick={() => {
@@ -72,7 +72,7 @@ export default function Footer() {
           </Link>
         </div>
         <div>
-          <div className="font-bold">COMPANY</div>
+          <div className="font-bold text-xs">COMPANY</div>
           <Link target="_blank"
             className="no-underline text-white"
             onClick={() => {
@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="font-bold">MORE</div>
+          <div className="font-bold text-xs">MORE</div>
           <Link target="_blank"
             className="no-underline text-white"
             onClick={() => {

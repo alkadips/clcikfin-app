@@ -6,7 +6,7 @@ export default function About() {
         <div className="about-main">
           <div className="mt-2  ml-5">
             <p className=" text-3xl mt-5 font-bold text-black">ABOUT US</p>
-            <p className="mt-2 text-xl text-black">
+            <p className="mt-2 text-md text-black">
               Get to know the team behind Clikfin, India’s Best app to offer
               online credit, making credit easily accessible to millions of
               Indians right when they need it, without any collateral or complex
@@ -23,10 +23,10 @@ export default function About() {
         </div>
       </div>
 
-      <div className=" p-5 gap-5 about-para">
+      <div className=" p-5 gap-5 about-para ">
         <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid " style={{background:'#bdbde3'}}>
           <div className="font-bold text-center"> Our Vision</div>
-          <div className="mt-3">
+          <div className="mt-3" style={{fontSize:'14px'}}>
             {" "}
             Empower individuals to achieve their aspirations through financial
             tools and support. Dedicated to exceptional customer service,
@@ -37,7 +37,7 @@ export default function About() {
 
         <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid "style={{background:'#bdbde3'}}>
           <div className="font-bold text-center">Our Mission</div>
-          <div className="mt-3">
+          <div className="mt-3 " style={{fontSize:'14px'}}>
             At ClikFin, our mission is to seamlessly connect borrowers and
             lenders, ensuring access to the besttailored financial solutions. We
             are dedicated to empowering individuals by providing efficient and
@@ -47,7 +47,7 @@ export default function About() {
 
         <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid "style={{background:'#bdbde3'}}>
           <div className="font-bold text-center"> Who We Are</div>
-          <div className="mt-3">
+          <div className="mt-3" style={{fontSize:'14px'}}>
             ClikFin, a venture by CygniSys Services Pvt. Ltd. is a leading
             online platform specializing in personal loans. We pride ourselves
             on bridging the gap between financial aspirations and practical

@@ -32,11 +32,11 @@ export default function Header() {
   };
   return (
     <div className="sticky-header">
-      <div className="flex justify-evenly shadow-2xl ... header-wrapper ">
+      <div className="flex justify-between shadow-2xl ... header-wrapper ">
         <div>
-          <Link className="no-underline text-white"  to="/">
+          <Link className="no-underline text-white" to="/">
             <img
-              className="w-40"
+              className="w-40 ml-5"
               alt="logo"
               src={process.env.PUBLIC_URL + "/assets/images/white.png"}
             ></img>
@@ -143,6 +143,7 @@ export default function Header() {
                 </div>
               </Link>
             </li>
+
             {/* <li>
       <Link style={{ cursor: "pointer",textDecoration:'none' }}>
         <div
@@ -155,8 +156,8 @@ export default function Header() {
     </li> */}
           </ul>
         </nav>
-        <div className="flex font-bold wrapper-gap  " style={{ gap: "20px" }}>
-          <Link className="no-underline text-white"  to="/">
+        <div className="flex p-5  wrapper-gap  " style={{ gap: "20px", fontSize: '13px' }}>
+          <Link className="no-underline text-white" to="/">
             <div className="home">Home</div>
           </Link>
           <Link
@@ -169,9 +170,9 @@ export default function Header() {
             <div className="home">About</div>
           </Link>
           <Link
-           onClick={() => {
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-          }}
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
             className="no-underline text-white"
             to="/personelloan"
           >
@@ -207,9 +208,9 @@ export default function Header() {
           >
             <div className="home">Blog</div>
           </Link> */}
-         
-        
-           {/* <Menu as="div" className="relative inline-block text-left">
+
+
+          {/* <Menu as="div" className="relative inline-block text-left">
             <div>
               <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                 Options
@@ -300,7 +301,7 @@ export default function Header() {
 
           <Link
             className="no-underline text-white"
-          
+
             to="/contact"
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -309,6 +310,26 @@ export default function Header() {
             <div className="home">Contact</div>
           </Link>
 
+
+
+
+          <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
+            <img
+              style={{ width: '100px' }}
+              className="mobile-image"
+              alt="google"
+              src={process.env.PUBLIC_URL + "/assets/images/andr.png"}
+            ></img>
+          </Link>
+
+          <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
+            <img
+              style={{ width: '100px' }}
+              className="mobile-image"
+              alt="apple"
+              src={process.env.PUBLIC_URL + "/assets/images/app.png"}
+            ></img>
+          </Link>
           <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}
@@ -318,6 +339,7 @@ export default function Header() {
               Get Cash Now
             </div>
           </Link>
+
           {/* <Link
             className="cursor-pointer no-underline"
             style={{ color: "#2B4A84" }}

@@ -4,18 +4,18 @@ export default function Privacy2() {
   return (
     <div>
       <div className=" mt-5 p-5">
-        <div className="font-bold text-3xl mt-5 text-center text-black">
+        <div className="font-bold text-4xl mt-5 text-center text-black">
           Privacy Policy
         </div>
         <div className="text-black">
-          <div className="font-bold mt-5">Introduction</div>
+          <div className="font-bold mt-5 text-4xl">Introduction</div>
           <div className="mt-3">
             CYGNISYS SERVICES PRIVATE LIMITED, a company established under the Companies Act, March 2013,
             with its registered office situated at 147, 3rd Floor, 7th Sector, 5th Main, HSR Layout, Bangalore,
             Karnataka 560102, India, and branch office at Sacred World Mall, Wanwadi, Pune, Maharashtra,
             exclusively owns and operates this digital platform.
           </div>
-          <div className="font-bold mt-5">Last Updated on 21 November 2023</div>
+          <div className="font-bold mt-5 text-3xl">Last Updated on 21 November 2023</div>
           <div className="mt-3">
             This privacy policy (“Policy”) is in accordance with the Information Technology Act, 2000, the
             Information Technology (Reasonable security practices and procedures and sensitive personal data
@@ -68,13 +68,13 @@ export default function Privacy2() {
 
           </div>
 
-          <div className="font-bold mt-5">Services</div>
+          <div className="font-bold mt-5 text-3xl">Services</div>
           <div>ClikFin is in the business of inter alia, providing services (“Services”) in the nature of:</div>
 
 
 
-          <div className="mt-5 font-bold">
-            1. Provision of Credit Report
+          <div className="mt-5 font-bold text-3xl">
+           Provision of Credit Report
           </div>
           <ul>
             <li>We fetch Your credit report (“Report”) from credit bureaus as Your agent after obtaining Your
@@ -90,13 +90,13 @@ export default function Privacy2() {
           <div className="mt-2">On provision of information as mentioned in this Clause, You provide your express consent to Us to
             use the information for the purposes stated in this Clause in accordance with this Policy.
           </div>
-          <div className="font-bold mt-5">2. Facilitating the Provision of Loan </div>
-          <div className="mt-2">
-            a) ClikFin has partnered with LoanTap, CREDIT SAISON and UPWARDS (collectively, “Lending
+          <div className="font-bold  text-3xl mt-5">Facilitating the Provision of Loan </div>
+          <div className="mt-2 ml-5">
+            -ClikFin has partnered with LoanTap, CREDIT SAISON and UPWARDS (collectively, “Lending
             Partners”) ClikFin acts as an intermediary for the purposes of connecting You with the
             Lending Partners and enabling You to avail products offered by Lending Partners such as
             loans  and their other financial products, as the case maybe.
-            b) Information that We Collect: We collect the following information from You with Your explicit
+             -Information that We Collect: We collect the following information from You with Your explicit
             consent per instructions from Lending Partners for processing Your loan application
           </div>
 
@@ -125,7 +125,7 @@ export default function Privacy2() {
               providing ancillary services to the Lending Partner as outsourced by the Lending Partners which we
               may further outsource to third parties, such as collection of loan dues.
             </div>
-            <div className="mt-2">c) Sharing of information: We share such information with Lending Partners and third parties
+            <div className="mt-2 ml-5">- Sharing of information: We share such information with Lending Partners and third parties
               for collection of documents required for completing KYC for the purpose of the credit
               product you wish to avail</div>
             <div className="mt-2">
@@ -136,8 +136,8 @@ export default function Privacy2() {
             </div>
             <div className="mt-2">For details on Our Lending Partners, You may refer to website link of Our Lending Partners which we
               publish on Our Platform</div>
-            <div className="mt-5 font-bold">3. Marketing and Promotional Campaign</div>
-            <div className="mt-2">a) By using the Platform and furnishing information about the Services, You hereby agree that
+            <div className="mt-5 font-bold text-3xl"> Marketing and Promotional Campaign</div>
+            <div className="mt-2 ml-5">-By using the Platform and furnishing information about the Services, You hereby agree that
               You are interested in acquiring knowledge of and availing various products, services, offers,
               or campaigns that ClikFin displays on its Platform, including but not limited to pre-approved
               loan and credit card offers provided by Our Lending Partners. You, while providing
@@ -146,18 +146,18 @@ export default function Privacy2() {
               relation to the Services, i.e., for imparting credit product and Services knowledge, informing
               about promotional offers running on Platform and various other offers as provided by Our
               Lending Partners with respect to their products and services</div>
-            <div className="mt-2">
-              b) Information that We Collect: Information collected as detailed under Clause 1(b) and
+            <div className="mt-2 ml-5">
+              - Information that We Collect: Information collected as detailed under Clause 1(b) and
               employment related information as mentioned under Clause 2(b) shall be collected/utilised
               to provide Services enlisted in this Clause.
             </div>
-            <div className="mt-2">
-              c) Sharing of information: We share Your information with third parties and network of Lending
+            <div className="mt-2 ml-5">
+              - Sharing of information: We share Your information with third parties and network of Lending
               Partners to enable them to contact You in relation to the marketing and promotional
               campaigns as detailed under this Clause 3.
             </div>
-            <div className="font-bold mt-5">
-              4. Customer support
+            <div className="font-bold mt-5 text-3xl">
+              Customer support
             </div>
             <div className="mt-2">
               a) You may call or write to us for any customer support in relation to the Services provided by
@@ -184,8 +184,8 @@ export default function Privacy2() {
               By writing to us or calling us, You provide Your express consent to Us to use the information listed in
               this Clause for purposes mentioned in this Clause
             </div>
-            <div className="mt-5 font-bold">
-              5. Cookies
+            <div className="mt-5 font-bold text-3xl">
+               Cookies
             </div>
             <div className="mt-2">Cookies are small data files that a website stores on Your computer. We will use cookies on Our
               Platform similar to other lending marketplace websites/apps. Use of this information helps Us
@@ -194,19 +194,19 @@ export default function Privacy2() {
               products that may be of interest to You. We might also use this information to display advertising
               from third party companies. You will be provided with an option to decline cookies at all times but if
               You choose to do this it might affect Services provided to You</div>
-            <div className="mt-5 font-bold">
-              6. Your rights
+            <div className="mt-5 font-bold text-3xl">
+               Your rights
             </div>
             <div className="mt-2">With respect to the information collected by Us to provide Services, You have the following rights
               available to You:</div>
-            <div className="mt-2 font-bold">a) Right to deny:</div>
+            <div className="mt-2 font-bold text-3xl ml-5">-Right to deny:</div>
             <div className="mt-2">
               You may deny providing any information required by Us, restrain Us from sharing information with
               Lending Partners or third parties (as the case maybe), deny storage of information or not provide Us
               the right to contact You.
             </div>
-            <div className="font-bold mt-3">
-              b) Right to withdraw consent with respect to use of information and right to be forgotten
+            <div className="font-bold mt-3 text-3xl ml-5">
+              - Right to withdraw consent with respect to use of information and right to be forgotten
             </div>
             <div className="mt-2">You have the right to withdraw consent previously provided to Us with respect to Our usage of Your
               information and You have the right to require the Platform to delete/ forget the data relating to You.
@@ -235,7 +235,7 @@ export default function Privacy2() {
               outsourced any services in relation to its credit products such as collection of dues to Us and in such
               cases, we will be required to retain Your information
             </div>
-            <div className="font-bold mt-5">c) Right to rectify</div>
+            <div className="font-bold mt-5 text-3xl ml-5">- Right to rectify</div>
             <div className="mt-2">We urge You to review information provided by You. In the event that any information provided by
               You is inaccurate, incomplete or outdated, You have the right to provide Us with accurate, complete
               and up to date information and have Us rectify or amend such information at Our end immediately
@@ -246,7 +246,7 @@ export default function Privacy2() {
             <div className="mt-2">Please be mindful that the Services provided to You may get affected or We may no longer be able to
               provide You Services if You exercise Your right to deny consent or Your right to withdraw consent or
               Your right to be forgotten or if You provide incorrect/inaccurate information.</div>
-            <div className="mt-5 font-bold">7. Storage and security of information</div>
+            <div className="mt-5 font-bold text-3xl"> Storage and security of information</div>
             <div className="mt-2">
               We store and process Your personal information on Amazon Web Services. Some of the safeguards
               We use are firewalls and data encryption using SSL, and information access authorization controls.
@@ -284,7 +284,7 @@ export default function Privacy2() {
               from Lending Partner in cases of an ongoing loan or pending credit card payments for collection of
               dues if outsourced to Us
             </div>
-            <div className="font-bold mt-5">8. Confidentiality Agreement:</div>
+            <div className="font-bold mt-5 text-3xl">Confidentiality Agreement:</div>
             <div className="mt-2">We may share Your data with third Parties for providing and improving Our Services, enforcing
               ‘Terms & Conditions’, and may use or assign Your information in the course of corporate divestitures,
               mergers, or to protect the rights, property, or safety of Us, Our Users, or others. Except requirement
@@ -298,14 +298,14 @@ export default function Privacy2() {
               any actions of any third parties that receive Your personal information</div>
             
            
-            <div className="font-bold mt-5">9. Phishing</div>
+            <div className="font-bold mt-5 text-3xl">Phishing</div>
             <div>“Phishing” usually occurs when users of a website are induced by an individual/entity into divulging
               sensitive personal information or personal information by using fraudulent websites and/ or e-mail
               addresses. In the event You provide information to a website or respond to an e-mail which does not
               belong to Us or is not connected with Us in any manner, You will be a victim of Phishing. We do not
               send e-mails requesting a User for payment information, user name or passwords</div>
-            <div className="mt-5 font-bold">
-              10. Severability and Exclusion
+            <div className="mt-5 font-bold text-3xl">
+              Severability and Exclusion
             </div>
             <div>We have taken every effort to ensure that this Policy adheres to applicable laws, rules and
               regulations. The invalidity or unenforceability of any part of this Policy shall not prejudice or affect
@@ -315,15 +315,15 @@ export default function Privacy2() {
               other means. This includes, but is not limited to, information posted in any public areas of the
               Platform. All unsolicited information shall be deemed to be non-confidential and ClikFin shall be free
               to use and/ or disclose such unsolicited information without any limitations.</div>
-            <div className="mt-5 font-bold">11. No Waiver</div>
+            <div className="mt-5 font-bold text-3xl"> No Waiver</div>
             <div>The rights and remedies available under this Policy may be exercised as often as necessary and are
               cumulative and not exclusive of rights or remedies provided by law. It may be waived only in writing.
               Delay in exercising or non-exercise of any such right or remedy does not constitute a waiver of that
               right or remedy, or any other right or remedy</div>
-            <div className="mt-5 font-bold">12. Governing Law and Dispute Resolution</div>
+            <div className="mt-5 font-bold text-3xl"> Governing Law and Dispute Resolution</div>
             <div>This Policy shall be governed by and construed in accordance with laws and courts mentioned in the
               ‘Terms and Conditions’.</div>
-            <div className="font-bold mt-5"> 13. Applicability of local laws</div>
+            <div className="font-bold mt-5 text-3xl">  Applicability of local laws</div>
             <div>The Company is corporated and registered under Companies Act, 2013 with its registered office at
               Bangalore, Karnataka , India, By browsing/using the Platform, You hereby acknowledge that ClikFin is
               not responsible or liable in any manner to comply with any local laws of Your territory except India</div>

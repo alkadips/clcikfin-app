@@ -1,50 +1,45 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
-export default function Homepage() {
-  const [upwords, setupwords] = useState(false);
-  const [laontap, setLoanTap] = useState(false);
-  const toggleupword = () => {
-    setupwords(!upwords);
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+export default function Homepage() { 
+ 
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: '90%',
+    bgcolor: 'background.paper',
+   fontSize:'12px',
+   
+    p: 4,
   };
+  
 
-  const toggleloantap = () => {
-    setLoanTap(!laontap);
-  };
+  const [upwordOpen, setUpwordOpen] = React.useState(false);
+  const handleOpenUpword = () => setUpwordOpen(true);
+  const handleCloseUpword = () => setUpwordOpen(false);
+
+  const [loantapOpen, setloantapOpen] = React.useState(false);
+  const handleOpenLoanTap = () => setloantapOpen(true);
+  const handleCloselaonTap = () => setloantapOpen(false);
 
   return (
     <div>
       <div
-        className="p-5  gap-5 main-home"
-        style={{ background: "#ecebeb" }}
+        className="p-3  gap-5 main-home"
+
       >
-        <div >
-          <img src={process.env.PUBLIC_URL + "/assets/images/home.png"}></img>
+        <div className="mt-16">
+          <img src={process.env.PUBLIC_URL + "/assets/images/home2.png"}></img>
         </div>
 
         <div>
-          <div className="flex   mt-5 gap-5 justify-center">
-            <div>
-              <Link to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication">
-                <img
-                  className="mobile-image"
-                  alt="google"
-                  src={process.env.PUBLIC_URL + "/assets/images/andr.png"}
-                ></img>
-              </Link>
-            </div>
-            <div>
-              <Link to="https://apps.apple.com/in/app/clikfin-one-click-away/id1658734808">
-                <img
-                  className="mobile-image"
-                  alt="apple"
-                  src={process.env.PUBLIC_URL + "/assets/images/app.png"}
-                ></img>
-              </Link>
-            </div>
-          </div>
 
-          <div className="font-bold text-3xl ml-3 mt-5 text-black welcome">
+
+          {/* <div className="font-bold text-3xl ml-3 mt-5 text-black welcome">
             Welcome To ClikFin – Your Instant Life Upgrade
           </div>
           <div className="list-item-demo">
@@ -61,7 +56,7 @@ export default function Homepage() {
               fund your dream vacation, shop for your favorite gadgets, settle
               bills, or handle any financial exigency, we’ve got you covered!
             </p>
-          </div>
+          </div> */}
           <NavLink
             className="no-underline"
             to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication"
@@ -69,7 +64,7 @@ export default function Homepage() {
         </div>
       </div>
 
-      <div className=" text-center text-3xl text-black font-bold mt-5">
+      <div className=" text-center text-3xl text-black font-bold ">
         Why Choose Instant Loan?
       </div>
       <div
@@ -85,8 +80,14 @@ export default function Homepage() {
           24X7
         </p>
       </div>
-
-      <div className=" text-center text-3xl text-black mt-24 font-bold">
+      {/* <div className="font-bold text-center text-3xl mt-5">How ClikFin Works?</div>
+      <div>
+        <img
+          className=" how-clik"
+          src={process.env.PUBLIC_URL + "/assets/images/home22.png"}
+        ></img>
+      </div> */}
+      <div className=" text-center text-3xl text-black  font-bold">
         Our Awesome Testimonials
       </div>
       <div className="text-center mt-3 text-black">
@@ -99,7 +100,7 @@ export default function Homepage() {
         <Carousel>
           <Carousel.Item>
             <div className=" gap-5  justify-center text-black p-3 testmonials">
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid" style={{ background: '#bdbde3' }}>
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -148,7 +149,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid" style={{ background: '#bdbde3' }}>
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -197,7 +198,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid" style={{ background: '#bdbde3' }}>
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -250,7 +251,7 @@ export default function Homepage() {
           </Carousel.Item>
           <Carousel.Item>
             <div className=" gap-5 justify-center text-black p-3 testmonials">
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid" style={{ background: '#bdbde3' }}>
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -299,7 +300,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid" style={{ background: '#bdbde3' }}>
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -348,7 +349,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid" style={{ background: '#bdbde3' }}>
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -401,7 +402,7 @@ export default function Homepage() {
           </Carousel.Item>
           <Carousel.Item>
             <div className=" gap-5  justify-center text-black p-3 testmonials">
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid" style={{ background: '#bdbde3' }}>
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -450,7 +451,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid" style={{ background: '#bdbde3' }}>
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -499,7 +500,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid" style={{ background: '#bdbde3' }}>
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -555,34 +556,15 @@ export default function Homepage() {
       <div className="font-bold text-center text-3xl text-black mt-12">
         Our Partners
       </div>
-
-      <div className="flex justify-center gap-5 mt-5">
-        <div>
-          <img
-            onClick={toggleupword}
-            className="mobile-image cursor-pointer w-36"
-            src={process.env.PUBLIC_URL + "/assets/images/part1.png"}
-          ></img>
-        </div>
-        <div>
-          <img
-            onClick={toggleloantap}
-            className="mobile-image cursor-pointer w-36"
-            src={process.env.PUBLIC_URL + "/assets/images/par3.jpg"}
-          ></img>
-        </div>
-
-        <div>
-          <img
-            className="mobile-image w-16 cursor-pointer"
-            src={process.env.PUBLIC_URL + "/assets/images/par2.jpeg"}
-          ></img>
-        </div>
-      </div>
-
-      {upwords && (
-        <div className="mt-5">
-          <table className="m-auto w-11/12">
+      <Modal
+  open={upwordOpen}
+  onClose={handleCloseUpword}
+  aria-labelledby="modal-modal-title"
+  aria-describedby="modal-modal-description"
+>
+  <Box sx={style}>
+  <div className="mt-5">
+          <table className="m-auto w-11/12" >
             <tr>
               <th>BANK/NBFC</th>
               <td>Upwards</td>
@@ -617,10 +599,18 @@ export default function Homepage() {
             </tr>
           </table>
         </div>
-      )}
-      {laontap && (
-        <div className="mt-5">
-          <table className="m-auto w-11/12">
+  </Box>
+</Modal>
+
+<Modal
+  open={loantapOpen}
+  onClose={handleCloselaonTap}
+  aria-labelledby="modal-modal-title"
+  aria-describedby="modal-modal-description"
+>
+  <Box sx={style}>
+  <div className="mt-5">
+          <table className="m-auto w-11/12" style={{fontSize:'12x'}}>
             <tr>
               <th>BANK/NBFC</th>
               <td>Loan Tap</td>
@@ -662,7 +652,38 @@ export default function Homepage() {
             </tr>
           </table>
         </div>
-      )}
+  </Box>
+</Modal>
+      <div className="flex justify-center gap-5 mt-5">
+        <div>
+          <img
+           
+            onClick={handleOpenUpword}
+            className="mobile-image cursor-pointer w-36"
+            src={process.env.PUBLIC_URL + "/assets/images/part1.png"}
+          ></img>
+        </div>
+        <div>
+          <img
+              onClick={handleOpenLoanTap}
+          
+            className="mobile-image cursor-pointer w-36"
+            src={process.env.PUBLIC_URL + "/assets/images/par3.jpg"}
+          ></img>
+        </div>
+
+        <div>
+          <img
+            className="mobile-image w-16 cursor-pointer"
+            src={process.env.PUBLIC_URL + "/assets/images/par2.jpeg"}
+          ></img>
+        </div>
+      </div>
+
+   
+       
+     
+    
       <div className="font-bold text-center text-3xl text-black mt-12">
         Introducing ClikFin - Your Gateway To Financial Solutions
       </div>
