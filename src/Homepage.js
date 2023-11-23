@@ -99,7 +99,7 @@ export default function Homepage() {
         <Carousel>
           <Carousel.Item>
             <div className=" gap-5  justify-center text-black p-3 testmonials">
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -148,7 +148,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -197,7 +197,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -250,7 +250,7 @@ export default function Homepage() {
           </Carousel.Item>
           <Carousel.Item>
             <div className=" gap-5 justify-center text-black p-3 testmonials">
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -299,7 +299,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -348,7 +348,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short
@@ -401,7 +401,7 @@ export default function Homepage() {
           </Carousel.Item>
           <Carousel.Item>
             <div className=" gap-5  justify-center text-black p-3 testmonials">
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
                 <div>
                   <p>
                     “I used ClikFin to help me pay for my travel expenses. The
@@ -450,7 +450,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
                 <div>
                   <p>
                     “These guys are always ready to help when you need it most.
@@ -499,7 +499,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid">
+              <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid"style={{background:'#bdbde3'}}>
                 <div>
                   <p>
                     “Their application process was quick and simple. in a short

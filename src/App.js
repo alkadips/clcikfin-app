@@ -6,14 +6,11 @@ import EmiCalc from "./EmiCalc";
 import Faqs from "./Faqs";
 import About from "./About";
 import TermsCon from "./TermsCon";
-import Privacy from "./Privacy";
 import Contact from "./Contact";
 import Personel from "./Personel";
 import Blog from "./Blog";
 import DuplicateCusLead from "./DuplicateCusLead";
-import CheckDuplicateCustomer from "./Form/CheckDuplicateCustomer";
-import PreApproval from "./Form/PreApproval";
-// import Privacy2 from "./Privacy2";
+import Privacy2 from "./Privecy2";
 
 function App() {
   return (
@@ -27,13 +24,12 @@ function App() {
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/about" element={<About />} />
           <Route path="/terms" element={<TermsCon />} />
-          <Route path="/privacy" element={<Privacy />} />
-          {/* <Route path="/privacy2" element={<Privacy2 />} /> */}
+        
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/duplicate" element={<DuplicateCusLead />} />
-          <Route path="/checkdupcusform" element={<CheckDuplicateCustomer />} />
-          <Route path="/preapproval" element={<PreApproval />} />
+          <Route path="/privacy" element={<Privacy2 />} />
+
         </Routes>
         <Footer />
       </HashRouter>

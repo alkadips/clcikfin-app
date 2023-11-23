@@ -7,7 +7,7 @@ html {
   overflow-y: scroll;
 }
 .get-cash-now {
-  background-color: #426097;
+  background-color: #f9bd08;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@ html {
   position: sticky;
   width: 100%;
   z-index: 1;
-  background-color: white;
+  background-color: #0f2359;
   top: 0;
 }
 
@@ -93,7 +93,7 @@ html {
 .footer {
   padding: 10px;
   color: white;
-  background-color: black;
+  background-color: #0f2359;
 }
 .footer-wrapper{
   display: flex;
@@ -325,7 +325,12 @@ tr:hover {
 #drawer ul a:hover {
   color:#2b4a84;
 }
+.wrapper-gap{
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (max-width: 600px) {
   #drawer-toggle:checked ~ #drawer-toggle-label {
     height: 100%;
@@ -452,10 +457,6 @@ tr:hover {
 .tabs-emi{
   flex-direction: row;
 }
-.terms-main{
-  margin: 0 auto;
-  width: 50%;
-}
 .faq-section{
   display: flex;
   flex-direction: row;
@@ -510,9 +511,7 @@ tr:hover {
     display: flex;
     padding: 20px;
   }
-  .terms-main{
-    width: 100%;
-  }
+ 
   .emi-main{
     flex-direction: column;
   }

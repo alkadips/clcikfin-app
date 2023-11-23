@@ -24,7 +24,7 @@ export default function About() {
       </div>
 
       <div className=" p-5 gap-5 about-para">
-        <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid ">
+        <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid " style={{background:'#bdbde3'}}>
           <div className="font-bold text-center"> Our Vision</div>
           <div className="mt-3">
             {" "}
@@ -35,7 +35,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid ">
+        <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid "style={{background:'#bdbde3'}}>
           <div className="font-bold text-center">Our Mission</div>
           <div className="mt-3">
             At ClikFin, our mission is to seamlessly connect borrowers and
@@ -45,7 +45,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid ">
+        <div className=" p-5 rounded-lg ... clickfin-para-home text-black border-2 border-solid "style={{background:'#bdbde3'}}>
           <div className="font-bold text-center"> Who We Are</div>
           <div className="mt-3">
             ClikFin, a venture by CygniSys Services Pvt. Ltd. is a leading

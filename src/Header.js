@@ -34,12 +34,11 @@ export default function Header() {
     <div className="sticky-header">
       <div className="flex justify-evenly shadow-2xl ... header-wrapper ">
         <div>
-          <Link className="no-underline" style={{ color: "#2B4A84" }} to="/">
+          <Link className="no-underline text-white"  to="/">
             <img
-              style={{ marginTop: "20px" }}
-              className="w-40 ml-5"
+              className="w-40"
               alt="logo"
-              src={process.env.PUBLIC_URL + "/assets/images/newlogo.png"}
+              src={process.env.PUBLIC_URL + "/assets/images/white.png"}
             ></img>
           </Link>{" "}
         </div>
@@ -156,13 +155,12 @@ export default function Header() {
     </li> */}
           </ul>
         </nav>
-        <div className="flex font-bold wrapper-gap" style={{ gap: "20px" }}>
-          <Link className="no-underline" style={{ color: "#2B4A84" }} to="/">
+        <div className="flex font-bold wrapper-gap  " style={{ gap: "20px" }}>
+          <Link className="no-underline text-white"  to="/">
             <div className="home">Home</div>
           </Link>
           <Link
-            className="no-underline"
-            style={{ color: "#2B4A84" }}
+            className="no-underline text-white"
             to="/about"
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -171,16 +169,17 @@ export default function Header() {
             <div className="home">About</div>
           </Link>
           <Link
-            className="no-underline"
-            style={{ color: "#2B4A84" }}
+           onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+            className="no-underline text-white"
             to="/personelloan"
           >
             <div className="home">Personal Loan</div>
           </Link>
 
           <Link
-            className="no-underline"
-            style={{ color: "#2B4A84" }}
+            className="no-underline text-white"
             to="/emicalculator"
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -300,8 +299,8 @@ export default function Header() {
           </Menu>  */}
 
           <Link
-            className="no-underline"
-            style={{ color: "#2B4A84" }}
+            className="no-underline text-white"
+          
             to="/contact"
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

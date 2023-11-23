@@ -64,7 +64,7 @@ export default function Blog() {
                     </div>
                   )}
                   <div className="mt-3">
-                    <button className="bg-blue-500 p-2 rounded-full ... text-white" onClick={toggleiswhy}>
+                    <button className="bg-blue-500 p-2 rounded-full ... text-white" style={{background:'#FFA000'}} onClick={toggleiswhy}>
                       {iswhy ? "Read Less" : "Read More..."}
                     </button>
                   </div>
@@ -188,6 +188,8 @@ export default function Blog() {
                     <button
                       className="bg-blue-500 p-2 rounded-full ... text-white"
                       onClick={togglehowtobuld}
+                      style={{background:'#FFA000'}}
+
                     >
                       {howtobuild ? "Read Less" : "Read More..."}
                     </button>
@@ -321,6 +323,7 @@ export default function Blog() {
                     <button
                       className="bg-blue-500 p-2 rounded-full ... text-white"
                       onClick={togglediffernttype}
+                      style={{background:'#FFA000'}}
                     >
                       {differntType ? "Read Less" : "Read More..."}
                     </button>
@@ -441,6 +444,7 @@ export default function Blog() {
                     <button
                       className="bg-blue-500 p-2 rounded-full ... text-white"
                       onClick={togglesimpleIntegration}
+                      style={{background:'#FFA000'}}
                     >
                       {simpleintegration ? "Read Less" : "Read More..."}
                     </button>

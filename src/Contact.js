@@ -38,31 +38,39 @@ export default function Contact() {
           We Would Love To Hear Your Suggestions Or Complaints. Please Let Us
           Try To Help You.
         </div>
-      
+
         <div className="flex justify-around mt-3 font-bold">
+          <div>Corporate Office</div>
+
           <div>BRANCH OFFICE</div>
-          <div>CALL US AT</div>
-          <div>EMAIL ADDRESS</div>
+
+
         </div>
         <div className="flex justify-around mt-2 gap-5 p-3">
           <div className="text-center w-1/4">
-            47, 7th sector 5th Main, HSR layout Bangalore – 560102 Karnataka,
+            #147, 7th sector 5th Main, HSR layout Bangalore – 560102 Karnataka,
             India
           </div>
-          <div className="text-center w-1/4"> Available Soon</div>
-          <div className="text-center w-1/4">support@clikfin.com</div>
+          <div className="text-center w-1/4">
+            Sacred Heart Mall,  Wanowrie, Pune, Maharashtra,411040,India
+          </div>
         </div>
       </div>
-      <div>
+      <div className="flex gap-5 p-5 justify-evenly">
+        <div >
         <iframe
           src="https://maps.google.com/maps?q=155-148%2C%205th%20Main%20Rd%2C%20Sector%207%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102&t=m&z=10&output=embed&iwloc=near"
-          width="100%"
+        width='100%'
           title="Address"
-          height="450"
+         
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        </div>
+      <div>
+      <iframe width='100%' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8297357619886!2d73.90039019999999!3d18.491370000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1d763eef245%3A0x231235bdaa9ad735!2sSacred%20World%20Mall%2C%20Wanwadi%2C%20Pune%2C%20Maharashtra%20411040!5e0!3m2!1sen!2sin!4v1700656377048!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       </div>
     </div>
   );

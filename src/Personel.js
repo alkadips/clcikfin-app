@@ -82,15 +82,43 @@ export default function Personel() {
     );
   };
   return (
-    <div className="text-black per-loan-back mt-16">
-      <div className="main-per gap-5">
-        <div >
-          <div>
+    <div className="text-black per-loan-back mt-24">
+       <div className="font-bold text-3xl mt-5 text-center">
+              Benefits And Features Of Unsecured Personal Loans
+            </div>
+      <div className="main-per gap-2">
+      <div>
+          <div className="mt-5">
             <img className="text-center" src={process.env.PUBLIC_URL + "/assets/images/bacr.png"}></img>
           </div>
-          <div className="ml-5 text-center">
+         
+                </div>
+       
+        <div>
+       
+          <div>
+           
+            <div className=" text-black rounded-xl mt-2 ">
+              <div className="m-auto no-contra p-2">
+               
+                <div className="text-black mt-5">
+                  <div className="font-bold"> 1. Minimal Documentation:</div>
+                  <div>
+                    {" "}
+                    Streamlined digital application process for swift approval.
+                  </div>
+                </div>
+                <div className="text-black mt-2">
+                  <div className="font-bold"> 2. Easy Approval:</div>
+                  <div>
+                    {" "}
+                    Quick verification for fast access to funds during
+                    emergencies.
+                  </div>
+                </div>
+                
             <div className="text-black mt-2">
-              <div className="font-bold">4. Multipurpose</div>
+              <div className="font-bold">3. Multipurpose</div>
               <div>
                 {" "}
                 Versatile use for various needs like weddings, home renovations,
@@ -98,43 +126,13 @@ export default function Personel() {
               </div>
             </div>
             <div className="text-black mt-2">
-              <div className="font-bold">5. Low-Interest Rates:</div>
+              <div className="font-bold">4. Low-Interest Rates:</div>
               <div>
                 Eligibility and good credit history can secure competitive
                 rates, saving money.
               </div>
-            </div>
+            
           </div>
-        </div>
-        <div>
-          <div>
-            <div className="font-bold text-3xl mt-5 text-center">
-              Benefits And Features Of Unsecured Personal Loans
-            </div>
-            <div className=" text-black rounded-xl mt-2 ">
-              <div className="m-auto no-contra p-2">
-                <div className="text-black mt-5">
-                  <div className="font-bold">1. No Collateral:</div>
-                  <p>
-                    No need to pledge assets, reducing the risk of losing
-                    valuable Asset.
-                  </p>
-                </div>
-                <div className="text-black mt-2">
-                  <div className="font-bold"> 2. Minimal Documentation:</div>
-                  <div>
-                    {" "}
-                    Streamlined digital application process for swift approval.
-                  </div>
-                </div>
-                <div className="text-black mt-2">
-                  <div className="font-bold"> 3. Easy Approval:</div>
-                  <div>
-                    {" "}
-                    Quick verification for fast access to funds during
-                    emergencies.
-                  </div>
-                </div>
               </div>
             </div>
           </div>

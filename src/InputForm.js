@@ -38,8 +38,8 @@ export default class InputForm extends React.Component {
       <Form>
         <Form.Group as={Row} controlId="formPrincipalAmount">
           <Form.Label column sm="2">Principal</Form.Label>
-          <Col sm="10">
-            <InputGroup>
+          <Col sm="10" >
+            <InputGroup className="ml-3">
               <InputGroup.Text id="basic-addon1">₹</InputGroup.Text>
               <Form.Control
                   name="principal"
@@ -56,7 +56,7 @@ export default class InputForm extends React.Component {
         <Form.Group className='mt-5'  as={Row} controlId="formAprPercentage">
           <Form.Label column sm="2">Interest Rate</Form.Label>
           <Col sm="10">
-            <InputGroup>
+            <InputGroup className="ml-3">
               <Form.Control
                   name="rate"
                   placeholder="Annual Interest Rate"
@@ -73,7 +73,7 @@ export default class InputForm extends React.Component {
         <Form.Group  className='mt-5'  as={Row} controlId="formTermYear">
           <Form.Label column sm="2">Term</Form.Label>
           <Col sm="10">
-            <InputGroup>
+            <InputGroup className="ml-3">
               <Form.Control
                   name="duration"
                   placeholder="Term in years"

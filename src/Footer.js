@@ -68,7 +68,7 @@ export default function Footer() {
             }}
             to="faqs"
           >
-            <div className="text-xs mt-3">Faqs</div>
+            <div className="text-xs mt-3">FAQs</div>
           </Link>
         </div>
         <div>
