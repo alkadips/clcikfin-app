@@ -1,45 +1,60 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import CryptoJs from 'crypto-js'
 export default function DuplicateCusLead() {
   const [name, setName] = useState();
   const [mobile, setMobile] = useState();
   const [email, setEmail] = useState();
   
+
+
+  const generateCheckSum = ()=>{ 
+    const hmac = CryptoJs.HmacSHA1('29', 'ym6BtHlSkR2KxA18BY6uswzaMnVVKM3Q');
+    console.log('Request payload:'+JSON.stringify(hmac));
+    // CryptoJs.update(JSON.stringify(hmac));
+    // let hash = hmac.digest('base64');
+    console.log('Check-sum:'+ hmac);
+    console.log('Request payload:'+JSON.stringify(hmac))
+    return hmac
+
+    
+}
   const checkDuplicatelead = async() => {
+    // axios.post(
+    //     "https://test-partners.cashe.co.in/partner/checkDuplicateCustomerLead",
+    //     {
+    //       partner_name: "TestPartner",
+    //       mobile_no: "9119225448",
+    //     }
+    //   )
+    //   .then(async (response) => {
+    //     console.log("res", response);
+    //   })
+    //   .catch((error) => {
+    //     console.log("error while customer duplication lead", error);
+    //   });
 
-    axios.post(
-        "https://test-partners.cashe.co.in/partner/checkDuplicateCustomerLead",
-        {
-          partner_name: "TestPartner",
-          mobile_no: "9119225448",
-        }
-      )
-      .then(async (response) => {
-        console.log("res", response);
-      })
-      .catch((error) => {
-        console.log("error while customer duplication lead", error);
-      });
-
-//    const data={
-//        partner_name: "TestPartner",
-//       mobile_no: "9119225448"       
-//     }
-//       await axios.post("https://test-partners.cashe.co.in/partner/checkDuplicateCustomerLead", {
-//       headers: {
-//           'Content-Type': 'application/json',
-//           'Check-Sum':'rKVpRHVHgkMlayrNviKePu40OXI='
-//       },
-//       data
-//   })      
-//   .then((response) => {
-//       // dispatch({type: FOUND_USER, data: response.data[0]})
-// console.log(response)
-//   })
-//   .catch((error) => {
-//       // dispatch({type: ERROR_FINDING_USER})
-//       console.log(error)
-//   })
+   const data={
+       partner_name: "SwitchMyLoan_Partner_2",
+      mobile_no: "9119225448"       
+    }
+      await axios.post("https://test-partners.cashe.co.in/partner/checkDuplicateCustomerLead", {
+      headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          "Access-Control-Allow-Methods": "POST",
+          'Check-Sum':'ac112a94e1d2cda0cae0aec2b8ace4cc3784c739'
+      },
+      data
+  })      
+  .then((response) => {
+      // dispatch({type: FOUND_USER, data: response.data[0]})
+console.log(response)
+  })
+  .catch((error) => {
+      // dispatch({type: ERROR_FINDING_USER})
+      console.log(error)
+  })
 }
   const preAprovalApi = () => {
     axios
@@ -254,6 +269,7 @@ export default function DuplicateCusLead() {
   };
   useEffect(() => {
     checkDuplicatelead();
+    generateCheckSum();
     // preAprovalApi();
     // createCustomer();
     // addingMurchantIdDeactivate();

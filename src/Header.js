@@ -210,7 +210,7 @@ export default function Header() {
           </Link> */}
 
 
-          {/* <Menu as="div" className="relative inline-block text-left">
+           <Menu as="div" className="relative inline-block text-left">
             <div>
               <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                 Options
@@ -262,42 +262,102 @@ export default function Header() {
                        </Link>
                     )}
                   </Menu.Item>
+
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href="#"
-                        className={classNames(
-                          active
-                            ? "bg-gray-100 text-gray-900"
-                            : "text-gray-700",
-                          "block px-4 py-2 text-sm"
-                        )}
-                      >
-                        License
-                      </a>
+                       <Link
+                       to="/planbasedOnsalary"
+                         className={classNames(
+                           active
+                             ? "bg-gray-100 text-gray-900"
+                             : "text-gray-700",
+                           "block px-4 py-2 text-sm"
+                         )}
+                       >
+                         PlanBasedOnSalry
+                       </Link>
                     )}
                   </Menu.Item>
-                  <form method="POST" action="#">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          type="submit"
-                          className={classNames(
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700",
-                            "block w-full px-4 py-2 text-left text-sm"
-                          )}
-                        >
-                          Sign out
-                        </button>
-                      )}
-                    </Menu.Item>
-                  </form>
+                  <Menu.Item>
+                    {({ active }) => (
+                       <Link
+                       to="/createcustomer"
+                         className={classNames(
+                           active
+                             ? "bg-gray-100 text-gray-900"
+                             : "text-gray-700",
+                           "block px-4 py-2 text-sm"
+                         )}
+                       >
+                         Create Customer
+                       </Link>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                       <Link
+                       to="/addingdeactivatemurchant"
+                         className={classNames(
+                           active
+                             ? "bg-gray-100 text-gray-900"
+                             : "text-gray-700",
+                           "block px-4 py-2 text-sm"
+                         )}
+                       >
+                         Adding Deactivate Murchant
+                       </Link>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                       <Link
+                       to="/customerstatus"
+                         className={classNames(
+                           active
+                             ? "bg-gray-100 text-gray-900"
+                             : "text-gray-700",
+                           "block px-4 py-2 text-sm"
+                         )}
+                       >
+                         Check Customer Status
+                       </Link>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                       <Link
+                       to="/bulkcustomerstatus"
+                         className={classNames(
+                           active
+                             ? "bg-gray-100 text-gray-900"
+                             : "text-gray-700",
+                           "block px-4 py-2 text-sm"
+                         )}
+                       >
+                         Check Bulk Customer Status
+                       </Link>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                       <Link
+                       to="/documentupload"
+                         className={classNames(
+                           active
+                             ? "bg-gray-100 text-gray-900"
+                             : "text-gray-700",
+                           "block px-4 py-2 text-sm"
+                         )}
+                       >
+                        Document Upload
+                       </Link>
+                    )}
+                  </Menu.Item>
+                  
                 </div>
               </Menu.Items>
             </Transition>
-          </Menu>  */}
+          </Menu>  
 
           <Link
             className="no-underline text-white"
@@ -336,9 +396,20 @@ export default function Header() {
             to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication"
           >
             <div className="get-cash-now rounded-full ... p-2">
-              Get Cash Now
+              Get Instant Cash
             </div>
           </Link>
+          <Link
+            className="no-underline"
+            style={{ color: "#2B4A84" }}
+            to="login"
+          >
+            <div className="get-cash-now rounded-full ... p-2">
+              Login
+            </div>
+          </Link>
+
+        
 
           {/* <Link
             className="cursor-pointer no-underline"
