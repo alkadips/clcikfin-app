@@ -34,28 +34,53 @@ export default function DuplicateCusLead() {
     //     console.log("error while customer duplication lead", error);
     //   });
 
-   const data={
-       partner_name: "SwitchMyLoan_Partner_2",
-      mobile_no: "9119225448"       
+//    const data={
+//        partner_name: "SwitchMyLoan_Partner_2",
+//       mobile_no: "9119225448"       
+//     }
+//       await axios.post("https://test-partners.cashe.co.in/partner/checkDuplicateCustomerLead", {
+//       headers: {
+//           'Check-Sum':'3ca6b75241cd9c68a10d06ac082f855be88418a3'
+//       },
+//       data
+//   })      
+//   .then((response) => {
+//       // dispatch({type: FOUND_USER, data: response.data[0]})
+// console.log(response)
+//   })
+//   .catch((error) => {
+//       // dispatch({type: ERROR_FINDING_USER})
+//       console.log(error)
+//   })
+
+
+
+axios
+        .post(
+          "https://test-partners.cashe.co.in/partner/checkDuplicateCustomerLead",
+          {
+            partner_name: 'TestPartner',
+            mobile_no: '9119225448',
+          },
+          {
+            headers: {
+              'Access-Control-Allow-Credentials': true,
+              'Access-Control-Max-Age':-1,
+              'Check-Sum': `3ca6b75241cd9c68a10d06ac082f855be88418a3`,
+            },
+          }
+        )
+        .then(async (response) => {
+        console.log('res',response)
+
+         
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        
     }
-      await axios.post("https://test-partners.cashe.co.in/partner/checkDuplicateCustomerLead", {
-      headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-          "Access-Control-Allow-Methods": "POST",
-          'Check-Sum':'ac112a94e1d2cda0cae0aec2b8ace4cc3784c739'
-      },
-      data
-  })      
-  .then((response) => {
-      // dispatch({type: FOUND_USER, data: response.data[0]})
-console.log(response)
-  })
-  .catch((error) => {
-      // dispatch({type: ERROR_FINDING_USER})
-      console.log(error)
-  })
-}
+
   const preAprovalApi = () => {
     axios
       .post("https://test-partners.cashe.co.in/report/getLoanApprovalDetails", {
