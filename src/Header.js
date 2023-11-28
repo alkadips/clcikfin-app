@@ -210,7 +210,7 @@ export default function Header() {
           </Link> */}
 
 
-           <Menu as="div" className="relative inline-block text-left">
+           {/* <Menu as="div" className="relative inline-block text-left">
             <div>
               <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                 Options
@@ -357,7 +357,7 @@ export default function Header() {
                 </div>
               </Menu.Items>
             </Transition>
-          </Menu>  
+          </Menu>   */}
 
           <Link
             className="no-underline text-white"
@@ -399,7 +399,7 @@ export default function Header() {
               Get Instant Cash
             </div>
           </Link>
-          <Link
+          {/* <Link
             className="no-underline"
             style={{ color: "#2B4A84" }}
             to="login"
@@ -407,7 +407,7 @@ export default function Header() {
             <div className="get-cash-now rounded-full ... p-2">
               Login
             </div>
-          </Link>
+          </Link> */}
 
         
 
