@@ -1,8 +1,7 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 export default function PlanBasedOnSalary() {
-
     const [errors, setErros] = useState({
         partnerNameError: "",
         salaryError: "",
@@ -29,8 +28,35 @@ export default function PlanBasedOnSalary() {
         setSalary(e.target.value);
     };
 
+
+    const apiForPlanBasedSalary = async () => {
+        axios
+            .post(
+                "https://test-partners.cashe.co.in/partner/fetchCashePlans/salary",
+                {
+                    partner_name: 'Bankbazaar',
+                    salary: '20000',
+                   
+
+                },
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Access-Control-Request-Headers': '*',
+                        'Check-Sum': 'XefdH55XWaQ1dLsfXv5N/mJdFkk='
+                    }
+                }
+            )
+            .then(async (response) => {
+                console.log('res', response)
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    }
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        apiForPlanBasedSalary();
     }, []);
     return (
         <div className="mt-24">
@@ -47,9 +73,6 @@ export default function PlanBasedOnSalary() {
                                 {!partnerName ? errors.partnerNameError : ""}
                             </p>
                         </div>
-
-
-
                         <div className="mb-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
                                 Salary<span className="text-red-600 ml-1"> *</span>
@@ -71,12 +94,9 @@ export default function PlanBasedOnSalary() {
                         className="mobile-i3mage"
                         alt="google"
                         src={process.env.PUBLIC_URL + '/assets/images/slider1.jpg'}
-
                     ></img>
                 </div>
             </div>
-
         </div>
     )
-
 }

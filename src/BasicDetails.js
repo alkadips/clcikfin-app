@@ -7,6 +7,23 @@ export default function BasicDetails() {
     const [education, setEducation] = useState('');
     const [state, setState] = useState('');
     const [addressProof, setAddressPoof] = useState('');
+    const [submitClicked, setSubmitClicked] = useState(false);
+    const [emailId, setEmail] = useState("");
+    const [panNumber, setPan] = useState("");
+    const [name, setName] = useState("");
+    const [addredd1, setAddressLine1] = useState("");
+    const [line1, setLine1] = useState("");
+    const [line2, setLine2] = useState("");
+    const [pincode, setPincode] = useState("");
+    const [city, setCity] = useState("");
+    const [landmark, setlandmark] = useState("");
+    const [fatherName, setFatherName] = useState("");
+    const [contactNumber, setContactNumber] = useState("");
+    const [numberOfYearsStaying, setnumberOfYearsStaying] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [fristname, setfristname] = useState("");
+    const [middleName, setMiddleName] = useState("");
+    const [adharNumber, setAadharNumber] = useState("");
     const handleChangeEducation = (event) => {
         setEducation(event.target.value);
     };
@@ -31,25 +48,7 @@ export default function BasicDetails() {
         aadharNumberErrror:"",
         pannumberError:"",
     });
-    const [submitClicked, setSubmitClicked] = useState(false);
-    const [emailId, setEmail] = useState("");
-    const [panNumber, setPan] = useState("");
-    const [name, setName] = useState("");
-    const [addredd1, setAddressLine1] = useState("");
-    const [line1, setLine1] = useState("");
-    const [line2, setLine2] = useState("");
-    const [pincode, setPincode] = useState("");
-    const [city, setCity] = useState("");
-    const [landmark, setlandmark] = useState("");
-    const [fatherName, setFatherName] = useState("");
-    const [contactNumber, setContactNumber] = useState("");
-    const [numberOfYearsStaying, setnumberOfYearsStaying] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [fristname, setfristname] = useState("");
-    const [middleName, setMiddleName] = useState("");
-
-    const [adharNumber, setAadharNumber] = useState("");
-
+   
     const handlechangePanNumber = (event) => {
         setPan(event.target.value);
     };
@@ -72,15 +71,12 @@ export default function BasicDetails() {
     const handleFatherName = (e) => {
         setFatherName(e.target.value);
     };
-   
-  
     const handlechangeEmail = (e) => {
         setEmail(e.target.value);
     };
     const handlechangeLandmark=(e)=>{
         setlandmark(e.target.value)
     }
-    
     const handlchangeFristName = (e) => {
         setfristname(e.target.value);
     };
@@ -90,15 +86,12 @@ export default function BasicDetails() {
     const handlechangelIne2 = (e) => {
         setLine2(e.target.value);
     };
-   
     const handlechangepuncode = (e) => {
         setPincode(e.target.value);
     };
-    
     const handlechangeCity = (e) => {
         setCity(e.target.value);
     };
-   
     const onClickButton = () => {
         if (!fristname) {
             setErros({ fristNameError: "Please Enter Frist name" });
@@ -128,7 +121,6 @@ export default function BasicDetails() {
             return true;
         }
     };
-
     return (
         <div className="mt-24">
             <div className="font-bold text-center text-3xl mt-24">Basic Details</div>
@@ -152,7 +144,6 @@ export default function BasicDetails() {
                                 <input value={middleName} onChange={handleMiddleName} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Middle Name" />
                             </div>
                         </div>
-
                         <div className="flex-one gap-5">
                             <div className="mb-4">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
@@ -170,7 +161,6 @@ export default function BasicDetails() {
                                 <input value={fatherName} onChange={handleFatherName} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Father Name" />
                             </div>
                         </div>
-
                         <div className="flex-one gap-5">
                             <div className="mb-4">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
@@ -178,10 +168,6 @@ export default function BasicDetails() {
                                 </label>
                                 <input value={contactNumber} onChange={handleChangeContact} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="number" placeholder="Contact Number" />
                             </div>
-
-
-
-                            
                         </div>
                         <div className="flex-one gap-5">
                             <div className="mb-4">
@@ -203,7 +189,6 @@ export default function BasicDetails() {
                             </p>
                             </div>
                         </div>
-
                         <div className="flex-one gap-5 justify-between">
                             <div className="mb-4">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
@@ -214,17 +199,14 @@ export default function BasicDetails() {
                                         <div>Male</div>
                                         <div>
                                             <input id="username" type="radio" />
-
                                         </div>
                                     </div>
                                     <div className="flex gap-2">
                                         <div>Female</div>
                                         <div>
                                             <input id="username" type="radio" />
-
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <div className="mb-4">
@@ -233,13 +215,9 @@ export default function BasicDetails() {
                                 </label>
                                 <div className='p-2' style={{ border: '1px solid', width: '100%' }}>
                                     <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
-
                                 </div>
-
                             </div>
                         </div>
-
-
                         <div className="flex-one gap-5  justify-between">
                             <div className="mb-4" >
                             <FormControl sx={{ width: 230 }}>
@@ -252,8 +230,7 @@ export default function BasicDetails() {
                                     value={education}
                                     label="Education"
                                     onChange={handleChangeEducation}
-                                    
-
+                                    style={{height:'45px'}}
                                 >
                                     <MenuItem value='Under Graduate'>Under Graduate</MenuItem>
                                     <MenuItem value='Graduate'>Graduate</MenuItem>
@@ -272,29 +249,24 @@ export default function BasicDetails() {
                                             <div>Single</div>
                                             <div>
                                                 <input id="username" type="radio" />
-
                                             </div>
                                         </div>
                                         <div className="flex gap-2">
                                             <div>married</div>
                                             <div>
                                                 <input id="username" type="radio" />
-
                                             </div>
                                         </div>
                                         <div className="flex gap-2">
                                             <div>Other</div>
                                             <div>
                                                 <input id="username" type="radio" />
-
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div className="flex-one gap-5">
                             <div className="mb-4">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
@@ -314,14 +286,12 @@ export default function BasicDetails() {
                                         <div>RENTED</div>
                                         <div>
                                             <input id="username" type="radio" />
-
                                         </div>
                                     </div>
                                     <div className="flex gap-2">
                                         <div>OWNED</div>
                                         <div>
                                             <input id="username" type="radio" />
-
                                         </div>
                                     </div>
                                 </div>
@@ -343,7 +313,6 @@ export default function BasicDetails() {
                                 <input value={city} onChange={handlechangeCity} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="City" />
                             </div>
                         </div>
-
                         <label className="block text-center text-blue-600    mb-2 mt-5" for="username">
                             Current Address
                         </label>
@@ -389,7 +358,7 @@ export default function BasicDetails() {
                                     value={state}
                                     label="State"
                                     onChange={handleChangeState}
-                                    
+                                    style={{height:'45px'}}
                                 >
                                     <MenuItem   value='ANDAMAN & NICOBAR'>ANDAMAN & NICOBAR</MenuItem>
                                     <MenuItem value='ISLANDS'>ISLANDS</MenuItem>
@@ -448,6 +417,7 @@ export default function BasicDetails() {
                                     value={addressProof}
                                     label="Age"
                                     onChange={handleChangeAddressProof}
+                                    style={{height:'45px'}}
                                     >
                                     <MenuItem defaultValue='Utility Bill' value='Utility Bill'>Utility Bill</MenuItem>
                                     <MenuItem value='Rental Agreement'>Rental Agreement</MenuItem>
@@ -487,7 +457,6 @@ export default function BasicDetails() {
                                 <input value={line2} onChange={handlechangelIne2} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Line 2" />
                             </div>
                         </div>
-
                         <div className="flex-one gap-5 mt-5">
                             <div>
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
@@ -509,12 +478,12 @@ export default function BasicDetails() {
                                     Select State
                                 </label>
                                 <Select
-                               
                                     labelId="demo-simple-select-label"
                                     id="demo-simple-select"
                                     value={state}
                                     label="Age"
                                     onChange={handleChangeState}
+                                    style={{height:'45px'}}
                                    >
                                     <MenuItem defaultValue='ANDAMAN & NICOBAR' value='ANDAMAN & NICOBAR'>ANDAMAN & NICOBAR</MenuItem>
                                     <MenuItem value='ISLANDS'>ISLANDS</MenuItem>
@@ -569,25 +538,12 @@ export default function BasicDetails() {
                                 <input value={pincode} onChange={handlechangepuncode} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="number" placeholder="Pincode" />
                             </div>
                         </div>
-                       
-
-
-                        
-                    {/* <Link
-            className="no-underline"
-            onClick={() => {
-                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              }}
-            to="employDetails"
-          > */}
             <div onClick={onClickButton} className="mb-4 text-center bg-blue-600 p-2 text-white cursor-pointer">
               Next
             </div>
-          {/* </Link> */}
                     </form>
                 </div>
             </div>
         </div>
     )
-
 }

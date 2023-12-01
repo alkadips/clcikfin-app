@@ -361,11 +361,12 @@ tr:hover {
     position: absolute;
     height: 2px;
     width: 24px;
-    background: #8d8d8d;
+    background: #d9ff07;
     left: 13px;
     top: 18px;
-    box-shadow: 0 6px 0 #8d8d8d, 0 12px 0 #8d8d8d;
+   box-shadow: 0 6px 0 #d9ff07, 0 12px 0 #f9f208;
   }
+  
 
   header {
     width: 100%;

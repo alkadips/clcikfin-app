@@ -113,6 +113,15 @@ export default function Footer() {
           >
             <div className="text-xs mt-3">Terms & condition</div>
           </Link>
+          <Link target="_blank"
+            className="no-underline text-white"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            to="grivience"
+          >
+            <div className="text-xs mt-3">Grievance</div>
+          </Link>
         </div>
         <div>
         <div className="font-bold">CONTACT US</div>
@@ -146,7 +155,8 @@ export default function Footer() {
                 className="text-white no-underline"
                 to="https://www.facebook.com/ClikFin/"
               >
-                <IoLogoFacebook />
+                <IoLogoFacebook style={{background: '#0d6efd',borderRadius: "50%", width: '27px',height: '27px',padding: '4px'}} />
+                
               </Link>
             </div>
             <div>
@@ -154,7 +164,7 @@ export default function Footer() {
                 className="text-white no-underline"
                 to="https://twitter.com/clikfin?lang=en"
               >
-                <IoLogoTwitter />
+                <IoLogoTwitter style={{background: '#fe4f50',borderRadius: "50%", width: '27px',height: '27px',padding: '4px'}}/>
               </Link>
             </div>
             <div>
@@ -162,7 +172,7 @@ export default function Footer() {
                 className="text-white no-underline"
                 to="https://www.instagram.com/clikfin/?hl=en"
               >
-                <IoLogoInstagram />
+                <IoLogoInstagram style={{background: '#16baff',borderRadius: "50%", width: '27px',height: '27px',padding: '4px'}}/>
               </Link>
             </div>
             <div>
@@ -170,7 +180,7 @@ export default function Footer() {
                 className="text-white no-underline"
                 to="https://www.linkedin.com/company/clikfin/"
               >
-                <IoLogoLinkedin />
+                <IoLogoLinkedin style={{background: '#0d6efd',borderRadius: "50%", width: '27px',height: '27px',padding: '4px'}}/>
               </Link>
             </div>
             <div>
@@ -178,7 +188,7 @@ export default function Footer() {
                 className="text-white no-underline"
                 to="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=support@clikfin.com"
               >
-                <IoIosMail />
+                <IoIosMail style={{background: '#0d6efd',borderRadius: "50%", width: '27px',height: '27px',padding: '4px'}}/>
               </Link>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {  NavLink } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 import Box from '@mui/material/Box';
@@ -29,26 +29,26 @@ export default function Homepage() {
   return (
     <div>
       <div
-        className="p-3  gap-5 main-home"
-
+        className="p-3  main-home"
+        style={{marginTop:'45px'}}
       >
-        <div className="mt-16">
-          <img src={process.env.PUBLIC_URL + "/assets/images/home2.png"}></img>
+        <div style={{width:'50%'}}>
+          <img  src={process.env.PUBLIC_URL + "/assets/images/home88.jpg"}></img>
         </div>
 
-        <div>
+        <div style={{width:'50%'}}>
 
 
-          {/* <div className="font-bold text-3xl ml-3 mt-5 text-black welcome">
-            Welcome To ClikFin – Your Instant Life Upgrade
+          <div className="font-bold text-3xl mt-16 text-black welcome">
+            <span style={{color:"#2b4a84"}}>Welcome To ClikFin </span>– Your Instant Life Upgrade
           </div>
-          <div className="list-item-demo">
-            <ul className="text-black" style={{ listStyle: "initial" }}>
-              <li>Up to ₹10 Lakhs</li>
-              <li>Instant Transfer to Bank</li>
-            </ul>
+          <div>
+            <div className=" mt-3" style={{ listStyle: "initial",color:'#0dcaf0' }}>
+              <div className="font-bold text-3xl">Get Up to ₹10 Lakhs Instant Transfer to Bank</div>
+            </div>
+
           </div>
-          <div className="clickfin-para-home p-3  rounded text-black  border-solid "style={{border:'1px solid'}}>
+          <div className="p-3  rounded text-black text-2xl  border-solid  mt-16">
             <p>
               At ClikFin, we understand that life can present unexpected
               challenges and opportunities, and that’s why we’re here to offer
@@ -56,7 +56,7 @@ export default function Homepage() {
               fund your dream vacation, shop for your favorite gadgets, settle
               bills, or handle any financial exigency, we’ve got you covered!
             </p>
-          </div> */}
+          </div>
           <NavLink
             className="no-underline"
             to="https://play.google.com/store/apps/details?id=com.clikfin.clikfinapplication"

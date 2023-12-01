@@ -1,28 +1,38 @@
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import CryptoJs from 'crypto-js'
 
 export default function CheckDuplicateCustomer() {
-    const PHONE_REGEX =
-        new RegExp(/"^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"/gmi);
+    const pattern = '/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/';
     const [errors, setErros] = useState({
         partnerNameError: "",
         mobileNumberError: "",
-        emailError: ""
+        emailError: "",
+        matchEmailError: ""
     });
     const [submitClicked, setSubmitClicked] = useState(false);
     const [partnerName, setPartnerName] = useState("");
     const [mobileNumber, setMobileNumber] = useState("");
     const [email, setEmail] = useState("");
+    const [matchEmail, setMatchEmail] = useState("");
+    const [checksum, setcheckSum] = useState("");
+
+
     const onClickButton = () => {
         if (!partnerName) {
             setErros({ partnerNameError: "Please Enter Partner name" });
             return false;
-        } else if (!mobileNumber && PHONE_REGEX) {
-            setErros({ mobileNumberError: "Please Enter Valid Number" });
+        } else if (!mobileNumber) {
+            setErros({ mobileNumberError: "Please Enter mobile Number" });
             return false;
         } else if (!email) {
-            setErros({ emailError: "Please Enter Valid Email Address" });
+            setErros({ emailError: "Please Enter  Email Address" });
             return false;
-        } else if (partnerName && mobileNumber && email) {
+
+        } else if (!pattern && !matchEmail) {
+            setErros({ matchEmailError: "Please Enter Valid Email Address" });
+            return false;
+        } else if (partnerName && mobileNumber && email && matchEmail) {
             setSubmitClicked(true);
             return true;
         }
@@ -36,6 +46,43 @@ export default function CheckDuplicateCustomer() {
     const handleInputEmail = (e) => {
         setEmail(e.target.value);
     };
+    const handleInputMatch = (e) => {
+        setMatchEmail(e.target.value);
+    };
+    const generateCheckSum = () => {
+        const hmac = CryptoJs.HmacSHA1('29', 'ym6BtHlSkR2KxA18BY6uswzaMnVVKM3Q');
+        console.log('Request payload:', JSON.stringify(hmac));
+        setcheckSum(hmac);
+        return hmac
+    }
+    const checkDuplicatelead = async () => {
+        axios
+            .post(
+                "https://test-partners.cashe.co.in/partner/checkDuplicateCustomerLead",
+                {
+                    partner_name: 'TestPartner',
+                    mobile_no: '9119225448',
+                },
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Access-Control-Request-Headers': '*',
+                        'Check-Sum': checksum
+                    }
+                }
+            )
+            .then(async (response) => {
+                console.log('res', response)
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        checkDuplicatelead();
+        generateCheckSum();
+    }, []);
     return (
         <div className="mt-24">
             <div className="font-bold text-center text-3xl">Check Duplicate Customer Lead</div>
@@ -51,7 +98,6 @@ export default function CheckDuplicateCustomer() {
                                 {!partnerName ? errors.partnerNameError : ""}
                             </p>
                         </div>
-
                         <div className="mb-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
                                 Enter Mobile Number<span className="text-red-600 ml-1">*</span>
@@ -61,24 +107,22 @@ export default function CheckDuplicateCustomer() {
                                 {!mobileNumber ? errors.mobileNumberError : ""}
                             </p>
                         </div>
-
                         <div className="mb-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
                                 Enter Email Id<span className="text-red-600 ml-1">*</span>
                             </label>
-                            <input onChange={handleInputEmail} value={email} required className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email" />
+                            <input onChange={handleInputEmail ? handleInputEmail : handleInputMatch} value={email ? email : matchEmail} required className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email" />
                             <p className="text-red-600 text-left mt-2">
                                 {!email ? errors.emailError : ""}
                             </p>
+                            <p className="text-red-600 text-left mt-2">
+                                {!matchEmail ? errors.matchEmailError : ""}
+                            </p>
                         </div>
-
                         <div onClick={onClickButton} className="mb-4 text-center bg-blue-600 p-2 text-white cursor-pointer">
                             Save
                         </div>
-
-
                     </form>
-
                 </div>
                 <div className="one-login">
                     <img
@@ -90,5 +134,4 @@ export default function CheckDuplicateCustomer() {
             </div>
         </div>
     )
-
 }

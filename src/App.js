@@ -9,7 +9,6 @@ import TermsCon from "./TermsCon";
 import Contact from "./Contact";
 import Personel from "./Personel";
 import Blog from "./Blog";
-import DuplicateCusLead from "./DuplicateCusLead";
 import Privacy2 from "./Privecy2";
 import CheckDuplicateCustomer from "./Form/CheckDuplicateCustomer";
 import PreApproval from "./Form/PreApproval";
@@ -22,6 +21,7 @@ import AddingDeactivateMurchant from "./Form/AddingDeactivateMurchant";
 import CustomerStatus from "./Form/CustomerStatus";
 import BulkCustomerStatus from "./Form/BulkCustomerStatus";
 import DocumentUplaod from "./Form/DocumentUplaod";
+import Grivience from "./Grivience";
 
 function App() {
   return (
@@ -37,7 +37,6 @@ function App() {
           <Route path="/terms" element={<TermsCon />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/duplicate" element={<DuplicateCusLead />} />
           <Route path="/privacy" element={<Privacy2 />} />
           <Route path="/checkdupcusform" element={<CheckDuplicateCustomer />} />
           <Route path="/preapproval" element={<PreApproval />} />
@@ -48,6 +47,7 @@ function App() {
           <Route path="/bulkcustomerstatus" element={<BulkCustomerStatus />} />
           <Route path="/documentupload" element={<DocumentUplaod />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/grivience" element={<Grivience />} />
           <Route path="/login/basic" element={<BasicDetails />} />
           <Route path="/login/basic/employDetails" element={<EmployeeDetails />} />
         </Routes>
